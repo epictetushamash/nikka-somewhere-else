@@ -1,0 +1,22 @@
+{
+  "name": "nikka-somewhere-else",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epictetushamash/nikka-somewhere-else.git"
+  },
+  "author": "Nikka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epictetushamash/nikka-somewhere-else/issues"
+  },
+  "homepage": "https://github.com/epictetushamash/nikka-somewhere-else#readme",
+  "dependencies": {
+    "bower": "^1.8.2"
+  }
+}
