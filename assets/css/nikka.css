@@ -194,3 +194,13 @@ section {
     left: 30px;
 }
 
+
+/* ----------------- about page ---------------- */
+
+.nkguo-intro {
+    width: inherit;
+    height: inherit;
+    background-image:  url("image/itisme.png");
+    background-size: cover;
+
+} 
