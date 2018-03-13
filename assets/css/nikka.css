@@ -64,6 +64,7 @@ section {
     position: fixed;
     bottom: 200px;
     left: -100px;
+    z-index: 23;
 }
 
 .main-nav a {
@@ -197,10 +198,25 @@ section {
 
 /* ----------------- about page ---------------- */
 
-.nkguo-intro {
-    width: inherit;
-    height: inherit;
-    background-image:  url("image/itisme.png");
-    background-size: cover;
 
+.nkguo-intro {
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background-image:  url("image/itisme.png");
+    background-size:   contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    
 } 
+
+.nkguo {
+    position: fixed;
+    height: inherit;
+    display: block;
+}
+
+.screen-black {
+    background: rgba(0,0,255,1);
+    z-index: 10;
+}
