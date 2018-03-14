@@ -82,11 +82,17 @@ section {
     color: rgb(0,0,255);
 }
 
+
+
+
 .guidelink {
     text-align: center;
     position: relative;
     bottom: 50px;
 }
+
+
+
 .guidelink a {
     text-decoration: none;
     font-size: 1.2em;
@@ -106,11 +112,12 @@ section {
     height: 460px;
     width: 380px;
     box-shadow: 0px 5px 45px 10px rgba(0,0,0,0.1); 
-    background-image: url("image/itisme.png");
+/*    background-image: url("image/itisme.png");*/
     background-size: cover;
     background-position: 57%;
     border-radius: 5px;
 }
+
 
 .image::before {
     content: "";
@@ -153,6 +160,8 @@ section {
 /* about section begins below */
 
 #img-about {right: 10px;
+        background-image: url("image/itisme.png");
+
 }
 
 #link-about {
@@ -168,6 +177,8 @@ section {
 
 #img-work {
     left: 10px;
+        background-image: url("image/concentrating.png");
+
 }
 
 #link-work {
@@ -182,7 +193,10 @@ section {
 
 /* elsewhere section begins below */
 
-#img-elsewhere {right: 10px;
+#img-elsewhere {
+    right: 10px;
+    background-image: url("image/diver-2.png");
+
 }
 
 #link-elsewhere {
@@ -204,7 +218,7 @@ section {
     width: 100%;
     height: 100%;
     background-image:  url("image/itisme.png");
-    background-size:   contain;
+    background-size:  contain;
     background-repeat: no-repeat;
     background-position: right;
     
@@ -212,11 +226,14 @@ section {
 
 .nkguo {
     position: fixed;
-    height: inherit;
     display: block;
+    width: auto;
+    height: auto;
+    padding-top: 20%;
+    padding-left: 15%;
 }
 
 .screen-black {
     background: rgba(0,0,255,1);
-    z-index: 10;
+    z-index: 23;
 }
