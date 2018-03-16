@@ -111,7 +111,7 @@ section {
     position: absolute;
     height: 460px;
     width: 380px;
-    box-shadow: 0px 5px 45px 10px rgba(0,0,0,0.1); 
+    box-shadow: 0px 5px 45px 10px rgba(0,0,0,0.1);
 /*    background-image: url("image/itisme.png");*/
     background-size: cover;
     background-position: 57%;
@@ -221,16 +221,14 @@ section {
     background-size:  contain;
     background-repeat: no-repeat;
     background-position: right;
-    
-} 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+}
 
 .nkguo {
-    position: fixed;
     display: block;
-    width: auto;
-    height: auto;
-    padding-top: 20%;
-    padding-left: 15%;
 }
 
 .screen-black {
