@@ -23,7 +23,6 @@ section {
     justify-content: center;
     text-transform: uppercase;
     margin: 0 auto;
-    /* font-variant-caps: all-petite-caps; */
 }
 
 .banner {
@@ -227,11 +226,40 @@ section {
     padding-left: 20%;
 }
 
-.nkguo {
+
+
+.nkguo-content{
     display: block;
+    position: fixed;
+}
+
+.nkguo-content h2, h3{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.nkguo-intro nkguo-content keywords{
+    margin-top: 40px;
+}
+
+.nkguo-content p {
+    font-size: 4em;
+    line-height: 1.1;
+    font-weight: 600;
 }
 
 .screen-black {
     background: rgba(0,0,255,1);
-    z-index: 23;
+    z-index: 200003;
+}
+
+.logo {
+    position: fixed;
+    left: 60px;
+    top: 50px;    
+}
+
+.logo img{
+        width: 50px;
+
 }
