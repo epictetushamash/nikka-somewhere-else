@@ -80,8 +80,7 @@ section {
 .main-nav li a:hover {
     color: rgb(0,0,255);
 }
-
-
+/* navigation active*/
 
 
 .guidelink {
@@ -227,14 +226,13 @@ section {
 }
 
 
-
 .nkguo-content{
     display: block;
     position: fixed;
 }
 
 .nkguo-content h2, h3{
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -243,7 +241,7 @@ section {
 }
 
 .nkguo-content p {
-    font-size: 4em;
+    font-size: 2em;
     line-height: 1.1;
     font-weight: 600;
 }
@@ -259,7 +257,76 @@ section {
     top: 50px;    
 }
 
-.logo img{
+.logo img {
         width: 50px;
-
 }
+
+
+/* ----------------- work page ---------------- */
+
+
+.ribbon-wrapper {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ribbon-content h1{
+    width: 75%;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 550;
+    line-height: 1.3;
+    margin: 0 auto;
+    
+}
+
+.seasor {
+    width: 80%;
+    height: 600px;
+    background-color: aquamarine;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
