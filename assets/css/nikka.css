@@ -8,7 +8,7 @@ body {
    src: url(Avenir.ttc);
 }
 
-/* Every section element takes 100vh */
+/* GLOBAL - Every section element takes 100vh */
 section {
     height: 100vh;
 }
@@ -63,7 +63,7 @@ section {
     position: fixed;
     bottom: 200px;
     left: -100px;
-    z-index: 23;
+    z-index: 30;
 }
 
 .main-nav a {
@@ -80,7 +80,32 @@ section {
 .main-nav li a:hover {
     color: rgb(0,0,255);
 }
+
 /* navigation active*/
+/*
+.main-nav li.active {
+    
+}
+.main-nav li.active:hover {
+    
+}
+.main-nav li.active:hover a {
+    
+}
+
+*/
+.main-nav li.active a {
+    color: rgb(0,0,255);
+}
+
+/* Navigation on intro section Style - Default */
+
+/* Navigation on screen-black section Style */
+
+.screen-black .main-nav li a {
+    color: white;
+    z-index: 36px;
+}
 
 
 .guidelink {
@@ -101,7 +126,7 @@ section {
 
 }
 
-.image-wrapper{
+.image-wrapper {
     position: relative;
 }
 
@@ -203,15 +228,37 @@ section {
     z-index: 3;
 }
 
-#descrip-elsewhere p{
+#descrip-elsewhere p {
     left: 30px;
 }
 
-
 /* ----------------- about page ---------------- */
+/* Helper CSS class - [BUG] */
+#contact section {
+    overflow: hidden;
+}
+#contact div[class*=intro] {
+    display: block;
+    position: fixed;
+}
 
+#contact .bg-image {
+    width: 100%;
+    height: 100%;
+    background-image:  url("image/itisme.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 42%;
+}
 
 .nkguo-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 20%;
+/*
     background-attachment: fixed;
     width: 100%;
     height: 100%;
@@ -223,20 +270,34 @@ section {
     flex-direction: column;
     justify-content: center;
     padding-left: 20%;
+*/
 }
-
-
-.nkguo-content{
+.nkguo-content {
     display: block;
-    position: fixed;
+/*    position: fixed;*/
 }
 
-.nkguo-content h2, h3{
+/* Section z-inde */
+.intro-wrapper {
+    z-index: 1
+}
+.screen-black {
+    z-index: 2
+}
+.screen-white {
+    z-index: 3
+}
+.screen-blue {
+    z-index: 4
+}
+
+
+.nkguo-content h2, .nkguo-content h3 {
     font-size: 1em;
     font-weight: 600;
 }
 
-.nkguo-intro nkguo-content keywords{
+.nkguo-intro .nkguo-content .keywords {
     margin-top: 40px;
 }
 
@@ -248,7 +309,7 @@ section {
 
 .screen-black {
     background: rgba(0,0,255,1);
-    z-index: 200003;
+/*    z-index: 200003;*/
 }
 
 .logo {
@@ -273,7 +334,7 @@ section {
     align-items: center;
 }
 
-.ribbon-content h1{
+.ribbon-content h1 {
     width: 75%;
     text-align: center;
     font-size: 4em;
@@ -289,24 +350,6 @@ section {
     background-color: aquamarine;
     float: right;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
