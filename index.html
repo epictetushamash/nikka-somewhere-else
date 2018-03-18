@@ -15,7 +15,7 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0000ff">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	    crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/nikka.css" />
@@ -26,21 +26,19 @@
 		<section class="row align-items-center justify-content-center full-height py-0 uppercase banner-wrapper">
 			<div class="col">
 				<div class="banner">
-					<h3>Portfolio</h3>
-					<div class="title">
+					<h3 data-anchor-target=".row.banner-wrapper" data-start="transform: translateY(0px)" data-471-start="transform: translateY(390px)">Portfolio</h3>
+					<div class="title" data-anchor-target=".row.banner-wrapper" data-start="transform: translateY(0px)" data-100-start="transform: translateY(-50px)">
 						<h1>Nikka is somewhere else</h1>
 					</div>
+					<a class="d-block text-center guidelink" href="#her-journey" data-anchor-target=".row.banner-wrapper" data-start="transform: translateY(0px)"
+					    data-300-start="transform: translateY(-20px)">You will be guided through her journey</a>
 				</div>
-			</div>
-		</section>
-		<section class="row position-absolute w-100 guidelink text-center">
-			<div class="col">
-				<a href="#her-journey">Her journey</a>
 			</div>
 		</section>
 		<section class="row py-5 about" id="her-journey">
 			<div class="col-sm-12 col-md">
 				<div class="image-wrapper d-flex justify-content-end">
+					<span class="number">01</span>
 					<div class="image-bg">
 					</div>
 					<div class="image-link">
@@ -49,13 +47,12 @@
 				</div>
 			</div>
 			<div class="col-sm-12 col-md">
-				<div class="description about">
+				<div class="description">
 					<p>
-					Twenty-three years ago, she landed on this planet. She said hello to a whale drinking at the seaside, had a bite of
-						a green strawberry picked up from the ground.
+						Twenty-three years ago, she landed on this planet. She said hello to a whale drinking at the seaside, had a bite of a green
+						strawberry picked up from the ground.
 						<br>
-						<br>
-						She was born with curiosity.
+						<br> She was born with curiosity.
 					</p>
 				</div>
 			</div>
@@ -70,6 +67,7 @@
 			</div>
 			<div class="col-sm-12 col-md">
 				<div class="image-wrapper">
+					<span class="number">02</span>
 					<div class="image-bg">
 					</div>
 					<div class="image-link">
@@ -81,6 +79,7 @@
 		<section class="row py-5 elsewhere">
 			<div class="col-sm-12 col-md">
 				<div class="image-wrapper">
+					<span class="number">03</span>
 					<div class="image-bg">
 					</div>
 					<div class="image-link">
@@ -89,7 +88,7 @@
 				</div>
 			</div>
 			<div class="col-sm-12 col-md">
-				<div class="description elsewhere">
+				<div class="description">
 					<p>She likes to watch firefly squid shinning on the beach, diving underwater so she can catch some urchins for dinner.
 						Not to mention climbing onto trees, that is her favorite to do during night for staring at Orion.
 						<br>
@@ -97,26 +96,52 @@
 				</div>
 			</div>
 		</section>
-		<nav class="main-nav">
+		<nav class="main-nav fixed">
 			<ul class="nav">
 				<li>
-					<a href="elsewhere.html">Elsewhere</a>
+					<a href="about.html">About</a>
 				</li>
 				<li>
 					<a href="work.html">Work</a>
 				</li>
 				<li>
-					<a href="about.html">About</a>
+					<a href="elsewhere.html">Elsewhere</a>
 				</li>
 			</ul>
 		</nav>
+		<footer class="row">
+			<div class="col">
+				c 2018
+			</div>
+			<div class="col">
+				<div class="social-widget">
+					<ul>
+						<li><a href="#" title=""><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#" title=""><i class="fab fa-medium-m"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<a href="mailto:nikka999@foxmail.com">nikka999@foxmail.com</a>>
+			</div>
+		</footer>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	    crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 	    crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	    crossorigin="anonymous"></script>
+		crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<script src="/assets/js/skrollr.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var s = skrollr.init(
+
+			);
+		});
+	</script>
 </body>
 
 </html>
