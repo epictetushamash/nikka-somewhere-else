@@ -356,11 +356,18 @@ body {
 }
 
 .seasor {
-    width: 80%;
+    width: 100%;
     height: 600px;
     background-color: aquamarine;
     float: right;
 }
+
+
+#seasor {
+    float: right;
+}
+
+/* ----------- work page end ------------- */
 
 .footer {
     color: #c2c2c2;
