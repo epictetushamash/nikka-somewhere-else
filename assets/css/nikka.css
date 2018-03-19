@@ -140,6 +140,7 @@ body {
     background-position: center;
     border-radius: 5px;
     z-index: 3;
+    overflow: hidden;
 }
 
 /* .image-wrapper .image-bg::before {
@@ -175,19 +176,17 @@ body {
     margin-top: 60px;
 }
 
-/* About section begins below */
 .about .image-wrapper .number {
     left: 0;
 }
 .about .image-wrapper .image-bg {
-    /* background-image: url("../image/itisme.png"); */
     background-image: url("../image/itisme-retouched.png");
     margin-left: auto;
 }
 .about .image-wrapper .image-link {
     right: -45px;
     bottom: 50px;
-    z-index: 9;
+    z-index: 2;
 }
 .about .description p {
     margin-left: 40px;
@@ -198,14 +197,13 @@ body {
     right: 0;
 }
 .work .image-wrapper .image-bg {
-    /* background-image: url("../image/concentrating.png"); */
     background-image: url("../image/concentrating-retouched.png");
     margin-right: auto;
 }
 .work .image-wrapper .image-link {
     left: -60px;
     bottom: 50px;
-    z-index: 3;
+    z-index: 2;
 }
 .work .description p {
     margin-left: auto;
@@ -217,40 +215,49 @@ body {
     left: 0;
 }
 .elsewhere .image-wrapper .image-bg {
-    /* background-image: url("../image/diver-2.png"); */
     background-image: url("../image/diver-2-retouched.png");
     margin-left: auto;
 }
 .elsewhere .image-wrapper .image-link {
     right: -45px;
     bottom: 50px;
-    z-index: 3;
+    z-index: 2;
 }
 .elsewhere .description p {
     margin-left: 40px;
 }
 
-
 /* ----------------- About page ---------------- */
+
 /* Navigation on intro section Style - Default */
 
 /* Navigation on screen-black section Style */
+.screen-blue {
+    background-color: #0000ff;
+    color: white
+}
+.screen-blue .main-nav li a {
+    color: white;
+    z-index: 36px;
+}
+.screen-black {
+    background-color: #202020;
+    color: white
+}
 .screen-black .main-nav li a {
     color: white;
     z-index: 36px;
 }
-/* Helper CSS class - [BUG] */
+.screen-white {
+    background-color: white;
+    color: #0000ff;
+}
 
-#contact section {
+#about section {
     overflow: hidden;
 }
 
-#contact div[class*=intro] {
-    display: block;
-    position: fixed;
-}
-
-#contact .bg-image {
+#about .intro-wrapper .bg-image {
     width: 100%;
     height: 100%;
     background-image: url("../image/itisme.png");
@@ -260,51 +267,35 @@ body {
     background-size: 42%;
 }
 
-#contact div.nkguo-intro {
+#about div.nkguo-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     padding-left: 20%;
     z-index: -1;
-    /*
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    background-image:  url("image/itisme.png");
-    background-size:  contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20%;
-*/
-}
-
-.nkguo-content {
-    display: block;
-    /*    position: fixed;*/
 }
 
 /* Section z-inde */
-
 .intro-wrapper {
     z-index: 1
 }
-
-.screen-black {
+.screen-blue {
     z-index: 2
 }
 
-.screen-white {
+.screen-black {
     z-index: 3
 }
 
-.screen-blue {
+.screen-white {
     z-index: 4
 }
 
+.nkguo-content {
+    position: fixed;
+    z-index: -1;
+}
 .nkguo-content h2,
 .nkguo-content h3 {
     font-size: 1em;
@@ -321,15 +312,11 @@ body {
     font-weight: 600;
 }
 
-.screen-black {
-    background: rgba(0, 0, 255, 1);
-    /*    z-index: 200003;*/
-}
-
 .logo {
     position: fixed;
     left: 60px;
     top: 50px;
+    z-index: 9999;
 }
 
 .logo img {
@@ -362,17 +349,18 @@ body {
     float: right;
 }
 
+/* FOOTER */
 .footer {
     color: #c2c2c2;
     font-size: 14px;
 }
-
 .footer a {
     color: #c2c2c2;
 }
 .footer a:hover {
     color: #0000ff;
 }
+/* Footer social widget */
 .social-widget {
     display: block;
 }
@@ -383,6 +371,17 @@ body {
     display: inline-block;
     padding: 0 10px;
 }
+/* Footer column alignment */
+.footer .col {
+    text-align: center;
+}
+.footer .col:first-child {
+    text-align: left;
+}
+.footer .col:last-child {
+    text-align: right;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .banner-wrapper {
