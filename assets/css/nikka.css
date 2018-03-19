@@ -357,16 +357,24 @@ body {
 
 .seasor {
     width: 100%;
-    height: 600px;
+    height: auto;
     background-color: aquamarine;
-    float: right;
+    
 }
 
+/* helper class float right */
 
-#seasor {
-    float: right;
+.float-right {
+    position: absolute;
+    right: 0;
 }
 
+.UX .seasor img {
+    width: 100%;
+    
+}
+
+   
 /* ----------- work page end ------------- */
 
 .footer {
