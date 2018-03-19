@@ -128,7 +128,7 @@ body {
     font-size: 200px;
     font-weight: 700;
     position: absolute;
-    top: 0;
+    bottom: 0;
     z-index: -1;
 }
 
@@ -362,6 +362,27 @@ body {
     float: right;
 }
 
+.footer {
+    color: #c2c2c2;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #c2c2c2;
+}
+.footer a:hover {
+    color: #0000ff;
+}
+.social-widget {
+    display: block;
+}
+.social-widget ul {
+    display: block;
+}
+.social-widget ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .banner-wrapper {
