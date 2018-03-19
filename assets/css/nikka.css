@@ -325,11 +325,18 @@ body {
 }
 
 .seasor {
-    width: 80%;
+    width: 70%;
     height: 600px;
     background-color: aquamarine;
     float: right;
 }
+
+.bluebox {
+    width: 150px;
+    background-color:  rgb(0,0,255);
+    height: 150px;
+}
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
