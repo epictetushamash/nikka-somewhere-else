@@ -4,19 +4,8 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: #0000ff;
 }
-.container {
-    position: relative;
+section, footer {
     background-color: white;
-}
-.container-fluid {
-    background-color: white;
-}
-.container-fluid .row {
-     max-width: 1140px;
-     margin: 0 auto;
-}
-.container-fluid .row.full-width {
-    max-width: initial;
 }
 .full-height {
     height: 100vh;
