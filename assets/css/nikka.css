@@ -358,22 +358,50 @@ body {
 .seasor {
     width: 100%;
     height: auto;
-    background-color: aquamarine;
-    
+    background-color: white;   
+    display: block;
 }
 
 /* helper class float right */
-
 .float-right {
     position: absolute;
     right: 0;
 }
 
-.UX .seasor img {
+.uxproject .seasor img {
     width: 100%;    
 }
 
-   
+.bluebox {
+    width: 15%;
+/*    padding-top: 50%;*/
+    background-color: rgb(0,0,255);
+    position: absolute;
+    right: 30%;
+}   
+
+.bluebox:before {
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.uxproject .yc {
+    width: 100%;
+    height: auto;
+    background-color: blue;   
+}
+
+.uxproject .yc img {
+    width: 100%;    
+}
+
+.uxproject .maison {
+    width: 400px;
+    height: 260px;
+}
+
+
 /* ----------- work page end ------------- */
 
 .footer {
@@ -415,9 +443,7 @@ body {
         font-size: 34px;
         padding: 0;
     }
-    .UX .float-right {
-        padding: 0;
-    }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
