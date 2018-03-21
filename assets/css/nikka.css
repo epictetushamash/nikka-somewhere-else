@@ -356,9 +356,7 @@ body {
 }
 
 .seasor {
-    width: 100%;
     height: auto;
-    background-color: white;   
     display: block;
 }
 
@@ -372,11 +370,16 @@ body {
     width: 100%;    
 }
 
+.bluebox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20%;
+}
+
 .bluebox {
     width: 15%;
-/*    padding-top: 50%;*/
     background-color: rgb(0,0,255);
-    position: absolute;
     right: 30%;
 }   
 
@@ -400,6 +403,7 @@ body {
     width: 400px;
     height: 260px;
 }
+
 
 
 /* ----------- work page end ------------- */
