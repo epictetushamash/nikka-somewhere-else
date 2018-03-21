@@ -215,6 +215,9 @@ section, footer {
 
 /* ----------------- About page ---------------- */
 
+.intro-wrapper {
+    position: relative;
+}
 /* Navigation on intro section Style - Default */
 
 /* Navigation on screen-black section Style */
@@ -311,7 +314,7 @@ section, footer {
 
 /* ----------------- work page ---------------- */
 
-.ribbon-wrapper {
+/* .ribbon-wrapper {
     width: 100%;
     height: 80vh;
     display: flex;
@@ -333,7 +336,7 @@ section, footer {
     height: 600px;
     background-color: aquamarine;
     float: right;
-}
+} */
 
 /* FOOTER */
 .footer {
