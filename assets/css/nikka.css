@@ -340,7 +340,7 @@ body {
 }
 
 .seasor {
-    width: 80%;
+    width: 70%;
     height: 600px;
     background-color: aquamarine;
     float: right;
@@ -379,6 +379,13 @@ body {
 .footer .col:last-child {
     text-align: right;
 }
+
+.bluebox {
+    width: 150px;
+    background-color: #0000ff;
+    height: 150px;
+}
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
