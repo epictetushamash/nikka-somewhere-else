@@ -4,19 +4,8 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: #0000ff;
 }
-.container {
-    position: relative;
+section, footer {
     background-color: white;
-}
-.container-fluid {
-    background-color: white;
-}
-.container-fluid .row {
-     max-width: 1140px;
-     margin: 0 auto;
-}
-.container-fluid .row.full-width {
-    max-width: initial;
 }
 .full-height {
     height: 100vh;
@@ -226,6 +215,9 @@ body {
 
 /* ----------------- About page ---------------- */
 
+.intro-wrapper {
+    position: relative;
+}
 /* Navigation on intro section Style - Default */
 
 /* Navigation on screen-black section Style */
@@ -322,7 +314,7 @@ body {
 
 /* ----------------- work page ---------------- */
 
-.ribbon-wrapper {
+/* .ribbon-wrapper {
     width: 100%;
     height: 80vh;
     display: flex;
@@ -344,7 +336,7 @@ body {
     height: 600px;
     background-color: aquamarine;
     float: right;
-}
+} */
 
 /* FOOTER */
 .footer {
