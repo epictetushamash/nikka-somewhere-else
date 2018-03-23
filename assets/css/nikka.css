@@ -331,15 +331,26 @@ section, footer {
     margin: 0 auto;
 }
 
+
 .seasor {
     height: auto;
     display: block;
 } 
 
 
-.uxproject .seasor img {
+.seasor img {
+     -webkit-filter: grayscale(100);
+	filter: grayscale(100);
     width: 100%;    
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
+ 
+.seasor a:hover img {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
 
 .bluebox-container {
     display: flex;
@@ -359,53 +370,95 @@ section, footer {
 	padding-top: 100%; 	/* initial ratio of 1:1*/
 }
 
-.uxproject .yc {
+.yc {
     width: 100%;
     height: auto;
 }
 
-.uxproject .yc img {
-    width: 100%;    
+.yc img {
+    width: 100%;   
+     -webkit-filter: grayscale(100);
+	filter: grayscale(100);   
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
-.uxproject .maison {
+.yc a:hover img {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.maison {
     width: 100%;
     height: auto;
 }
 
-.uxproject .maison img{
+.maison img{
     width: 100%;
-
+     -webkit-filter: grayscale(100);
+	filter: grayscale(100);   
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
+.maison a:hover img {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
 .printplus {
     height: auto;
     display: block;
     margin-top: 80px;
 } 
 
-
-.uxproject .printplus img {
-    width: 100%;    
+.printplus img{
+    width: 100%;
+     -webkit-filter: grayscale(100);
+	filter: grayscale(100);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
-.uxproject .tacit {
+.printplus a:hover img {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+.tacit {
     width: 100%;
     height: auto;
 }
 
-.uxproject .tacit img {
-    width: 100%;    
+.tacit img{
+    width: 100%;
+     -webkit-filter: grayscale(100);
+	filter: grayscale(100);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
-.uxproject .cuptocup {
+.tacit a:hover img {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.cuptocup {
     width: 100%;
     height: auto;
 }
 
-.uxproject .cuptocup img{
+.cuptocup img{
     width: 100%;
+    -webkit-filter: grayscale(100);
+	filter: grayscale(100);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
 
+.cuptocup a:hover img {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 /* ----------- work page end ------------- */
