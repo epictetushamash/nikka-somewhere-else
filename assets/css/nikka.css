@@ -359,18 +359,40 @@ section, footer {
     margin: 0 auto;
 }
 
+.projectlink p1 {
+    color: black;
+    left: -100px;
+    top: 120px;
+    position: absolute;
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.projectlink p2 {
+    color: black;
+    left: -100px;
+    top: 180px;
+    position: absolute;
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+}
 
 .seasor {
     height: auto;
     display: block;
 } 
 
-
 .seasor img {
-     -webkit-filter: grayscale(100);
+    -webkit-filter: grayscale(100);
+    -moz-filter: grayscale(100);
 	filter: grayscale(100);
     width: 100%;    
     -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
  
@@ -384,7 +406,6 @@ section, footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 25%;
 }
 
 .bluebox {
@@ -494,6 +515,8 @@ section, footer {
 .footer {
     color: #c2c2c2;
     font-size: 14px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 .footer a {
     color: #c2c2c2;
@@ -522,19 +545,11 @@ section, footer {
 .footer .col:last-child {
     text-align: right;
 }
-<<<<<<< HEAD
-=======
-.placeholder {
-    height: 40px !important;
-    background-color: #0000ff;
-}
 .bluebox {
     width: 150px;
     background-color: #0000ff;
     height: 150px;
 }
->>>>>>> origin/feature/Yunfei-local
-
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
