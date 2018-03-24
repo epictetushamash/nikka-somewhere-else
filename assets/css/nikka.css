@@ -6,6 +6,11 @@ body {
 }
 section, footer {
     background-color: white;
+    overflow: hidden;
+}
+.container-fluid .container {
+    padding-left: 0;
+    padding-right: 0;
 }
 .full-height {
     height: 100vh;
@@ -72,9 +77,9 @@ section, footer {
 /* Vertical Navigation */
 .main-nav {
     transform: rotate(90deg);
-    transform-origin: center;
-    bottom: 200px;
-    left: -100px;
+    transform-origin: left top 0;
+    bottom: 300px;
+    left: 100px;
     z-index: 30;
     position: absolute;
 }
@@ -115,6 +120,9 @@ section, footer {
 
 .main-nav.fixed {
     position: fixed;
+}
+.main-nav.absoluted {
+    position: absolute;
 }
 /* Image Module */
 .image-wrapper {
@@ -214,16 +222,62 @@ section, footer {
 }
 
 /* ----------------- About page ---------------- */
+.logo {
+    position: fixed;
+    left: 60px;
+    top: 50px;
+    z-index: 9999;
+}
 
+.logo img {
+    width: 50px;
+}
 .intro-wrapper {
     position: relative;
 }
 /* Navigation on intro section Style - Default */
+.jumbotro.about {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.jumbotro.about .nkguo-intro {
+    /* position: absolute;
+    top: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.about .nkguo-content h2, .about .nkguo-content h3{
+    font-size: 1em;
+    font-weight: 600;
+}
+.about .keywords {
+    margin-top: 40px;
+}
 
+.about .nkguo-content p {
+    font-size: 2em;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.jumbotro.about.bg-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/itisme.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 42%;
+}
 /* Navigation on screen-black section Style */
 .screen-blue {
     background-color: #0000ff;
-    color: white
+    color: white;
+    position: relative;
 }
 .screen-blue .main-nav li a {
     color: white;
@@ -242,11 +296,14 @@ section, footer {
     color: #0000ff;
 }
 
+
+
+/* 
 #about section {
     overflow: hidden;
 }
 
-#about .intro-wrapper .bg-image {
+#about .intro-wrapper {
     width: 100%;
     height: 100%;
     background-image: url("../image/itisme.png");
@@ -261,9 +318,8 @@ section, footer {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding-left: 20%;
     z-index: -1;
-}
+} */
 
 /* Section z-inde */
 .intro-wrapper {
@@ -281,36 +337,8 @@ section, footer {
     z-index: 4
 }
 
-.nkguo-content {
-    position: fixed;
-    z-index: -1;
-}
-.nkguo-content h2,
-.nkguo-content h3 {
-    font-size: 1em;
-    font-weight: 600;
-}
 
-.nkguo-intro .nkguo-content .keywords {
-    margin-top: 40px;
-}
 
-.nkguo-content p {
-    font-size: 2em;
-    line-height: 1.1;
-    font-weight: 600;
-}
-
-.logo {
-    position: fixed;
-    left: 60px;
-    top: 50px;
-    z-index: 9999;
-}
-
-.logo img {
-    width: 50px;
-}
 
 /* ----------------- work page ---------------- */
 
@@ -391,7 +419,6 @@ section, footer {
 .footer {
     color: #c2c2c2;
     font-size: 14px;
-    margin-bottom: 40px !important;
 }
 .footer a {
     color: #c2c2c2;
@@ -420,7 +447,10 @@ section, footer {
 .footer .col:last-child {
     text-align: right;
 }
-
+.placeholder {
+    height: 40px !important;
+    background-color: #0000ff;
+}
 .bluebox {
     width: 150px;
     background-color: #0000ff;
