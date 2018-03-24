@@ -103,20 +103,6 @@ section, footer {
     color: #0000ff;
 }
 
-/* navigation active*/
-
-/*
-.main-nav li.active {
-    
-}
-.main-nav li.active:hover {
-    
-}
-.main-nav li.active:hover a {
-    
-}
-
-*/
 
 .main-nav li.active a {
     color: #0000ff;
@@ -514,7 +500,15 @@ section, footer {
 	filter: grayscale(0);
 }
 
-/* ----------- work page end ------------- */
+/* ----------------- seasor  ---------------- */
+
+
+
+
+
+
+/* ----------------- foot ---------------- */
+
 
 .footer {
     color: #c2c2c2;
