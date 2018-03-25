@@ -90,7 +90,7 @@ section, footer {
     transform-origin: left top 0;
     bottom: 300px;
     left: 100px;
-    z-index: 30;
+    z-index: 0;
     position: absolute;
 }
 
@@ -134,6 +134,38 @@ section, footer {
 
 .main-nav.absoluted {
     position: absolute;
+}
+
+/* SVG Navigation */
+#navigation {
+    position: fixed;
+    width: 350px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: left top 0;
+    transform-origin: left top 0;
+    bottom: 350px;
+    left: 100px;
+    z-index: 99;
+}
+#navigation a {
+    cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+#navigation text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+#navigation #white-clip-up {
+    transform: translateX(350px);
+}
+#navigation #white-clip-up {
+    transform: translateX(350px);
 }
 /* Image Module */
 .image-wrapper {
@@ -263,10 +295,10 @@ section, footer {
 /* Navigation on intro section Style - Default */
 .jumbotro.about {
     background-color: white;
-    position: fixed;
+    /* position: fixed;
     top: 0;
     width: 100%;
-    z-index: -1;
+    z-index: -1; */
 }
 
 .jumbotro.about .nkguo-intro {
@@ -324,6 +356,7 @@ section, footer {
 .screen-black {
     background-color: #202020;
     color: white;
+    position: relative;
 }
 
 .screen-black .main-nav li a {
@@ -334,6 +367,7 @@ section, footer {
 .screen-white {
     background-color: white;
     color: #0000ff;
+    position: relative;
 }
 
 
@@ -572,6 +606,7 @@ section, footer {
     font-size: 14px;
     padding-top: 100px;
     padding-bottom: 80px;
+    position: relative;
 }
 
 .footer a {
