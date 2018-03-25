@@ -1,0 +1,51 @@
+//*******************
+// NIKKA CUSTOM SASS
+// 
+// Version: 1.0
+//*******************
+
+// Color variables
+$color-primary: #0000ff;
+$color-black: #000;
+$color-white: #fff;
+
+// Font variables
+$base-font-family: "Nunito Sans", sans-serif;
+$base-font-size: 16px;
+
+// Custom Media queries
+
+// xs: 0,
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px
+
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+
+$large-desktop: "only screen and (max-width : #{$break-xl})";
+$desktop: "only screen and (max-width : #{$break-lg})";
+$tablet: "only screen and (max-width : #{$break-md})";
+$mobile: "only screen and (max-width : #{$break-sm})";
+
+// Sample of usage
+// @media #{desktop} {
+//     background: red;
+// }
+
+
+// Overwrite Bootstrap variables
+// For more available variables, check the file under node_modules/bootstrap/scss/_variables.scss
+$primary: $color-primary;
+$body-bg: $primary;
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1000px
+);

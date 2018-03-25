@@ -16,8 +16,9 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	    crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/nikka.css" />
 </head>
 
@@ -27,6 +28,41 @@
 			<img src="logo-guo.png" alt="hand writing Nikka as logo">
 		</a>
 	</div>
+	<svg id="navigation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 350 50" style="enable-background:new 0 0 350 50;" xml:space="preserve">
+		<symbol id="navigation-text">
+			<a xlink:href="/about.html">
+				<text transform="matrix(1 0 0 1 0 33)">About</text>
+			</a>
+			<a xlink:href="/work.html">
+				<text transform="matrix(1 0 0 1 124 33)">Work</text>
+			</a>
+			<a xlink:href="/work.html">
+				<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+			</a>
+		</symbol>
+		<clippath id="navigation-text-clip">
+			<text transform="matrix(1 0 0 1 0 33)">About</text>
+			<text transform="matrix(1 0 0 1 124 33)">Work</text>
+			<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+		</clippath>
+		<g clip-path="url(#navigation-text-clip)" class="colortext">
+			<!-- Animated shapes inside text -->
+			<rect width="100%" height="100%" fill="black"></rect>
+			<rect width="30%" height="100%" fill="#0000ff"></rect>
+			
+			<rect width="100%" height="100%" fill="white" id="white-clip-up" 
+				data-anchor-target="#white-navigation"
+				data-bottom-top="transform: translateX(350px);width:100%"
+				data--50-bottom-top="transform: translateX(350px);width:100%"
+				data--400-bottom-top="transform: translateX(0);width:100%"
+				data--50-bottom-bottom="transform: translateX(0);width:100%"
+				data--400-bottom-bottom="transform: translateX(350px);width:0"
+				data-emit-events
+				></rect>
+		</g>
+		<use xlink:href="#navigation-text" fill="transparent"></use>
+	</svg>
 	<section class="jumbotro about full-height bg-image">
 		<div class="container">
 			<div class="row py-0 d-flex align-items-center justify-content-center full-height">
@@ -49,7 +85,7 @@
 				</div>
 				<div class="col-sm-12 col-md-6"></div>
 			</div>
-			<nav class="main-nav fixed">
+			<!-- <nav class="main-nav fixed">
 				<ul class="nav">
 					<li class="active">
 						<a href="about.html">About</a>
@@ -61,55 +97,57 @@
 						<a href="elsewhere.html">Elsewhere</a>
 					</li>
 				</ul>
-			</nav>
+			</nav> -->
 		</div>
 	</section>
-	<section class="screen-blue d-flex align-items-center justify-content-center full-height">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-						<h2>Nikka is somewhere else.</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur pharetra aliquam. Pellentesque suscipit laoreet est eget gravida. Proin scelerisque quis lectus quis interdum. Curabitur consequat dui in ante blandit, quis scelerisque velit ornare. Duis nec turpis sit amet neque volutpat tempor. Aliquam vestibulum justo nibh, eget vulputate ipsum tincidunt in. Morbi id neque egestas, rhoncus nibh at, cursus ipsum. Quisque sit amet lacus velit. Donec ultricies quam et urna semper fermentum. Sed volutpat velit a blandit imperdiet.</p>
+	<div id="white-navigation">
+		<section class="screen-blue d-flex align-items-center justify-content-center full-height">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+							<h2>Nikka is somewhere else.</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur pharetra aliquam. Pellentesque suscipit laoreet est eget gravida. Proin scelerisque quis lectus quis interdum. Curabitur consequat dui in ante blandit, quis scelerisque velit ornare. Duis nec turpis sit amet neque volutpat tempor. Aliquam vestibulum justo nibh, eget vulputate ipsum tincidunt in. Morbi id neque egestas, rhoncus nibh at, cursus ipsum. Quisque sit amet lacus velit. Donec ultricies quam et urna semper fermentum. Sed volutpat velit a blandit imperdiet.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<nav class="main-nav absoluted">
-			<ul class="nav">
-				<li class="active">
-					<a href="about.html">About</a>
-				</li>
-				<li>
-					<a href="work.html">Work</a>
-				</li>
-				<li>
-					<a href="elsewhere.html">Elsewhere</a>
-				</li>
-			</ul>
-		</nav>
-	</section>
-	<section class="screen-black d-flex align-items-center justify-content-center full-height">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-						<h2>Nikka is somewhere else.</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur pharetra aliquam. Pellentesque suscipit laoreet est eget gravida. Proin scelerisque quis lectus quis interdum. Curabitur consequat dui in ante blandit, quis scelerisque velit ornare. Duis nec turpis sit amet neque volutpat tempor. Aliquam vestibulum justo nibh, eget vulputate ipsum tincidunt in. Morbi id neque egestas, rhoncus nibh at, cursus ipsum. Quisque sit amet lacus velit. Donec ultricies quam et urna semper fermentum. Sed volutpat velit a blandit imperdiet.</p>
+			<!-- <nav class="main-nav absoluted">
+				<ul class="nav">
+					<li class="active">
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="work.html">Work</a>
+					</li>
+					<li>
+						<a href="elsewhere.html">Elsewhere</a>
+					</li>
+				</ul>
+			</nav> -->
+		</section>
+		<section class="screen-black d-flex align-items-center justify-content-center full-height">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+							<h2>Nikka is somewhere else.</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur pharetra aliquam. Pellentesque suscipit laoreet est eget gravida. Proin scelerisque quis lectus quis interdum. Curabitur consequat dui in ante blandit, quis scelerisque velit ornare. Duis nec turpis sit amet neque volutpat tempor. Aliquam vestibulum justo nibh, eget vulputate ipsum tincidunt in. Morbi id neque egestas, rhoncus nibh at, cursus ipsum. Quisque sit amet lacus velit. Donec ultricies quam et urna semper fermentum. Sed volutpat velit a blandit imperdiet.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<nav class="main-nav absoluted">
-			<ul class="nav">
-				<li class="active">
-					<a href="about.html">About</a>
-				</li>
-				<li>
-					<a href="work.html">Work</a>
-				</li>
-				<li>
-					<a href="elsewhere.html">Elsewhere</a>
-				</li>
-			</ul>
-		</nav>
-	</section>
+			<!-- <nav class="main-nav absoluted">
+				<ul class="nav">
+					<li class="active">
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="work.html">Work</a>
+					</li>
+					<li>
+						<a href="elsewhere.html">Elsewhere</a>
+					</li>
+				</ul>
+			</nav> -->
+		</section>
+	</div>
 	<section class="screen-white d-flex align-items-center justify-content-center full-height">
 		<div class="container">
 			<div class="row">
@@ -119,7 +157,7 @@
 				</div>
 			</div>
 		</div>
-		<nav class="main-nav absoluted">
+		<!-- <nav class="main-nav absoluted">
 			<ul class="nav">
 				<li class="active">
 					<a href="about.html">About</a>
@@ -131,7 +169,7 @@
 					<a href="elsewhere.html">Elsewhere</a>
 				</li>
 			</ul>
-		</nav>
+		</nav> -->
 	</section>
 	<footer class="footer">
 		<div class="container">
@@ -161,33 +199,68 @@
 	<script src="/assets/js/skrollr.min.js"></script>
 	<script>
 		$(document).ready(function () {
+			var allowRefersh = false;
 			var s = skrollr.init({
 				forceHeight: false
 			});
 
-			function alignFixedElement(elm, targetElm) {
-				var elmHeight = $(elm).height();
-				$(targetElm).css('margin-top', elmHeight);
-			}
+			// function alignFixedElement(elm, targetElm) {
+			// 	var elmHeight = $(elm).height();
+			// 	$(targetElm).css('margin-top', elmHeight);
+			// }
 
-			alignFixedElement('.jumbotro.about', '.screen-blue');
+			// alignFixedElement('.jumbotro.about', '.screen-blue');
 
-			$(window).on('resize', function() {
-				alignFixedElement('.jumbotro.about', '.screen-blue')
-			});
+			// $(window).on('resize', function() {
+			// 	alignFixedElement('.jumbotro.about', '.screen-blue')
+			// });
 
-			function navSwitcher() {
-				$('.main-nav.absoluted').each(function() {
-					console.log($('.main-nav.fixed').offset().top);
-					console.log($(this).closest('section').offset().top);
-					$(this).css('top', $('.main-nav.fixed').offset().top - $(this).closest('section').offset().top );
-				});
-			};
-			$(document).scroll(function() {
-				navSwitcher();
-			});
+			// $(document).scroll(function() {
+			// 	console.log($('.screen-blue').offset().top - $(window).scrollTop());
+			// 	if ($('.screen-blue').offset().top - $(window).scrollTop() < $('.screen-blue').offset().top - 69 ){
+			// 		console.log('touch');
+			// 		// $('#white-clip').width('100px');
+			// 	} else {
+			// 		console.log('Not yet');
+			// 	}
+			// });
 
-			navSwitcher();
+			// function navSwitcher() {
+				
+			// 	$('.screen-black .main-nav.absoluted').css('opacity', 0);
+			// 	$('.screen-white .main-nav.absoluted').css('opacity', 0);
+
+			// 	$('.screen-blue .main-nav.absoluted').each(function() {
+			// 		console.log($('.main-nav.fixed').offset().top);
+			// 		console.log($(this).closest('section').offset().top);
+			// 		$(this).css('top', $('.jumbotro .main-nav.fixed').offset().top - $(this).closest('section').offset().top );
+			// 	});
+
+			// 	if ($('.screen-black').hasClass('skrollable-after')) {
+
+			// 		// $('.screen-blue .main-nav.absoluted').css('opacity', 0);
+			// 		$('.screen-black .main-nav.absoluted').css('opacity', 1);
+
+			// 		$('.screen-black .main-nav.absoluted').each(function() {
+			// 			$(this).css('top', $('.screen-blue .main-nav.absoluted').offset().top );
+			// 		});
+			// 	}
+				
+			// 	if ($('.screen-white').hasClass('skrollable-after')) {
+			// 		$('.screen-white .main-nav.absoluted').css('opacity', 1);
+			// 		// $('.screen-blue .main-nav.absoluted').css('opacity', 0);
+			// 		// $('.screen-black .main-nav.absoluted').css('opacity', 1);
+
+			// 		$('.screen-white .main-nav.absoluted').each(function() {
+			// 			$(this).css('top', $('.screen-blue .main-nav.absoluted').offset().top );
+			// 		});
+			// 	}
+			// };
+			// $(document).scroll(function() {
+			// 	navSwitcher();
+			// });
+
+			// navSwitcher();
 
 		});
 	</script>
