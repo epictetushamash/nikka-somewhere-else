@@ -116,6 +116,7 @@ section, footer {
 
 .main-nav.fixed {
     position: fixed;
+    z-index: 99;
 }
 
 .main-nav.absoluted {
@@ -150,8 +151,8 @@ section, footer {
 #navigation #white-clip-up {
     transform: translateX(350px);
 }
-#navigation #white-clip-up {
-    transform: translateX(350px);
+#navigation #white-clip-down {
+    transform: translateX(-350px);
 }
 /* Image Module */
 .image-wrapper {
@@ -739,9 +740,12 @@ section, footer {
 .footer {
     color: #c2c2c2;
     font-size: 14px;
+<<<<<<< HEAD
     margin-top: 100px;
     margin-bottom: 80px;
 
+=======
+>>>>>>> feature/Yunfei-local
     padding-top: 100px;
     padding-bottom: 80px;
     position: relative;
