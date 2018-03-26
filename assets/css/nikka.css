@@ -116,6 +116,7 @@ section, footer {
 
 .main-nav.fixed {
     position: fixed;
+    z-index: 99;
 }
 
 .main-nav.absoluted {
@@ -150,13 +151,8 @@ section, footer {
 #navigation #white-clip-up {
     transform: translateX(350px);
 }
-<<<<<<< HEAD
 #navigation #white-clip-down {
     transform: translateX(-350px);
-=======
-#navigation #white-clip-up {
-    transform: translateX(350px);
->>>>>>> feature/Nikka-local
 }
 /* Image Module */
 .image-wrapper {
@@ -598,8 +594,6 @@ section, footer {
 .cuptocup a:hover img {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
-<<<<<<< HEAD
-=======
 }
 
 /* ----------------- seasor  ---------------- */
@@ -682,7 +676,6 @@ section, footer {
     height: auto;
     box-shadow: 0px 5px 45px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
->>>>>>> feature/Nikka-local
 }
 
 .seasor-feature #local {
@@ -747,17 +740,9 @@ section, footer {
 .footer {
     color: #c2c2c2;
     font-size: 14px;
-<<<<<<< HEAD
-    margin-top: 100px;
-    margin-bottom: 80px;
-=======
     padding-top: 100px;
     padding-bottom: 80px;
     position: relative;
-<<<<<<< HEAD
-=======
->>>>>>> feature/Yunfei-local
->>>>>>> feature/Nikka-local
 }
 
 .footer a {
