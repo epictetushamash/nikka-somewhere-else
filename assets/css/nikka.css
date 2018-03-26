@@ -164,8 +164,8 @@ section, footer {
 #navigation #white-clip-up {
     transform: translateX(350px);
 }
-#navigation #white-clip-up {
-    transform: translateX(350px);
+#navigation #white-clip-down {
+    transform: translateX(-350px);
 }
 /* Image Module */
 .image-wrapper {
