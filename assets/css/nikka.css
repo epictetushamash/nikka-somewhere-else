@@ -748,26 +748,6 @@ section, footer {
 }
 
 
-.slickraven .screenshots #landing {
-    width:  50%;
-    height: auto;
-    margin-right: 10%;
-    margin-left: auto;
-}
-
-.slickraven .screenshots #screen {
-    width: 400px;;
-    height: auto;
-    margin-top: 160px;
-    margin-left: 10%;
-    margin-right: auto;
-}
-
-.slickraven .screenshots {
-    height: 100%;
-    width: auto;
-}
-
 /* ----------------- foot ---------------- */
 
 .footer {
