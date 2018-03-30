@@ -616,6 +616,7 @@ section, footer {
 .northlight .concept p, .bg p {
     font-weight: 400;
     font-size: 1.3em;
+    margin-top: 30px;
 }
 
 
@@ -743,19 +744,18 @@ section, footer {
 
 .slickraven {
     background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
-    height: 200vh;
+    height: 300vh;
     min-height: 100vh;
 }
 
-.slickraven .image-container {
+.slickraven .content-container {
     height: 100%;
     width: 100%;
     position: relative;
 }
 
-<<<<<<< HEAD
-=======
-.slickraven .image-container .landing {
+
+.slickraven .content-container .landing {
     box-shadow: 0px 5px 60px 10px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 10px 10px;
     margin-right: 10%;
@@ -768,7 +768,7 @@ section, footer {
     background-repeat: no-repeat;
 }
 
-.slickraven .image-container .overlap {
+.slickraven .content-container .overlap {
     background-image: url("../image/overlap-MF.png");
     width: 50%;
     height: 0;
@@ -778,10 +778,10 @@ section, footer {
     background-size: contain;
     margin-left: 10%;
     margin-right: auto;
-    top: 18%;
+    top: 200px;
 }
 
-.slickraven .image-container .font {
+.slickraven .content-container .font {
     background-image: url("../image/luxia.svg");
     width: 50%;
     height: 120px;
@@ -790,21 +790,62 @@ section, footer {
     margin-left: 12%;
     margin-right: auto;
     position: absolute;
-    top: 45%;
+    top: 640px;
 }
 
-.slickraven .concept h3 { 
+.slickraven .copywrite {
+    width:  auto;
+    margin: 100px 10% ;
+}
+
+
+.slickraven .copywrite h3 {
     font-weight: 600;
     font-size: 2em;
+    color: floralwhite;
 }
 
-.slickraven .concept p {
-    font-weight: 400;
+.slickraven .copywrite p {
+    margin-top: 30px;
+    font-weight: 300;
     font-size: 1.3em;
-    color: white;
+    color: whitesmoke;
 }
 
->>>>>>> 5efe119c56c2ca1f9a10b94eb9a152c0a9758b1e
+.slickraven .branding {
+    height: auto;
+    width: 80%;
+    margin: 0px 10%;
+}
+
+.slickraven .branding .card {
+    height: 125px;
+    width: 230px;
+    background-position: center; 
+    background-color: rbg(57,61,64);
+    box-shadow: 0px 5px 40px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.slickraven .branding #rice {
+    background-image: url("../image/logo-cn-rice.png");
+    background-size: cover;
+}
+
+.slickraven .branding #salmon {
+    background-image: url("../image/logo-mf-salmon.png");
+    background-size: cover;
+}
+.slickraven .branding #sandstone {
+    background-image: url("../image/logo-mf-sandstone.png");
+    background-size: cover;
+}
+.slickraven .branding #raven {
+    background-image: url("../image/logo-mf-raven.png");
+    background-size: cover;
+}
+
+
 /* ----------------- foot ---------------- */
 
 .footer {
