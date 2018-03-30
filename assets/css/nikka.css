@@ -742,12 +742,69 @@ section, footer {
 }
 
 .slickraven {
-    background: linear-gradient(to bottom right, #EDEDF8, #E5F2F8, #E5F3F4);
-    height: 120vh;
+    background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
+    height: 200vh;
     min-height: 100vh;
 }
 
+.slickraven .image-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
 
+<<<<<<< HEAD
+=======
+.slickraven .image-container .landing {
+    box-shadow: 0px 5px 60px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    margin-right: 10%;
+    margin-left: auto;
+    width: 50%;
+    height: 0;
+    padding-top: 78.1%;
+    background-image: url("../image/Landing-MF.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slickraven .image-container .overlap {
+    background-image: url("../image/overlap-MF.png");
+    width: 50%;
+    height: 0;
+    padding-top: 70%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10%;
+    margin-right: auto;
+    top: 18%;
+}
+
+.slickraven .image-container .font {
+    background-image: url("../image/luxia.svg");
+    width: 50%;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 12%;
+    margin-right: auto;
+    position: absolute;
+    top: 45%;
+}
+
+.slickraven .concept h3 { 
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.slickraven .concept p {
+    font-weight: 400;
+    font-size: 1.3em;
+    color: white;
+}
+
+>>>>>>> 5efe119c56c2ca1f9a10b94eb9a152c0a9758b1e
 /* ----------------- foot ---------------- */
 
 .footer {

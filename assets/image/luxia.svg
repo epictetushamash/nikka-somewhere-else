@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="253px" height="103px" viewBox="0 0 253 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>luxia</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---maison" transform="translate(-961.000000, -1291.000000)" fill="#282828">
+            <g id="luxia" transform="translate(962.000000, 1282.000000)">
+                <text id="Font-#Luxia" font-family="Luxia-Oblique, Luxia" font-size="24" font-style="italic" font-weight="normal">
+                    <tspan x="0" y="111">Font #Luxia</tspan>
+                </text>
+                <text id="Aa-Bb-Cc-Dd" font-family="Luxia-MediumDisplay, Luxia" font-size="42" font-weight="500">
+                    <tspan x="0" y="41">Aa Bb Cc Dd</tspan>
+                </text>
+                <text id="Aa-Bb-Cc-Dd-Ee-Ff-Gg" font-family="Luxia-Medium, Luxia" font-size="17" font-weight="400">
+                    <tspan x="0" y="74">Aa Bb Cc Dd Ee Ff Gg</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
