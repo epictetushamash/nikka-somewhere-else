@@ -744,7 +744,7 @@ section, footer {
 
 .slickraven {
     background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
-    height: 300vh;
+    height: 230vh;
     min-height: 100vh;
 }
 
@@ -824,7 +824,7 @@ section, footer {
     background-position: center; 
     background-color: rbg(57,61,64);
     box-shadow: 0px 5px 40px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
+    margin: 0 auto  120px auto;
 }
 
 .slickraven .branding #rice {
@@ -845,6 +845,40 @@ section, footer {
     background-size: cover;
 }
 
+.mf-overview {
+    width: 100vw;
+    height: 730px;
+    background-image: url("../image/mf-overview.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.mf-mobile {
+    background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.mf-mobile .image {
+    width: 260px;
+    height: auto;
+    margin: auto auto;
+}
+
+.mf-mobile .image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 5px 45px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.mf-mobile #homepage {
+       margin-right: 0;
+}
+
+.mf-mobile #collection {
+       margin-left: 0;
+}
 
 /* ----------------- foot ---------------- */
 
