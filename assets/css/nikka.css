@@ -1075,7 +1075,7 @@ section, footer {
     width: 80%;
 }
 
-#youngcapital .design .copywrite h3{
+#youngcapital .design .copywrite h3, .validation h3{
     font-weight: 600;
     font-size: 2em;
     color: blue;
@@ -1198,6 +1198,42 @@ section, footer {
 .yc-mobile #cv {
        margin-left: 0;
 }
+/* ----------------- validation ---------------- */
+
+#youngcapital .validation {
+    margin: 100px auto;
+}
+
+#youngcapital .copy-container {
+    width: 60%;
+    margin:  0 auto 0 20%;
+}
+
+#youngcapital .validation .headline {
+    margin-left: 10%;
+}
+
+#youngcapital .data {
+    margin: 100px auto;
+}
+
+#youngcapital .data h2 {
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 4px;  
+}
+
+#youngcapital .data p {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #E5E5E5;
+    letter-spacing: 1px;
+}
+
+#youngcapital .block {
+    margin-bottom: 35px;
+}
+
 
 /* ----------------- foot ---------------- */
 
