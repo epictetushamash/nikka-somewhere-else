@@ -1234,8 +1234,52 @@ section, footer {
     margin-bottom: 35px;
 }
 
+/* ----------------- printplus ---------------- */
 
-/* ----------------- foot ---------------- */
+.mintsalad {
+    height: 70vh;
+}
+
+#printplus .ribbon-content h2 {
+    width: 100%;
+}
+
+.mintsalad .content-container {
+    height: 100%;
+    width: 80%;
+    margin: 100px 10% 0 10%;
+}
+
+.mintsalad .goal {
+    width: 100%;
+    height: auto;
+}
+
+.mintsalad h3 {
+    font-weight: 600;
+    font-size: 2em;
+    color: black;
+}
+
+.mintsalad p {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: black;
+}
+
+.mintsalad .image {
+    background-image: url("../image/headphone-xl.png");
+    height: 600px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -100px;
+    right: -60;
+    position: relative;
+}
+
+/* ----------------- footer ---------------- */
 
 .footer {
     color: #c2c2c2;
