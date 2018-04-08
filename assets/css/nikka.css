@@ -821,7 +821,7 @@ section, footer {
 
 .slickraven .copywrite p {
     margin-top: 30px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3em;
     color: whitesmoke;
 }
@@ -1263,7 +1263,7 @@ section, footer {
 
 .mintsalad p {
     margin-top: 30px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3em;
     color: black;
 }
@@ -1318,6 +1318,74 @@ section, footer {
     background-repeat: no-repeat;
 }
 
+#printplus .copywrite {
+    width:  auto;
+    margin: 100px 10% ;
+}
+
+
+#printplus .copywrite h3 {
+    font-weight: 600;
+    font-size: 2em;
+    color: black;
+}
+
+#printplus .copywrite p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: black;
+}
+
+
+/* ----------------- tacit ---------------- */
+
+#tacit .ribbon-content h2 {
+    width: 100%;
+}
+
+.nullland {
+    height: 1500px;
+    min-height: 100vh;
+}
+
+.nullland .content-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nullland .copywrite {
+    width:  auto;
+    margin: 100px 10% ;
+}
+
+.nullland .copywrite h3 {
+    font-weight: 600;
+    font-size: 2em;
+    color: black;
+}
+
+.nullland .copywrite p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: black;
+}
+
+#tacit .video-container {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 90vh;
+}
+
+.nullland .graphic-container {
+    
+}
+
+.null .graphic {
+    
+}
 /* ----------------- footer ---------------- */
 
 .footer {
