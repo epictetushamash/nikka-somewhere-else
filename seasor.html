@@ -21,114 +21,136 @@
 </head>
 
 <body>
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo-guo.png" alt="hand writing Nikka as logo">
+        </a>
+    </div>
+    <svg id="navigation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 350 50" style="enable-background:new 0 0 350 50;" xml:space="preserve">
+        <symbol id="navigation-text">
+            <a xlink:href="/about.html">
+                <text transform="matrix(1 0 0 1 0 33)">About</text>
+            </a>
+            <a xlink:href="/work.html">
+                <text transform="matrix(1 0 0 1 124 33)">Work</text>
+            </a>
+            <a xlink:href="/elsewhere.html">
+                <text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+            </a>
+        </symbol>
+        <clippath id="navigation-text-clip">
+            <text transform="matrix(1 0 0 1 0 33)">About</text>
+            <text transform="matrix(1 0 0 1 124 33)">Work</text>
+            <text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+        </clippath>
+        <g clip-path="url(#navigation-text-clip)" class="colortext">
+            <rect width="100%" height="100%" fill="black"></rect>
+            <rect width="30%" height="100%" fill="#0000ff" style="transform: translateX(30%)"></rect>
+        </g>
+        <use xlink:href="#navigation-text" fill="transparent"></use>
+    </svg>
 	<div class="container-fluid">
-		<header class="ribbon-wrapper">
-			<div class="ribbon-content">
-				<h1>SEASOR</h1>
-                <h2>mobile platform designed for people who study abroad</h2>
-			</div>
+		<header class="row">
+            <div class="col">
+                <div class="ribbon-wrapper">
+                    <div class="ribbon-content">
+                        <h1>SEASOR</h1>
+                        <h2>mobile platform designed for people who study abroad</h2>
+                    </div>
+                </div>
+            </div>
         </header>
 		
-    <div class="northlight">
-        <div class="screenshots">
-            <img src="assets/image/seasor-ip-screenshots.png">
-        </div>
-        
-        <div class="copyright">
-            <div class="row">
-                <div class="col-sm-12 col-md">
-                    <div class="concept">
-                        <h3>Concept</h3>
-                        <p>SEASOR, an mobile platform designed for students who study abroad, aims to connect those students together, helping them get the best out of their experience.</p>
-                    </div>
+        <div class="row northlight">
+            <div class="col">
+                <div class="screenshots">
+                    <img src="assets/image/seasor-ip-screenshots.png">
                 </div>
                 
-                <div class="col-sm-12 col-md">
-                    <div class="bg">
-                        <h3>Background</h3>
-                        <p>Based on personal experience as an international student, studying abroad means facing challenges, which triggers me to find solutions on some of existing problems.</p>
+                <div class="copyright container">
+                    <div class="row mx-0">
+                        <div class="col-sm-12 col-md">
+                            <div class="concept">
+                                <h3>Concept</h3>
+                                <p>SEASOR, an mobile platform designed for students who study abroad, aims to connect those students together, helping them get the best out of their experience.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 col-md">
+                            <div class="bg">
+                                <h3>Background</h3>
+                                <p>Based on personal experience as an international student, studying abroad means facing challenges, which triggers me to find solutions on some of existing problems.</p>
+                            </div>
+                        </div>                
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
-    </div>
 		
-        <div class="seasor-process">
-            <div class="ia">
-                <img src="assets/image/seasor-ia.svg">
-            </div>
-            <div class="flow">
-                <img src="assets/image/seasor-flow.svg">
+        <div class="row seasor-process">
+            <div class="col">
+                <div class="ia">
+                    <img src="assets/image/seasor-ia.svg">
+                </div>
+                <div class="flow">
+                    <img src="assets/image/seasor-flow.svg">
+                </div>
             </div>
         </div>
         
-        <div class="seasor-feature">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 pr-0">
-                    <div class="feature" id="local">
-                        <img src="assets/image/feature-local.png">
-                        <div class="text">
-                            <h3>Want to know the place before studying?</h3>
-                            <p>Check out what is happening in each city.</p>
+        <div class="row seasor-feature">
+            <div class="col">
+                <div class="container">
+                    <div class="row mx-0">
+                        <div class="col-sm-12 col-md-4 pr-0">
+                            <div class="feature" id="local">
+                                <img src="assets/image/feature-local.png">
+                                <div class="text">
+                                    <h3>Want to know the place before studying?</h3>
+                                    <p>Check out what is happening in each city.</p>
+                                </div>
+                            </div>      
                         </div>
-                    </div>      
-                </div>
-                <div class="col-sm-12 col-md-4 px-0">
-                     <div class="feature" id="event">
-                        <img src="assets/image/feature-event.png">
-                        <div class="text">
-                            <h3>Want to integrate to local life?</h3>
-                            <p>Join local events or create your own.</p>
+                        <div class="col-sm-12 col-md-4 px-0">
+                                <div class="feature" id="event">
+                                <img src="assets/image/feature-event.png">
+                                <div class="text">
+                                    <h3>Want to integrate to local life?</h3>
+                                    <p>Join local events or create your own.</p>
+                                </div>
+                            </div>        
                         </div>
-                    </div>        
-                </div>
-                <div class="col-sm-12 col-md-4 pl-0">
-                     <div class="feature" id="map">
-                        <img src="assets/image/feature-map.png">
-                        <div class="text">
-                            <h3>Want to travel to another place?</h3>
-                            <p>Connect with friends all over the world.</p>
+                        <div class="col-sm-12 col-md-4 pl-0">
+                                <div class="feature" id="map">
+                                <img src="assets/image/feature-map.png">
+                                <div class="text">
+                                    <h3>Want to travel to another place?</h3>
+                                    <p>Connect with friends all over the world.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>   
+                </div>
             </div>
         </div>
         
-        <div class="seasor-overview">
-            
+        <div class="row seasor-overview">
+            <div class="col"></div>
         </div>
      
-        <div class="switch">
-            <div class="next">
-                <a class="link" href="maisonfloolipe.html">
-                    <h4>Next</h4>
-                    <img src="assets/image/down-arrow.svg">
-                </a>
-                <p>Maison Floolipe</p>
-                <p>Online business - ux</p>
+        <div class="row switch">
+            <div class="col">
+                <div class="next">
+                    <a class="link" href="maisonfloolipe.html">
+                        <h4>Next</h4>
+                        <img src="assets/image/down-arrow.svg">
+                    </a>
+                    <p>Maison Floolipe</p>
+                    <p>Online business - ux</p>
+                </div>
             </div>
-        
         </div>
-        
-		<nav class="main-nav fixed">
-			<ul class="nav">
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li class="active">
-					<a href="work.html">Work</a>
-				</li>
-				<li>
-					<a href="elsewhere.html">Elsewhere</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="logo">
-			<a href="index.html">
-				<img src="logo-guo.png" alt="hand writing Nikka as logo">
-			</a>
-		</div>
-           
 	</div>
     
     <footer class="footer">
