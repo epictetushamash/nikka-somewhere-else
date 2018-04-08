@@ -1333,7 +1333,7 @@ section, footer {
 #printplus .copywrite p {
     margin-top: 30px;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: black;
 }
 
@@ -1345,15 +1345,10 @@ section, footer {
 }
 
 .nullland {
-    height: 1500px;
+    height: 1700px;
     min-height: 100vh;
 }
 
-.nullland .content-container {
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
 
 .nullland .copywrite {
     width:  auto;
@@ -1369,7 +1364,7 @@ section, footer {
 .nullland .copywrite p {
     margin-top: 30px;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: black;
 }
 
@@ -1379,13 +1374,36 @@ section, footer {
     height: 90vh;
 }
 
-.nullland .graphic-container {
+.nullland .process #graph{
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    min-width: 200px;
+}
+
+.nullland .process a {
+    text-decoration: none;
+    margin: 40px auto;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: blue;
+    justify-content: center;
+    display: flex;
     
 }
 
-.null .graphic {
-    
+.nullland .process img {
+    width: 20px;
+    margin: 0 10px;
 }
+
+.nullland .sketch {
+    background-image: url("../image/lightsketch-1.png"), url("../image/lightsketch-2.png");
+    background-position: contain;
+    background-repeat: no-repeat, no-repeat;
+    height: 400px;
+}
+
 /* ----------------- footer ---------------- */
 
 .footer {
