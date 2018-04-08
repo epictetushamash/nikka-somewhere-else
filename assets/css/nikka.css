@@ -88,7 +88,7 @@ section, footer {
     transform: rotate(90deg);
     -webkit-transform-origin: left top 0;
     transform-origin: left top 0;
-    bottom: 300px;
+    bottom: 350px;
     left: 100px;
     z-index: 0;
     position: absolute;

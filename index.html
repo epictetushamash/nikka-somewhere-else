@@ -145,7 +145,7 @@
 		</div>
 	</section>
 
-	<nav class="main-nav fixed">
+	<!-- <nav class="main-nav fixed">
 		<ul class="nav">
 			<li>
 				<a href="about.html">About</a>
@@ -157,12 +157,34 @@
 				<a href="elsewhere.html">Elsewhere</a>
 			</li>
 		</ul>
-	</nav>
-    
+	</nav> -->
+    <svg id="navigation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 350 50" style="enable-background:new 0 0 350 50;" xml:space="preserve">
+		<symbol id="navigation-text">
+			<a xlink:href="/about.html">
+				<text transform="matrix(1 0 0 1 0 33)">About</text>
+			</a>
+			<a xlink:href="/work.html">
+				<text transform="matrix(1 0 0 1 124 33)">Work</text>
+			</a>
+			<a xlink:href="/elsewhere.html">
+				<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+			</a>
+		</symbol>
+		<clippath id="navigation-text-clip">
+			<text transform="matrix(1 0 0 1 0 33)">About</text>
+			<text transform="matrix(1 0 0 1 124 33)">Work</text>
+			<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+		</clippath>
+		<g clip-path="url(#navigation-text-clip)" class="colortext">
+			<rect width="100%" height="100%" fill="black"></rect>
+		</g>
+		<use xlink:href="#navigation-text" fill="transparent"></use>
+	</svg>
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col ">
+				<div class="col">
 					<div class="copyright">© 2018</div>
 				</div>
 				<div class="col">

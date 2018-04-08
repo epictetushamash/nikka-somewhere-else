@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,6 +23,35 @@
 </head>
 
 <body id="work">
+	<div class="logo">
+		<a href="index.html">
+			<img src="logo-guo.png" alt="hand writing Nikka as logo">
+		</a>
+	</div>
+	<svg id="navigation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="0 0 350 50" style="enable-background:new 0 0 350 50;" xml:space="preserve">
+		<symbol id="navigation-text">
+			<a xlink:href="/about.html">
+				<text transform="matrix(1 0 0 1 0 33)">About</text>
+			</a>
+			<a xlink:href="/work.html">
+				<text transform="matrix(1 0 0 1 124 33)">Work</text>
+			</a>
+			<a xlink:href="/elsewhere.html">
+				<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+			</a>
+		</symbol>
+		<clippath id="navigation-text-clip">
+			<text transform="matrix(1 0 0 1 0 33)">About</text>
+			<text transform="matrix(1 0 0 1 124 33)">Work</text>
+			<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+		</clippath>
+		<g clip-path="url(#navigation-text-clip)" class="colortext">
+			<rect width="100%" height="100%" fill="black"></rect>
+			<rect width="30%" height="100%" fill="#0000ff" style="transform: translateX(30%)"></rect>
+		</g>
+		<use xlink:href="#navigation-text" fill="transparent"></use>
+	</svg>
 	<div class="container-fluid">
 		<header class="ribbon-wrapper">
 			<div class="ribbon-content">
@@ -85,7 +115,23 @@
 					<div class="row">
 						<div class="col-sm-12 col-md-6 offset-md-6 px-0">
                             <div class="projectlink">
-								<h1>Maison Floolipe</h1>
+								<h1>
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 286 48" style="enable-background:new 0 0 286 48;width:286px;" xml:space="preserve">
+										<symbol id="maisonText">
+											<text transform="matrix(1 0 0 1 0 35)">Maison Floolipe</text>
+										</symbol>
+										<clippath id="maisonText-clip">
+											<text transform="matrix(1 0 0 1 0 35)">Maison Floolipe</text>
+										</clippath>
+										<g clip-path="url(#maisonText-clip)" class="colortext">
+											<!-- Animated shapes inside text -->
+											<rect width="100%" height="100%" fill="black"></rect>
+											<rect width="50%" height="100%" fill="#fff" style="transform: translateX(169px)"></rect>
+										</g>
+										<use xlink:href="#maisonText" fill="transparent"></use>
+									</svg>
+								</h1>
 								<h2>online business</h2>
 							</div>
 							<div class="maison">
@@ -163,25 +209,6 @@
 					</div>
 				</div>
 			</div>
-           
-		<nav class="main-nav fixed">
-			<ul class="nav">
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li class="active">
-					<a href="work.html">Work</a>
-				</li>
-				<li>
-					<a href="elsewhere.html">Elsewhere</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="logo">
-			<a href="index.html">
-				<img src="logo-guo.png" alt="hand writing Nikka as logo">
-			</a>
-		</div>
 	</div>
 
 	<footer class="footer">
