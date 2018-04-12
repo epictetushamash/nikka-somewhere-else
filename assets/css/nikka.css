@@ -1400,8 +1400,9 @@ section, footer {
     background-color: salmon;
 }
 
-#elsewhere .ribbon-content {
+#elsewhere .ribbon-content h1{
     text-align: left;
+    margin-left: 0;
 }
 
 
