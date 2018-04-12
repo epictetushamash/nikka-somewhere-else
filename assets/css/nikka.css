@@ -1396,7 +1396,13 @@ section, footer {
 }
 
 /* ----------------- elsewhere ---------------- */
+#elsewhere .ribbon-wrapper {
+    background-color: salmon;
+}
 
+#elsewhere .ribbon-content {
+    text-align: left;
+}
 
 
 
