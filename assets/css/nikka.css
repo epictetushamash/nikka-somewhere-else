@@ -1398,13 +1398,93 @@ section, footer {
 /* ----------------- elsewhere ---------------- */
 #elsewhere .ribbon-wrapper {
     background-color: salmon;
+    background-image: url("../image/header-video.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#elsewhere .ribbon-content h1{
+#elsewhere .ribbon-content {
+    margin-left: -20%;
+}
+
+#elsewhere .ribbon-content h1 {
     text-align: left;
     margin-left: 0;
+    color: aliceblue; 
 }
 
+#elsewhere .ribbon-content p {
+    text-align: left;
+    margin-left: 0;
+    color: aliceblue; 
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.line-separator {
+    width: 40px;
+    margin-top: 180px;
+    height:4px;
+    background: white;
+}
+
+#elsewhere .main-content {
+    background-color: white;
+}
+
+#elsewhere .content-section {
+    width: 80%;
+    margin: auto auto;
+    padding-top: 60px;
+}
+
+#elsewhere .header h2 {
+     color: #0000ff;
+    font-weight: 700;
+}
+
+#elsewhere .header p {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+
+#elsewhere .content-section .image {
+    margin-top: 40px;
+}
+
+#elsewhere .content-section .horizontal {
+    width: 100%;
+    height: 230px;
+}
+
+#elsewhere .content-section .vertical {
+    width: 260px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#elsewhere .content-section .block {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#elsewhere .content-section #still-life {
+    background-image: url("../image/still-life-painting.png");
+    margin-top: 40px;
+}
+
+#elsewhere .content-section #water {
+    background-image: url("../image/water-sketch.png");
+    margin-top: 80px;
+
+}
+
+
+#elsewhere .content-section #kanagawa {
+    background-image: url("../image/kanagawa.png");
+}
 
 
 /* ----------------- footer ---------------- */
