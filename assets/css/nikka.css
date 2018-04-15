@@ -1396,15 +1396,13 @@ section, footer {
 }
 
 /* ----------------- elsewhere ---------------- */
+
+
 #elsewhere .ribbon-wrapper {
     background-color: salmon;
     background-image: url("../image/header-video.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#elsewhere .ribbon-content {
-    margin-left: -20%;
 }
 
 #elsewhere .ribbon-content h1 {
@@ -1421,7 +1419,7 @@ section, footer {
     margin-top: 20px;
 }
 
-.line-separator {
+.ribbon-content .line-separator {
     width: 40px;
     margin-top: 180px;
     height:4px;
@@ -1436,6 +1434,7 @@ section, footer {
     width: 80%;
     margin: auto auto;
     padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 #elsewhere .header h2 {
@@ -1450,7 +1449,8 @@ section, footer {
 
 
 #elsewhere .content-section .image {
-    margin-top: 40px;
+    margin: 10px 0;
+    
 }
 
 #elsewhere .content-section .horizontal {
@@ -1459,8 +1459,11 @@ section, footer {
 }
 
 #elsewhere .content-section .vertical {
-    width: 260px;
     height: 400px;
+}
+
+#elsewhere .image .content {
+    width: 260px;
     margin: 0 auto;
 }
 
@@ -1472,20 +1475,107 @@ section, footer {
 
 #elsewhere .content-section #still-life {
     background-image: url("../image/still-life-painting.png");
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 #elsewhere .content-section #water {
     background-image: url("../image/water-sketch.png");
-    margin-top: 80px;
-
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
-
 
 #elsewhere .content-section #kanagawa {
     background-image: url("../image/kanagawa.png");
 }
 
+#elsewhere .content-section #dustpan {
+    background-image: url("../image/sketch-dustpan.png");
+    height: 500px;
+    margin-top: 30px;
+}
+
+#elsewhere .content-section #seat {
+    background-image: url("../image/aircraft-seat.png");
+    width: 90%;
+    background-size: contain;
+    top: -50px;
+    position: relative;
+}
+
+#elsewhere .image #notation {
+    position: relative;
+    bottom: 250px;
+}
+
+#seat-notation {
+    position: relative;
+    bottom: 50px;
+}
+
+#elsewhere .content-section #book {
+    background-image: url("../image/sketch-book.png");
+    margin-top: 50px; 
+}
+
+#elsewhere .content-section #beverage {
+    background-image: url("../image/sketch-beverage.png");
+    margin-top: 50px; 
+}
+
+.main-content .line-separator {
+    width: 40px;
+    margin: 20px 0 10px auto;
+    height: 4px;
+    background: black;
+}
+
+.image .note {
+    max-width: 300px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.image .note h4{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: right;
+    line-height: 1.6;
+}
+
+.image .note p{
+    font-size: 1em;
+    font-weight: 400;
+    text-align: right;
+    max-width: 300px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#elsewhere .content-section #volunteer {
+    background-image: url("../image/volunteer.png");
+    margin-top: 30px;
+}
+
+#elsewhere .content-section #washi {
+    background-image: url("../image/washipaper.png");
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#elsewhere .content-section #bamboo {
+    background-image: url("../image/bamboospoon.png");
+}
+
+#elsewhere .content-section #dive {
+    background-image: url("../image/underwater-dive.png");
+    margin-top: 30px;
+
+}
+
+#elsewhere .content-section #hunting {
+    background-image: url("../image/underwater-hunting.png");
+    margin-top: 60px;
+}
 
 /* ----------------- footer ---------------- */
 
