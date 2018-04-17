@@ -51,12 +51,12 @@
         <use xlink:href="#navigation-text" fill="transparent"></use>
     </svg>
 	<div class="container-fluid">
-		<header class="row">
+		<header class="row" id="ribbon">
             <div class="col">
                 <div class="ribbon-wrapper">
-                    <div class="ribbon-content">
-                        <h1>SEASOR</h1>
-                        <h2>mobile platform designed for people who study abroad</h2>
+                    <div class="ribbon-content box-animation" data-target="#ribbon" data-top="@data-box-animation:active">
+                        <h1 data-box-animation-target>SEASOR</h1>
+                        <h2 data-box-animation-target>mobile platform designed for people who study abroad</h2>
                     </div>
                 </div>
             </div>
@@ -183,10 +183,17 @@
 	    crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	    crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+		crossorigin="anonymous"></script>
+	<script src="/assets/js/skrollr.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var s = skrollr.init({
+				forceHeight: false,
+				smoothScrolling: false
+			});
+		});
+	</script>
 </body>
 
 </html>
