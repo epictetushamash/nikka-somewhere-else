@@ -775,14 +775,14 @@ section, footer {
     width: 100%;
 }
 
-.ribbon-content .tags {
+.ribbon-wrapper .tags {
     text-align: right;
     position: absolute;
-    top: 500px;
-    right: 10%;
+    bottom: 64px;
+    right: 0;
 }
 
-.ribbon-content .tags p {
+.ribbon-wrapper .tags p {
     font-weight: 700;
 }
 
@@ -920,30 +920,24 @@ section, footer {
 }
 
 .mf-mobile #homepage {
-       margin-right: 0;
+    margin-right: 0;
 }
 
 .mf-mobile #collection {
-       margin-left: 0;
+    margin-left: 0;
 }
 
 /* ----------------- youngcapital ---------------- */
 
 .junefruit {
     background: linear-gradient(to bottom right, #F9A93A, #F77F00, #FF6E44);
-    height: 1500px;
-    min-height: 100vh;
 }
 
-
-.junefruit .content-container {
-    height: 100%;
-    width: 100%;
+.junefruit {
     position: relative;
 }
 
-
-.junefruit .content-container .landing {
+.junefruit .landing {
     box-shadow: 0px 5px 50px 10px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 5px 5px;
     margin-right: 10%;
@@ -956,7 +950,7 @@ section, footer {
     background-repeat: no-repeat;
 }
 
-.junefruit .content-container .overlap {
+.junefruit .overlap {
     box-shadow: 0px 5px 50px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     background-image: url("../image/yc-homepage.png");
@@ -969,14 +963,12 @@ section, footer {
     margin-left: 10%;
     margin-right: auto;
     top: 250px;
-   
 }
 
 .junefruit .copywrite {
     width:  auto;
-    margin: 100px 10% ;
+    padding: 100px 10%;
 }
-
 
 .junefruit .copywrite h3 {
     font-weight: 600;
@@ -991,24 +983,18 @@ section, footer {
     color: whitesmoke;
 }
 
-#youngcapital .process {
-    width: 100%;
-    height: 465vh;
-}
 
 #youngcapital .research {
     width: 100%;
     height: auto;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 #youngcapital .research .image {
     width: 80%;
     height: auto;
     border-radius: 5px; 
-    margin-right: 20px;
-    margin-left: auto;
 }
 
 #youngcapital .research .image img {
@@ -1016,11 +1002,11 @@ section, footer {
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.03);
-
 }
 
 #youngcapital .research .copywrite {
     width: 80%;
+    margin-left: auto;
 }
 #youngcapital .research .copywrite h3{
     font-weight: 600;
@@ -1043,15 +1029,14 @@ section, footer {
 }
 
 #youngcapital .opti .image {
-    width: 70%;
+    width: 80%;
     height: auto;
     border-radius: 5px; 
-    margin-right: auto;
-    margin-left: 30px;
+    margin-left: auto;
 }
 
 #youngcapital .opti .image img {
-    width: 110%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.05);
@@ -1060,9 +1045,6 @@ section, footer {
 
 #youngcapital .opti .copywrite {
     width: 80%;
-    margin-right: 0;
-    margin-left: auto;
-    right: -30px;
     position: relative;
 }
 #youngcapital .opti .copywrite h3{
@@ -1089,9 +1071,11 @@ section, footer {
     margin-bottom: 200px;
 }
 
-#youngcapital .design.image {
-    border-radius: 5px; 
-  
+#youngcapital .design .image {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: auto;
 }
 
 #youngcapital .design .image img {
@@ -1099,9 +1083,7 @@ section, footer {
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.04);
-    margin-right: 20px;
-    margin-left: auto;
-    float: right;
+    margin-right: auto;
 }
 
 #youngcapital .design .copywrite {
@@ -1123,7 +1105,7 @@ section, footer {
 }
 
 #youngcapital .copywrite h4 {
-    margin-top: 100px;
+    margin-top: 50px;
     font-weight: 700;
     font-size: 1em;
     text-transform: uppercase;
@@ -1137,15 +1119,14 @@ section, footer {
 }
 
 #youngcapital .segment .image {
-    width: 70%;
+    width: 80%;
     height: auto;
     border-radius: 5px; 
-    margin-right: auto;
-    margin-left: 30px;
+    margin-left: auto;
 }
 
 #youngcapital .segment .image img {
-    width: 110%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.05);
@@ -1154,10 +1135,7 @@ section, footer {
 
 #youngcapital .segment .copywrite {
     width: 80%;
-    margin-right: 0;
-    margin-left: auto;
-    right: -30px;
-    position: relative;
+    margin-right: auto;
 }
  
 #youngcapital .segment .copywrite p {
@@ -1176,23 +1154,20 @@ section, footer {
     margin-bottom: 200px;
 }
 
-#youngcapital .efficiency.image {
-    border-radius: 5px; 
-  
+#youngcapital .efficiency .image {
+    width: 80%;
 }
 
 #youngcapital .efficiency .image img {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.04);
-    margin-right: 20px;
-    margin-left: auto;
-    float: right;
 }
 
 #youngcapital .efficiency .copywrite {
     width: 80%;
+    margin-left: auto;
 }
  
 #youngcapital .efficiency .copywrite p {
@@ -1230,6 +1205,19 @@ section, footer {
 
 .yc-mobile #cv {
        margin-left: 0;
+}
+
+/* Swiper scrollbar style */
+.yc-mobile .swiper-container-horizontal > .swiper-wrapper {
+    margin-bottom: 50px;
+}
+.yc-mobile .swiper-container-horizontal > .swiper-scrollbar {
+    width: 40%;
+    left: 30%;
+    background: rgba(255,255,255,.3);
+}
+.yc-mobile .swiper-scrollbar-drag {
+    background: rgba(255,255,255,.8);
 }
 /* ----------------- validation ---------------- */
 
