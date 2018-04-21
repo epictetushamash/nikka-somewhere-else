@@ -230,6 +230,9 @@ section, footer {
     will-change: transform;
     transition: all .7s cubic-bezier(.4,0,.2,1);
 }
+.box-animation[data-box-animation="active"][data-box-animation-delay="300"]::after {
+    transition-delay: .3s;
+}
 .description {
     position: relative;
 }
@@ -459,9 +462,12 @@ section, footer {
     -ms-flex-align: center;
     align-items: center;
 }
-
+.ribbon-content {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
 .ribbon-content h1 {
-    width: 75%;
     text-align: center;
     font-size: 4em;
     font-weight: 700;
@@ -471,7 +477,6 @@ section, footer {
 
 .ribbon-content h2 {
     padding-top: 20px;
-    width: 75%;
     text-align: center;
     font-size: 3em;
     font-weight: 700;
@@ -789,18 +794,10 @@ section, footer {
 
 .slickraven {
     background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
-    height: 230vh;
-    min-height: 100vh;
-}
-
-.slickraven .content-container {
-    height: 100%;
-    width: 100%;
     position: relative;
 }
 
-
-.slickraven .content-container .landing {
+.slickraven .landing {
     box-shadow: 0px 5px 60px 10px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 10px 10px;
     margin-right: 10%;
@@ -813,7 +810,7 @@ section, footer {
     background-repeat: no-repeat;
 }
 
-.slickraven .content-container .overlap {
+.slickraven .overlap {
     background-image: url("../image/overlap-MF.png");
     width: 50%;
     height: auto;
@@ -828,7 +825,7 @@ section, footer {
 
 }
 
-.slickraven .content-container .font {
+.slickraven .font {
     background-image: url("../image/luxia.svg");
     width: 50%;
     height: 120px;
@@ -1007,6 +1004,8 @@ section, footer {
 #youngcapital .research .copywrite {
     width: 80%;
     margin-left: auto;
+    position: relative;
+    z-index: 0;
 }
 #youngcapital .research .copywrite h3{
     font-weight: 600;
@@ -1014,7 +1013,15 @@ section, footer {
     color: blue;
     margin-top: 50px;
 }
- 
+#youngcapital .research .copywrite .number{
+    color: #f5f5f5;
+    font-size: 150px;
+    font-weight: 700;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    left: 100px;
+}
 #youngcapital .research .copywrite p {
     margin-top: 30px;
     font-weight: 400;
@@ -1046,6 +1053,16 @@ section, footer {
 #youngcapital .opti .copywrite {
     width: 80%;
     position: relative;
+    z-index: 0;
+}
+#youngcapital .opti .copywrite .number{
+    color: #f5f5f5;
+    font-size: 150px;
+    font-weight: 700;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    left: 100px;
 }
 #youngcapital .opti .copywrite h3{
     font-weight: 600;
@@ -1088,8 +1105,18 @@ section, footer {
 
 #youngcapital .design .copywrite {
     width: 80%;
+    position: relative;
+    z-index: 0;
 }
-
+#youngcapital .design .copywrite .number {
+    color: #f5f5f5;
+    font-size: 150px;
+    font-weight: 700;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    left: 100px;
+}
 #youngcapital .design .copywrite h3, .validation h3{
     font-weight: 600;
     font-size: 2em;
@@ -1185,6 +1212,9 @@ section, footer {
     padding-top: 15vh;
     padding-bottom: 15vh;
 }
+.yc-mobile section.row{
+    background-color: transparent;
+}
 
 .yc-mobile .image {
     width: 260px;
@@ -1210,11 +1240,16 @@ section, footer {
 /* Swiper scrollbar style */
 .yc-mobile .swiper-container-horizontal > .swiper-wrapper {
     margin-bottom: 50px;
+    padding: 0 50px;
+}
+.yc-mobile .swiper-container-horizontal > .swiper-wrapper .swiper-slide {
+    width: 30% !important;
 }
 .yc-mobile .swiper-container-horizontal > .swiper-scrollbar {
     width: 40%;
     left: 30%;
     background: rgba(255,255,255,.3);
+    cursor: pointer;
 }
 .yc-mobile .swiper-scrollbar-drag {
     background: rgba(255,255,255,.8);
@@ -1222,16 +1257,53 @@ section, footer {
 /* ----------------- validation ---------------- */
 
 #youngcapital .validation {
-    margin: 100px auto;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
-#youngcapital .copy-container {
-    width: 60%;
-    margin:  0 auto 0 20%;
+#youngcapital .validation .image {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: auto;
 }
 
-#youngcapital .validation .headline {
-    margin-left: 10%;
+#youngcapital .validation .image img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.04);
+    margin-right: auto;
+}
+
+#youngcapital .validation .copywrite {
+    width: 80%;
+    position: relative;
+    z-index: 0;
+}
+#youngcapital .validation .copywrite .number {
+    color: #f5f5f5;
+    font-size: 150px;
+    font-weight: 700;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    left: 100px;
+}
+#youngcapital .validation .copywrite h3, .validation h3{
+    font-weight: 600;
+    font-size: 2em;
+    color: blue;
+    margin-top: 50px;
+}
+ 
+#youngcapital .validation .copywrite p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: black;
 }
 
 #youngcapital .data {
@@ -1256,10 +1328,6 @@ section, footer {
 }
 
 /* ----------------- printplus ---------------- */
-
-.mintsalad {
-    height: 70vh;
-}
 
 #printplus .ribbon-content h2 {
     width: 100%;
@@ -1295,8 +1363,7 @@ section, footer {
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    top: -100px;
-    right: -60;
+    right: -60px;
     position: relative;
 }
 
@@ -1307,14 +1374,12 @@ section, footer {
 
 #printplus .image p {
     text-align: center;
-    padding-top: 25%;
     font-size: 2em;
     font-weight: 600;
 }
 
 #printplus #print {
     background-image: url("../image/printable-parts.png");
-    width: 50vw;
     height: 440px;
     background-size: cover;
     background-position: center;
@@ -1323,7 +1388,6 @@ section, footer {
 
 #printplus #toolkit {
     background-image: url("../image/kit-parts.png");
-    width: 50vw;
     height: 440px;
     background-size: cover;
     background-position: center;
@@ -1341,7 +1405,7 @@ section, footer {
 
 #printplus .copywrite {
     width:  auto;
-    margin: 100px 10% ;
+    margin: 100px auto;
 }
 
 
@@ -1357,23 +1421,18 @@ section, footer {
     font-size: 1.3em;
     color: black;
 }
-
-
+#printplus .swiper-container .image img {
+    width: 100%;
+}
 /* ----------------- tacit ---------------- */
 
 #tacit .ribbon-content h2 {
     width: 100%;
 }
 
-.nullland {
-    height: 1700px;
-    min-height: 100vh;
-}
-
-
 .nullland .copywrite {
     width:  auto;
-    margin: 100px 10% ;
+    margin: 100px auto;
 }
 
 .nullland .copywrite h3 {
@@ -1391,7 +1450,6 @@ section, footer {
 
 #tacit .video-container {
     background-color: antiquewhite;
-    width: 100%;
     height: 90vh;
 }
 

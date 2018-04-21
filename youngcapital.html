@@ -113,6 +113,7 @@
                     <div class="col-sm-12 col-md-5">
                         <div class="copywrite">
                             <h3>Understand user journey</h3>
+                            <span class="number">1</span>
                             <p>Gathering both qualitative and quantitative insights such as Hotjat, Google Analytics, Usabilla, user tests to find out where the problem is and which to start at first.</p>
                         </div>
                     </div>
@@ -124,6 +125,7 @@
                     <div class="col-sm-12 col-md-5">
                         <div class="copywrite">
                             <h3>Architecture optimization</h3>
+                            <span class="number">2</span>
                             <p>Started with structure optimization, features are extracted out and reorganized in more natural and logical way, making sure users find right information quickly.</p>
                         </div>
                     </div>
@@ -145,6 +147,7 @@
                     <div class="col-sm-12 col-md-5">
                         <div class="copywrite">
                             <h3>Design</h3>
+                            <span class="number">3</span>
                             <h4>- Smarter service</h4>
                             <p>The core value of YC is to help users find career opportunities in a satisfied way, hence design needs to be smart enough. Recommending user-wanted jobs intelligently, without them spending time on typing, manually searching for jobs is a key improvement. <br><br>This entails changes not only on interfaces, backend sysytem, but also the way how internal staff work.</p>
                         </div>
@@ -178,68 +181,75 @@
                 </div>
             </section>
         </div>
-        <div class="container-fluid">
-            <section class="row yc-mobile">
+        <div class="container-fluid yc-mobile">
+            <div class="row">
                 <div class="col">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-dashboard.png">
+                    <div class="container">
+                        <section class="row">
+                            <div class="col">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/image/yc-mobile-dashboard.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/image/yc-mobile-menu.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/image/yc-mobile-cv.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/image/yc-mobile-dashboard.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/image/yc-mobile-menu.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/image/yc-mobile-cv.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/image/yc-mobile-dashboard.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/image/yc-mobile-menu.png">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/image/yc-mobile-cv.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-scrollbar"></div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-menu.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-cv.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-dashboard.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-menu.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-cv.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-dashboard.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-menu.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-cv.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-scrollbar"></div>
+                        </section>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
         <div class="container">
             <section class="validation">
                 <div class="row">
                     <div class="col">
-                        <div class ="headline">
+                        <div class="copywrite">
                             <h3>Validation</h3>
+                            <span class="number">4</span>
                         </div>
                     </div>
                 </div>
@@ -410,9 +420,19 @@
                 scrollbar: {
                     el: '.swiper-scrollbar',
                     hide: false,
+                    draggable: true,
+                    snapOnRelease: true
                 },
                 scrollbarDraggable: true,
-                scrollbarSnapOnRelease: true
+                scrollbarSnapOnRelease: true,
+                mousewheel: {
+                    invert: false,
+                    forceToAxis: true
+                },
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: false,
+                } 
             });
 		});
 	</script>
