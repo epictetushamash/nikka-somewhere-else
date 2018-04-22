@@ -82,6 +82,12 @@ section, footer {
     text-decoration: none;
     color: #0000ff;
 }
+.btn.btn-border-thicker {
+    border-width: 2px;
+}
+.btn.btn-rounded {
+    border-radius: 40px;
+}
 /* Vertical Navigation */
 .main-nav {
     -webkit-transform: rotate(90deg);
@@ -755,6 +761,8 @@ section, footer {
 .switch .next {
     text-align: right;
     margin-right: 40px;
+    position: absolute;
+    right: 0;
 }
 
 .switch .next h4 {
@@ -770,6 +778,43 @@ section, footer {
     text-decoration: none;
 }
 
+.footer-navigation {
+    color: #e5e5e5;
+}
+.footer-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-navigation li {
+    display: inline-block;
+}
+.footer-navigation li {
+    display: inline-block;
+}
+.footer-navigation .number {
+    display: inline-block;
+    font-size: 68px;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+.footer-navigation .navigation-text {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+.footer-navigation .title {
+    text-align: left;
+}
+.footer-navigation .sub-title {
+    font-size: 14px;
+}
+.footer-navigation li.current {
+    color: #0000ff;
+}
+.footer-navigation li.current .number{
+    color: #0000ff;
+}
 /* ----------------- maison floolipe  ---------------- */
 
 #maisonfloolipe .ribbon-content h1 {
@@ -1429,6 +1474,22 @@ section, footer {
 #tacit .ribbon-content h2 {
     width: 100%;
 }
+#tacit .graphic-container .btn-wrapper {
+    margin-top: 50px;
+}
+#tacit .graphic-container .btn-rounded {
+    padding: 12px 48px;
+    border-color: #0000ff;
+    color: #0000ff;
+}
+#tacit .graphic-container .btn-rounded:hover {
+    background-color: #0000ff;
+    color: #ffffff;
+}
+#tacit .graphic-wrapper {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
 
 .nullland .copywrite {
     width:  auto;
@@ -1476,10 +1537,10 @@ section, footer {
     margin: 0 10px;
 }
 
-.nullland .sketch {
-    background-image: url("../image/lightsketch-1.png"), url("../image/lightsketch-2.png");
-    background-position: contain;
-    background-repeat: no-repeat, no-repeat;
+#tacit .sketch {
+    background-image: url("../image/lightsketch-together.jpg");
+    background-position: cover center;
+    background-repeat: repeat;
     height: 400px;
 }
 
@@ -1488,11 +1549,16 @@ section, footer {
 
 #elsewhere .ribbon-wrapper {
     background-color: salmon;
-    background-image: url("../image/header-video.jpg");
+    background-image: url("../image/header-video-optimized.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: initial;
 }
-
+#elsewhere .ribbon-content {
+    z-index: 1;
+}
 #elsewhere .ribbon-content h1 {
     text-align: left;
     margin-left: 0;
@@ -1535,6 +1601,36 @@ section, footer {
     font-size: 1.2em;
 }
 
+#elsewhere .content-wrapper {
+    background: white;
+}
+#elsewhere .video-bg-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+#elsewhere .video-bg-overlay::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,255,.6);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#elsewhere .video-bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#elsewhere #video-bg-frame {
+    width: 100%;
+    height: 100%;
+}
 
 #elsewhere .content-section .image {
     margin: 10px 0;
@@ -1560,7 +1656,9 @@ section, footer {
     background-repeat: no-repeat;
     background-position: center;
 }
-
+#elsewhere .content-section .block.bg-contain {
+    background-size: contain;
+}
 #elsewhere .content-section #still-life {
     background-image: url("../image/still-life-painting.png");
     margin-top: 30px;
@@ -1577,8 +1675,8 @@ section, footer {
 }
 
 #elsewhere .content-section #dustpan {
-    background-image: url("../image/sketch-dustpan.png");
-    height: 500px;
+    background-image: url("../image/sketch-dustpan-optimized.jpg");
+    height: 250px;
     margin-top: 30px;
 }
 
@@ -1590,10 +1688,10 @@ section, footer {
     position: relative;
 }
 
-#elsewhere .image #notation {
+/* #elsewhere .image #notation {
     position: relative;
     bottom: 250px;
-}
+} */
 
 #seat-notation {
     position: relative;
@@ -1617,26 +1715,35 @@ section, footer {
     background: black;
 }
 
-.image .note {
+/* .image .note {
     max-width: 300px;
     margin-right: 0;
     margin-left: auto;
-}
+} */
 
 .image .note h4{
     font-size: 1.2em;
     font-weight: 600;
     text-align: right;
     line-height: 1.6;
+    margin-top: 30px;
 }
-
+.image .note h4::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #0000ff;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
 .image .note p{
     font-size: 1em;
     font-weight: 400;
     text-align: right;
-    max-width: 300px;
+    /* max-width: 300px;
     margin-right: 0;
-    margin-left: auto;
+    margin-left: auto; */
 }
 
 #elsewhere .content-section #volunteer {
