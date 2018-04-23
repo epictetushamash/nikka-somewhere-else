@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,10 +23,50 @@
 </head>
 
 <body id="work">
+	<div class="logo">
+		<a href="index.html">
+			<img src="logo-guo.png" alt="hand writing Nikka as logo">
+		</a>
+	</div>
+	<svg id="navigation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="0 0 350 50" style="enable-background:new 0 0 350 50;" xml:space="preserve">
+		<symbol id="navigation-text">
+			<a xlink:href="/about.html">
+				<text transform="matrix(1 0 0 1 0 33)">About</text>
+			</a>
+			<a xlink:href="/work.html">
+				<text transform="matrix(1 0 0 1 124 33)">Work</text>
+			</a>
+			<a xlink:href="/elsewhere.html">
+				<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+			</a>
+		</symbol>
+		<clippath id="navigation-text-clip">
+			<text transform="matrix(1 0 0 1 0 33)">About</text>
+			<text transform="matrix(1 0 0 1 124 33)">Work</text>
+			<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
+		</clippath>
+		<g clip-path="url(#navigation-text-clip)" class="colortext">
+			<rect width="100%" height="100%" fill="black"></rect>
+			<rect width="30%" height="100%" fill="#0000ff" style="transform: translateX(30%)"></rect>
+		</g>
+		<use xlink:href="#navigation-text" fill="transparent"></use>
+	</svg>
 	<div class="container-fluid">
-		<header class="ribbon-wrapper">
-			<div class="ribbon-content">
-				<h1>Design makes solutions. Art makes questions.</h1>
+		<header class="row" id="ribbon">
+			<div class="col">
+				<div class="ribbon-wrapper">
+					<div class="ribbon-content">
+						<h1>
+							<span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active">
+								<span data-box-animation-target>Design makes solutions.</span>
+							</span>
+							<span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active" data-box-animation-delay="300">
+								<span data-box-animation-target >Art makes questions.</span>
+							</span>
+						</h1>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -33,11 +74,10 @@
 
 			<div class="row" >
 				<div class="col-sm-12 col-md-8 offset-md-4 px-0">                 
-                    <div class="row">
-                         <div class="col-sm-12 px-0">
+                    <div class="row mx-0">
+                         <div class="col px-0">
                             <div class="projectlink">
                                 <h1>Seasor</h1>
-                                <br>
                                 <h2>mobile application</h2>
                             </div>
                             <div class="seasor">
@@ -50,10 +90,9 @@
 				</div>
 			</div>
 			
-
 			<div class="row bluebox-container d-sm-none d-md-block">
 				<div class="col-sm-12 col-md-8 offset-md-4 px-0">
-					<div class="row">
+					<div class="row mx-0">
 						<div class="col-sm-12 col-md-6 offset-md-6 px-0">
 							<div class="bluebox"></div>
 						</div>
@@ -63,7 +102,7 @@
 
 			<div class="row">
 				<div class="col-sm-12 col-md-8 offset-md-4 px-0">
-					<div class="row">
+					<div class="row mx-0">
 						<div class="col-sm-12 col-md-6 px-0">
 							<div class="projectlink">
 								<h1>YoungCapital</h1>
@@ -82,7 +121,7 @@
 
 			<div class="row">
 				<div class="col-sm-12 col-md-8 offset-md-4 px-0">
-					<div class="row">
+					<div class="row mx-0">
 						<div class="col-sm-12 col-md-6 offset-md-6 px-0">
                             <div class="projectlink">
 								<h1>Maison Floolipe</h1>
@@ -97,11 +136,15 @@
 					</div>
 				</div>
 			</div>
-
+			<div class="row">
+				<div class="col">
+					<hr class="my-0" style="height: 80px;border: none;">
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-sm-12 col-md-8 offset-md-4 px-0">
-					<div class="row">
-						<div class="col-sm-12 px-0">
+					<div class="row mx-0">
+						<div class="col px-0">
                              <div class="projectlink">
 								<h1>PrintPlus</h1>
 								<h2>3D printed headphone</h2>
@@ -116,10 +159,9 @@
 				</div>
 			</div>
 
-		
 			<div class="row bluebox-container d-sm-none d-md-block">
 				<div class="col-sm-12 col-md-8 offset-md-4 px-0">
-					<div class="row">
+					<div class="row mx-0">
 						<div class="col-sm-12 col-md-6 offset-md-6 px-0">
 							<div class="bluebox"></div>
 						</div>
@@ -129,7 +171,7 @@
 
 			<div class="row">
 				<div class="col-sm-12 col-md-8 offset-md-4 px-0">
-					<div class="row">
+					<div class="row mx-0">
 						<div class="col-sm-12 col-md-6 px-0">
                             <div class="projectlink">
 								<h1>TACIT</h1>
@@ -145,47 +187,8 @@
 					</div>
 				</div>
 			</div>
-
-<!--
-			<div class="row">
-				<div class="col-sm-12 col-md-8 offset-md-4 px-0">
-					<div class="row">
-						<div class="col-sm-12 col-md-6 offset-md-6 px-0">
-                            <div class="projectlink">
-								<h1>Cuptocup</h1>
-								<h2>Grocery service</h2>
-							</div>
-							<div class="cuptocup">
-								<a href="cuptocup.html">
-									<img src="assets/image/bg-cup.png" alt="cup shape speaker 3d modelling">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
--->
-           
-		<nav class="main-nav fixed">
-			<ul class="nav">
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li class="active">
-					<a href="work.html">Work</a>
-				</li>
-				<li>
-					<a href="elsewhere.html">Elsewhere</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="logo">
-			<a href="index.html">
-				<img src="logo-guo.png" alt="hand writing Nikka as logo">
-			</a>
 		</div>
 	</div>
-
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
@@ -228,7 +231,16 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	    crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-	    crossorigin="anonymous"></script>
+		crossorigin="anonymous"></script>
+	<script src="/assets/js/skrollr.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var s = skrollr.init({
+				forceHeight: false,
+				smoothScrolling: false
+			});
+		});
+	</script>
 </body>
 
 </html>

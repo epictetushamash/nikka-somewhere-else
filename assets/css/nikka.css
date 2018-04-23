@@ -82,6 +82,12 @@ section, footer {
     text-decoration: none;
     color: #0000ff;
 }
+.btn.btn-border-thicker {
+    border-width: 2px;
+}
+.btn.btn-rounded {
+    border-radius: 40px;
+}
 /* Vertical Navigation */
 .main-nav {
     -webkit-transform: rotate(90deg);
@@ -194,6 +200,45 @@ section, footer {
     text-decoration: none;
 }
 
+/* BOX BLOCK ANIMATION */
+.box-animation {
+    opacity: 1;
+    position: relative;
+    will-change: opacity;
+    overflow: hidden;
+}
+.box-animation::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000ff;
+    transition: all .6s cubic-bezier(.4,0,.2,1);
+    transform: translate3d(-100%,0,0);
+    will-change: transform;
+}
+.box-animation [data-box-animation-target] {
+    opacity: 0;
+    position: relative;
+    will-change: opacity;
+}
+.box-animation[data-box-animation="active"] [data-box-animation-target] {
+    opacity: 1;
+}
+.box-animation[data-box-animation="active"]::after {
+    left: 1px;
+    transform: translateZ(0);
+    will-change: transform;
+    transition: all .6s cubic-bezier(.4,0,.2,1);
+    transform: translate3d(100%,0,0);
+    will-change: transform;
+    transition: all .7s cubic-bezier(.4,0,.2,1);
+}
+.box-animation[data-box-animation="active"][data-box-animation-delay="300"]::after {
+    transition-delay: .3s;
+}
 .description {
     position: relative;
 }
@@ -221,6 +266,12 @@ section, footer {
 
 .about .description p {
     margin-left: 40px;
+}
+#about .footer {
+    background-color: #202020;
+}
+#about .footer a:hover {
+    color: #fff;
 }
 
 /* Work section begins below */
@@ -417,9 +468,12 @@ section, footer {
     -ms-flex-align: center;
     align-items: center;
 }
-
+.ribbon-content {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
 .ribbon-content h1 {
-    width: 75%;
     text-align: center;
     font-size: 4em;
     font-weight: 700;
@@ -429,7 +483,6 @@ section, footer {
 
 .ribbon-content h2 {
     padding-top: 20px;
-    width: 75%;
     text-align: center;
     font-size: 3em;
     font-weight: 700;
@@ -708,6 +761,8 @@ section, footer {
 .switch .next {
     text-align: right;
     margin-right: 40px;
+    position: absolute;
+    right: 0;
 }
 
 .switch .next h4 {
@@ -723,6 +778,43 @@ section, footer {
     text-decoration: none;
 }
 
+.footer-navigation {
+    color: #e5e5e5;
+}
+.footer-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-navigation li {
+    display: inline-block;
+}
+.footer-navigation li {
+    display: inline-block;
+}
+.footer-navigation .number {
+    display: inline-block;
+    font-size: 68px;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+.footer-navigation .navigation-text {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+.footer-navigation .title {
+    text-align: left;
+}
+.footer-navigation .sub-title {
+    font-size: 14px;
+}
+.footer-navigation li.current {
+    color: #0000ff;
+}
+.footer-navigation li.current .number{
+    color: #0000ff;
+}
 /* ----------------- maison floolipe  ---------------- */
 
 #maisonfloolipe .ribbon-content h1 {
@@ -733,32 +825,24 @@ section, footer {
     width: 100%;
 }
 
-.ribbon-content .tags {
+.ribbon-wrapper .tags {
     text-align: right;
     position: absolute;
-    top: 500px;
-    right: 10%;
+    bottom: 64px;
+    right: 0;
 }
 
-.ribbon-content .tags p {
+.ribbon-wrapper .tags p {
     font-weight: 700;
 }
 
 
 .slickraven {
     background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
-    height: 230vh;
-    min-height: 100vh;
-}
-
-.slickraven .content-container {
-    height: 100%;
-    width: 100%;
     position: relative;
 }
 
-
-.slickraven .content-container .landing {
+.slickraven .landing {
     box-shadow: 0px 5px 60px 10px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 10px 10px;
     margin-right: 10%;
@@ -771,7 +855,7 @@ section, footer {
     background-repeat: no-repeat;
 }
 
-.slickraven .content-container .overlap {
+.slickraven .overlap {
     background-image: url("../image/overlap-MF.png");
     width: 50%;
     height: auto;
@@ -786,7 +870,7 @@ section, footer {
 
 }
 
-.slickraven .content-container .font {
+.slickraven .font {
     background-image: url("../image/luxia.svg");
     width: 50%;
     height: 120px;
@@ -878,30 +962,24 @@ section, footer {
 }
 
 .mf-mobile #homepage {
-       margin-right: 0;
+    margin-right: 0;
 }
 
 .mf-mobile #collection {
-       margin-left: 0;
+    margin-left: 0;
 }
 
 /* ----------------- youngcapital ---------------- */
 
 .junefruit {
     background: linear-gradient(to bottom right, #F9A93A, #F77F00, #FF6E44);
-    height: 1500px;
-    min-height: 100vh;
 }
 
-
-.junefruit .content-container {
-    height: 100%;
-    width: 100%;
+.junefruit {
     position: relative;
 }
 
-
-.junefruit .content-container .landing {
+.junefruit .landing {
     box-shadow: 0px 5px 50px 10px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 5px 5px;
     margin-right: 10%;
@@ -914,7 +992,7 @@ section, footer {
     background-repeat: no-repeat;
 }
 
-.junefruit .content-container .overlap {
+.junefruit .overlap {
     box-shadow: 0px 5px 50px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     background-image: url("../image/yc-homepage.png");
@@ -927,14 +1005,12 @@ section, footer {
     margin-left: 10%;
     margin-right: auto;
     top: 250px;
-   
 }
 
 .junefruit .copywrite {
     width:  auto;
-    margin: 100px 10% ;
+    padding: 100px 10%;
 }
-
 
 .junefruit .copywrite h3 {
     font-weight: 600;
@@ -949,24 +1025,18 @@ section, footer {
     color: whitesmoke;
 }
 
-#youngcapital .process {
-    width: 100%;
-    height: 465vh;
-}
 
 #youngcapital .research {
     width: 100%;
     height: auto;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 #youngcapital .research .image {
     width: 80%;
     height: auto;
     border-radius: 5px; 
-    margin-right: 20px;
-    margin-left: auto;
 }
 
 #youngcapital .research .image img {
@@ -974,11 +1044,13 @@ section, footer {
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.03);
-
 }
 
 #youngcapital .research .copywrite {
     width: 80%;
+    margin-left: auto;
+    position: relative;
+    z-index: 0;
 }
 #youngcapital .research .copywrite h3{
     font-weight: 600;
@@ -986,7 +1058,15 @@ section, footer {
     color: blue;
     margin-top: 50px;
 }
- 
+#youngcapital .research .copywrite .number{
+    color: #f5f5f5;
+    font-size: 150px;
+    font-weight: 700;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    left: 100px;
+}
 #youngcapital .research .copywrite p {
     margin-top: 30px;
     font-weight: 400;
@@ -1001,15 +1081,14 @@ section, footer {
 }
 
 #youngcapital .opti .image {
-    width: 70%;
+    width: 80%;
     height: auto;
     border-radius: 5px; 
-    margin-right: auto;
-    margin-left: 30px;
+    margin-left: auto;
 }
 
 #youngcapital .opti .image img {
-    width: 110%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.05);
@@ -1018,10 +1097,17 @@ section, footer {
 
 #youngcapital .opti .copywrite {
     width: 80%;
-    margin-right: 0;
-    margin-left: auto;
-    right: -30px;
     position: relative;
+    z-index: 0;
+}
+#youngcapital .opti .copywrite .number{
+    color: #f5f5f5;
+    font-size: 150px;
+    font-weight: 700;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    left: 100px;
 }
 #youngcapital .opti .copywrite h3{
     font-weight: 600;
@@ -1047,9 +1133,11 @@ section, footer {
     margin-bottom: 200px;
 }
 
-#youngcapital .design.image {
-    border-radius: 5px; 
-  
+#youngcapital .design .image {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: auto;
 }
 
 #youngcapital .design .image img {
@@ -1057,15 +1145,23 @@ section, footer {
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.04);
-    margin-right: 20px;
-    margin-left: auto;
-    float: right;
+    margin-right: auto;
 }
 
 #youngcapital .design .copywrite {
     width: 80%;
+    position: relative;
+    z-index: 0;
 }
-
+#youngcapital .design .copywrite .number {
+    color: #f5f5f5;
+    font-size: 150px;
+    font-weight: 700;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    left: 100px;
+}
 #youngcapital .design .copywrite h3, .validation h3{
     font-weight: 600;
     font-size: 2em;
@@ -1081,7 +1177,7 @@ section, footer {
 }
 
 #youngcapital .copywrite h4 {
-    margin-top: 100px;
+    margin-top: 50px;
     font-weight: 700;
     font-size: 1em;
     text-transform: uppercase;
@@ -1095,15 +1191,14 @@ section, footer {
 }
 
 #youngcapital .segment .image {
-    width: 70%;
+    width: 80%;
     height: auto;
     border-radius: 5px; 
-    margin-right: auto;
-    margin-left: 30px;
+    margin-left: auto;
 }
 
 #youngcapital .segment .image img {
-    width: 110%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.05);
@@ -1112,10 +1207,7 @@ section, footer {
 
 #youngcapital .segment .copywrite {
     width: 80%;
-    margin-right: 0;
-    margin-left: auto;
-    right: -30px;
-    position: relative;
+    margin-right: auto;
 }
  
 #youngcapital .segment .copywrite p {
@@ -1134,23 +1226,20 @@ section, footer {
     margin-bottom: 200px;
 }
 
-#youngcapital .efficiency.image {
-    border-radius: 5px; 
-  
+#youngcapital .efficiency .image {
+    width: 80%;
 }
 
 #youngcapital .efficiency .image img {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.04);
-    margin-right: 20px;
-    margin-left: auto;
-    float: right;
 }
 
 #youngcapital .efficiency .copywrite {
     width: 80%;
+    margin-left: auto;
 }
  
 #youngcapital .efficiency .copywrite p {
@@ -1167,6 +1256,9 @@ section, footer {
     background: linear-gradient(to bottom right, #F9A93A, #F77F00, #FF6E44);
     padding-top: 15vh;
     padding-bottom: 15vh;
+}
+.yc-mobile section.row{
+    background-color: transparent;
 }
 
 .yc-mobile .image {
@@ -1189,19 +1281,74 @@ section, footer {
 .yc-mobile #cv {
        margin-left: 0;
 }
+
+/* Swiper scrollbar style */
+.yc-mobile .swiper-container-horizontal > .swiper-wrapper {
+    margin-bottom: 50px;
+    padding: 0 50px;
+}
+.yc-mobile .swiper-container-horizontal > .swiper-wrapper .swiper-slide {
+    width: 30% !important;
+}
+.yc-mobile .swiper-container-horizontal > .swiper-scrollbar {
+    width: 40%;
+    left: 30%;
+    background: rgba(255,255,255,.3);
+    cursor: pointer;
+}
+.yc-mobile .swiper-scrollbar-drag {
+    background: rgba(255,255,255,.8);
+}
 /* ----------------- validation ---------------- */
 
 #youngcapital .validation {
-    margin: 100px auto;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
-#youngcapital .copy-container {
-    width: 60%;
-    margin:  0 auto 0 20%;
+#youngcapital .validation .image {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: auto;
 }
 
-#youngcapital .validation .headline {
-    margin-left: 10%;
+#youngcapital .validation .image img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.04);
+    margin-right: auto;
+}
+
+#youngcapital .validation .copywrite {
+    width: 80%;
+    position: relative;
+    z-index: 0;
+}
+#youngcapital .validation .copywrite .number {
+    color: #f5f5f5;
+    font-size: 150px;
+    font-weight: 700;
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    left: 100px;
+}
+#youngcapital .validation .copywrite h3, .validation h3{
+    font-weight: 600;
+    font-size: 2em;
+    color: blue;
+    margin-top: 50px;
+}
+ 
+#youngcapital .validation .copywrite p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: black;
 }
 
 #youngcapital .data {
@@ -1226,10 +1373,6 @@ section, footer {
 }
 
 /* ----------------- printplus ---------------- */
-
-.mintsalad {
-    height: 70vh;
-}
 
 #printplus .ribbon-content h2 {
     width: 100%;
@@ -1265,8 +1408,7 @@ section, footer {
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    top: -100px;
-    right: -60;
+    right: -60px;
     position: relative;
 }
 
@@ -1277,14 +1419,12 @@ section, footer {
 
 #printplus .image p {
     text-align: center;
-    padding-top: 25%;
     font-size: 2em;
     font-weight: 600;
 }
 
 #printplus #print {
     background-image: url("../image/printable-parts.png");
-    width: 50vw;
     height: 440px;
     background-size: cover;
     background-position: center;
@@ -1293,7 +1433,6 @@ section, footer {
 
 #printplus #toolkit {
     background-image: url("../image/kit-parts.png");
-    width: 50vw;
     height: 440px;
     background-size: cover;
     background-position: center;
@@ -1311,7 +1450,7 @@ section, footer {
 
 #printplus .copywrite {
     width:  auto;
-    margin: 100px 10% ;
+    margin: 100px auto;
 }
 
 
@@ -1327,23 +1466,34 @@ section, footer {
     font-size: 1.3em;
     color: black;
 }
-
-
+#printplus .swiper-container .image img {
+    width: 100%;
+}
 /* ----------------- tacit ---------------- */
 
 #tacit .ribbon-content h2 {
     width: 100%;
 }
-
-.nullland {
-    height: 1700px;
-    min-height: 100vh;
+#tacit .graphic-container .btn-wrapper {
+    margin-top: 50px;
 }
-
+#tacit .graphic-container .btn-rounded {
+    padding: 12px 48px;
+    border-color: #0000ff;
+    color: #0000ff;
+}
+#tacit .graphic-container .btn-rounded:hover {
+    background-color: #0000ff;
+    color: #ffffff;
+}
+#tacit .graphic-wrapper {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
 
 .nullland .copywrite {
     width:  auto;
-    margin: 100px 10% ;
+    margin: 100px auto;
 }
 
 .nullland .copywrite h3 {
@@ -1361,7 +1511,6 @@ section, footer {
 
 #tacit .video-container {
     background-color: antiquewhite;
-    width: 100%;
     height: 90vh;
 }
 
@@ -1388,10 +1537,10 @@ section, footer {
     margin: 0 10px;
 }
 
-.nullland .sketch {
-    background-image: url("../image/lightsketch-1.png"), url("../image/lightsketch-2.png");
-    background-position: contain;
-    background-repeat: no-repeat, no-repeat;
+#tacit .sketch {
+    background-image: url("../image/lightsketch-together.jpg");
+    background-position: cover center;
+    background-repeat: repeat;
     height: 400px;
 }
 
@@ -1400,11 +1549,16 @@ section, footer {
 
 #elsewhere .ribbon-wrapper {
     background-color: salmon;
-    background-image: url("../image/header-video.jpg");
+    background-image: url("../image/header-video-optimized.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: initial;
 }
-
+#elsewhere .ribbon-content {
+    z-index: 1;
+}
 #elsewhere .ribbon-content h1 {
     text-align: left;
     margin-left: 0;
@@ -1447,6 +1601,36 @@ section, footer {
     font-size: 1.2em;
 }
 
+#elsewhere .content-wrapper {
+    background: white;
+}
+#elsewhere .video-bg-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+#elsewhere .video-bg-overlay::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,255,.6);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#elsewhere .video-bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#elsewhere #video-bg-frame {
+    width: 100%;
+    height: 100%;
+}
 
 #elsewhere .content-section .image {
     margin: 10px 0;
@@ -1472,7 +1656,9 @@ section, footer {
     background-repeat: no-repeat;
     background-position: center;
 }
-
+#elsewhere .content-section .block.bg-contain {
+    background-size: contain;
+}
 #elsewhere .content-section #still-life {
     background-image: url("../image/still-life-painting.png");
     margin-top: 30px;
@@ -1489,8 +1675,8 @@ section, footer {
 }
 
 #elsewhere .content-section #dustpan {
-    background-image: url("../image/sketch-dustpan.png");
-    height: 500px;
+    background-image: url("../image/sketch-dustpan-optimized.jpg");
+    height: 250px;
     margin-top: 30px;
 }
 
@@ -1502,10 +1688,10 @@ section, footer {
     position: relative;
 }
 
-#elsewhere .image #notation {
+/* #elsewhere .image #notation {
     position: relative;
     bottom: 250px;
-}
+} */
 
 #seat-notation {
     position: relative;
@@ -1529,26 +1715,35 @@ section, footer {
     background: black;
 }
 
-.image .note {
+/* .image .note {
     max-width: 300px;
     margin-right: 0;
     margin-left: auto;
-}
+} */
 
 .image .note h4{
     font-size: 1.2em;
     font-weight: 600;
     text-align: right;
     line-height: 1.6;
+    margin-top: 30px;
 }
-
+.image .note h4::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #0000ff;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
 .image .note p{
     font-size: 1em;
     font-weight: 400;
     text-align: right;
-    max-width: 300px;
+    /* max-width: 300px;
     margin-right: 0;
-    margin-left: auto;
+    margin-left: auto; */
 }
 
 #elsewhere .content-section #volunteer {
