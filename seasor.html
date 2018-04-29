@@ -15,8 +15,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nikka.css" />
 </head>
 
@@ -51,23 +50,32 @@
         <use xlink:href="#navigation-text" fill="transparent"></use>
     </svg>
     <div class="container-fluid">
-        <header class="row" id="ribbon">
+        <header class="row bg-white" id="ribbon">
             <div class="col">
-                <div class="ribbon-wrapper">
-                    
-                    
-                    <div class="ribbon-content" >
-                        <span class="ribbon-content box-animation" data-target="#ribbon" data-top="@data-box-animation:active">
-                            <h1 data-box-animation-target>SEASOR</h1>
-                        </span>
-                        
-                        <span class="ribbon-content box-animation" data-target="#ribbon" data-top="@data-box-animation:active"
-                        data-box-animation-delay="300" >
-                            <h2 data-box-animation-target>mobile platform designed for people who study abroad</h2>
-                        </span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="ribbon-wrapper">
+                                <div class="ribbon-content" style="width: 100%;">
+                                    <h1>
+                                        <span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active">
+                                            <span data-box-animation-target>SEASOR</span>
+                                        </span>
+                                    </h1>
+                                    <h2>
+                                        <span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active" data-box-animation-delay="300">
+                                            <span data-box-animation-target>mobile platform designed for people who study abroad</span>
+                                        </span>
+                                    </h2>
+                                </div>
+                                <div class="tags">
+                                    <p>April - May, 2016<br>
+                                    Concept design
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                   
-                    
                 </div>
             </div>
         </header>
@@ -100,7 +108,7 @@
             </div>
         </div>
 
-        <div class="row seasor-process">
+        <div class="row seasor-process bg-white">
             <div class="col">
                 <div class="ia">
                     <img src="assets/image/seasor-ia.svg">
@@ -151,55 +159,60 @@
             <div class="col"></div>
         </div>
 
-        <div class="row switch">
-            <div class="col d-flex align-items-center justify-content-center">
-                
-                <div class="footer-navigation">
-                    <ul class="footer-navigation-items d-flex align-items-center justify-content-start">
-                        <li class="footer-navigation-item current">
-                            <span class="number">1</span>
-                            <span class="navigation-text">
-                                <div class="title">Seasor</div>
-                                <div class="sub-title">MOBILE APPLICATION</div>
-                            </span>
-                        </li>
-                        <li class="footer-navigation-item">
-                            <span class="number">2</span>
-                            <span class="navigation-text">
-                                <div class="title">YoungCapital</div>
-                                <div class="sub-title">RECRUITMENT SERVICE</div>
-                            </span>
-                        </li>
-                        <li class="footer-navigation-item">
-                            <span class="number">3</span>
-                            <span class="navigation-text">
-                                <div class="title">Maison Floolipe</div>
-                                <div class="sub-title">ONLINE BUSINESS</div>
-                            </span>
-                        </li>
-                        <li class="footer-navigation-item">
-                            <span class="number">4</span>
-                            <span class="navigation-text">
-                                <div class="title">PrintPlus</div>
-                                <div class="sub-title">3D PRINTED HEADPHONE</div>
-                            </span>
-                        </li>
-                        <li class="footer-navigation-item">
-                            <span class="number">5</span>
-                            <span class="navigation-text">
-                                <div class="title">TACIT</div>
-                                <div class="sub-title">AMBIENT LIGHTING</div>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="next">
-                    <a class="link" href="maisonfloolipe.html">
-                        <h4>Next</h4>
-                        <img src="assets/image/down-arrow.svg">
-                    </a>
-                    <p>Maison Floolipe</p>
-                    <p>Online business - ux</p>
+        <div class="row switch bg-white hidden">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex align-items-center justify-content-center">
+                            <div class="footer-navigation">
+                                <ul class="footer-navigation-items d-flex align-items-center justify-content-start">
+                                    <li class="footer-navigation-item current">
+                                        <span class="number">1</span>
+                                        <span class="navigation-text">
+                                            <div class="title">Seasor</div>
+                                            <div class="sub-title">MOBILE APPLICATION</div>
+                                        </span>
+                                    </li>
+                                    <li class="footer-navigation-item">
+                                        <span class="number">2</span>
+                                        <span class="navigation-text">
+                                            <div class="title">YoungCapital</div>
+                                            <div class="sub-title">RECRUITMENT SERVICE</div>
+                                        </span>
+                                    </li>
+                                    <li class="footer-navigation-item">
+                                        <span class="number">3</span>
+                                        <span class="navigation-text">
+                                            <div class="title">Maison Floolipe</div>
+                                            <div class="sub-title">ONLINE BUSINESS</div>
+                                        </span>
+                                    </li>
+                                    <li class="footer-navigation-item">
+                                        <span class="number">4</span>
+                                        <span class="navigation-text">
+                                            <div class="title">PrintPlus</div>
+                                            <div class="sub-title">3D PRINTED HEADPHONE</div>
+                                        </span>
+                                    </li>
+                                    <li class="footer-navigation-item">
+                                        <span class="number">5</span>
+                                        <span class="navigation-text">
+                                            <div class="title">TACIT</div>
+                                            <div class="sub-title">AMBIENT LIGHTING</div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="next">
+                                <a class="link" href="maisonfloolipe.html">
+                                    <h4>Next</h4>
+                                    <img src="assets/image/down-arrow.svg">
+                                </a>
+                                <p>Maison Floolipe</p>
+                                <p>Online business - ux</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

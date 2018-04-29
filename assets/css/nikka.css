@@ -5,6 +5,9 @@ body {
 /*    background-color: #0000ff;*/
 }
 
+.hidden {
+    display: none !important;
+}
 section, footer {
     background-color: white;
     overflow: hidden;
@@ -331,10 +334,10 @@ section, footer {
 /* Navigation on intro section Style - Default */
 .jumbotro.about {
     background-color: white;
-    /* position: fixed;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: -1; */
+    z-index: -1;
 }
 
 .jumbotro.about .nkguo-intro {
@@ -371,11 +374,11 @@ section, footer {
 .jumbotro.about.bg-image {
     width: 100%;
     height: 100%;
-    background-image: url("../image/itisme.png");
+    background-image: url("../image/itisme.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-attachment: fixed;
-    background-size: 42%;
+    background-size: 100%;
 }
 /* Navigation on screen-black section Style */
 .screen-blue {
@@ -406,8 +409,18 @@ section, footer {
     position: relative;
 }
 
+#about #white-navigation {
+    margin-top: 100vh;
+}
 
-
+#about #white-navigation h2 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+#about #white-navigation h2 + p{
+    font-size: 2em;
+}
 /* 
 #about section {
     overflow: hidden;
@@ -825,6 +838,36 @@ section, footer {
     width: 100%;
 }
 
+#maisonfloolipe .color-card {
+    margin-bottom: 80px;
+}
+#maisonfloolipe .color-palette {
+    text-align: center;
+}
+#maisonfloolipe .color-palette .color-item-bg {
+    width: 90px;
+    height: 20px;
+    display: block;
+}
+#maisonfloolipe .color-palette .color-item-text {
+    font-size: 12px;
+    color: #c2c2c2;
+}
+#maisonfloolipe .color-item[data-color="#CFC1B0"] .color-item-bg {
+    background-color: #CFC1B0;
+}
+#maisonfloolipe .color-item[data-color="#D38269"] .color-item-bg {
+    background-color: #D38269;
+}
+#maisonfloolipe .color-item[data-color="#C69C6D"] .color-item-bg {
+    background-color: #C69C6D;
+}
+#maisonfloolipe .color-item[data-color="#FFFBF7"] .color-item-bg {
+    background-color: #FFFBF7;
+}
+#maisonfloolipe .color-item[data-color="#282828"] .color-item-bg{
+    background-color: #282828;
+}
 .ribbon-wrapper .tags {
     text-align: right;
     position: absolute;
@@ -913,7 +956,7 @@ section, footer {
     background-position: center; 
     background-color: rbg(57,61,64);
     box-shadow: 0px 5px 40px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto  120px auto;
+    margin: 0 auto  20px auto;
 }
 
 .slickraven .branding #rice {
@@ -934,6 +977,13 @@ section, footer {
     background-size: cover;
 }
 
+.mf-wireframe {
+    width: 100vw;
+    height: 730px;
+    background-image: url("../image/mf-wireframe.png");
+    background-size: cover;
+    background-position: center;
+}
 .mf-overview {
     width: 100vw;
     height: 730px;
@@ -1130,7 +1180,6 @@ section, footer {
     width: 100%;
     height: auto;
     margin-top: 200px;
-    margin-bottom: 200px;
 }
 
 #youngcapital .design .image {
@@ -1188,6 +1237,7 @@ section, footer {
 #youngcapital .segment {
     width: 100%;
     height: auto;
+    margin-top: 200px;
 }
 
 #youngcapital .segment .image {
@@ -1305,7 +1355,6 @@ section, footer {
     width: 100%;
     height: auto;
     margin-top: 200px;
-    margin-bottom: 200px;
 }
 
 #youngcapital .validation .image {
@@ -1511,7 +1560,7 @@ section, footer {
 
 #tacit .video-container {
     background-color: antiquewhite;
-    height: 90vh;
+    height: 100vh;
 }
 
 .nullland .process #graph{
@@ -1539,9 +1588,10 @@ section, footer {
 
 #tacit .sketch {
     background-image: url("../image/lightsketch-together.jpg");
-    background-position: cover center;
+    background-position: center center;
     background-repeat: repeat;
     height: 400px;
+    background-size: 100%;
 }
 
 /* ----------------- elsewhere ---------------- */
@@ -1613,7 +1663,7 @@ section, footer {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,255,.6);
+    background-color: transparent;
     z-index: 1;
     position: absolute;
     top: 0;

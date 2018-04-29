@@ -17,8 +17,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="../assets/plugin/swiper/css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nikka.css" />
 </head>
@@ -53,7 +52,7 @@
         </g>
         <use xlink:href="#navigation-text" fill="transparent"></use>
     </svg>
-	<div class="content-container">
+	<div class="content-container bg-white">
         <div class="container-fluid">
             <header class="row" id="ribbon">
                 <div class="col">
@@ -61,9 +60,17 @@
                         <div class="row">
                             <div class="col">
                                 <div class="ribbon-wrapper">
-                                    <div class="ribbon-content box-animation" data-target="#ribbon" data-top="@data-box-animation:active">
-                                        <h1 data-box-animation-target>YoungCapital</h1>
-                                        <h2 data-box-animation-target>one of the largest e-recruitment in Netherlands</h2>
+                                    <div class="ribbon-content" style="width: 100%;">
+                                        <h1>
+                                            <span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active">
+                                                <span data-box-animation-target>YoungCapital</span>
+                                            </span>
+                                        </h1>
+                                        <h2>
+                                            <span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active" data-box-animation-delay="300">
+                                                <span data-box-animation-target>one of the largest e-recruitment in EU</span>
+                                            </span>
+                                        </h2>
                                     </div>
                                     <div class="tags">
                                         <p>July, 2017 - Jan, 2018<br>
@@ -305,7 +312,7 @@
             </section>
         </div>
         
-        <div class="switch">
+        <div class="switch hidden">
             <div class="next">
                 <a class="link" href="seasor.html">
                     <h4>Next</h4>

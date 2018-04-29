@@ -17,8 +17,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-		crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="../assets/css/nikka.css" />
 </head>
 
@@ -52,16 +51,24 @@
 		</g>
 		<use xlink:href="#navigation-text" fill="transparent"></use>
 	</svg>
-	<div class="container-fluid">
+	<div class="container-fluid bg-white">
 		<header class="row" id="ribbon">
 			<div class="col">
 				<div class="container">
 					<div class="row">
 						<div class="col">
 							<div class="ribbon-wrapper">
-								<div class="ribbon-content box-animation" data-target="#ribbon" data-top="@data-box-animation:active">
-									<h1 data-box-animation-target>Tacit</h1>
-									<h2 data-box-animation-target>Ambient lighting clock</h2>
+								<div class="ribbon-content">
+									<h1>
+										<span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active">
+											<span data-box-animation-target>Tacit</span>
+										</span>
+									</h1>
+									<h2>
+										<span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active" data-box-animation-delay="300">
+											<span data-box-animation-target>Ambient lighting clock</span>
+										</span>
+									</h2>
 								</div>
 								<div class="tags">
 									<p>Feb, 2016 - June, 2016<br>
@@ -76,7 +83,7 @@
 		</header>
 
         <section class="row video-container">
-            <div class="col px-0 video" id="video-bg">
+            <div class="col px-0 video" id="video-bg-wrapper">
             </div>
         </section>
 		
@@ -106,7 +113,7 @@
 					<div class="graphic">
 						<img src="./assets/image/tacit-process-graph.svg">
 					</div>
-					<div class="btn-wrapper d-block"><a class="btn btn-outline-primary btn-border-thicker btn-rounded">Read process details</a></div>
+					<div class="btn-wrapper d-block"><a class="btn btn-outline-primary btn-border-thicker btn-rounded" href="./assets/documents/tacit-process-details.pdf" target="_blank">Read process details</a></div>
 				</div>
 			</div>
 		</section>
@@ -115,7 +122,7 @@
 			</div>
 		</section>
 
-        <div class="switch">
+        <div class="switch hidden">
             <div class="next">
                 <a class="link" href="seasor.html">
                     <h4>Next</h4>
@@ -164,7 +171,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 	<script src="/assets/js/skrollr.min.js"></script>
-	<script src="https://player.vimeo.com/api/player.js"></script>
+	<script src="./assets/plugin/youtube-background/jquery.youtubebackground.js"></script>
     <script>
         $(document).ready(function () {
             var s = skrollr.init({
@@ -172,25 +179,23 @@
                 smoothScrolling: false
             });
 
-			var videoOptions = {
-				id: 264873116,
-				loop: true,
-				autopause: true,
-				background: true,
-				byline: false,
-				color: '#0000FF',
-				playsinline: false,
-				portrait: true,
-				title: false
-			};
-
-			var player = new Vimeo.Player('video-bg', videoOptions);
-
-			player.setVolume(0);
-
-			player.on('play', function() {
-				console.log('played the video!');
+			$('#video-bg-wrapper').YTPlayer({
+				ratio: 16 / 9,
+				mute: true,
+				fitToBackground: false,
+				videoId: '1cqPCTngDe4',
+				playerVars: {
+					modestbranding: 0,
+					autoplay: 1,
+					controls: 0,
+					showinfo: 0,
+					branding: 0,
+					rel: 0,
+					autohide: 0,
+					start: 0
+				}
 			});
+			
         });
     </script>
 </body>
