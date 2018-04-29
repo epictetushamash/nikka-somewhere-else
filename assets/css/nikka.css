@@ -2,7 +2,6 @@
 body {
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
-/*    background-color: #0000ff;*/
 }
 
 .hidden {
@@ -1876,8 +1875,39 @@ section, footer {
     height: 150px;
 }
 
+.container-fluid.mobile-construction {
+    display: none;
+    height: 100vh;
+    text-align: center;
+}
+.container-fluid.mobile-construction .row {
+    padding: 15px;
+}
+.container-fluid.mobile-construction .col {
+    border: 10px solid #0000ff;
+}
+.container-fluid.mobile-construction .col.full-height {
+    height: calc(100vh - 30px);
+    min-height: calc(100vh - 30px);
+}
+.container-fluid.mobile-construction h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #0000ff;
+}
+.container-fluid.mobile-construction p {
+    font-size: 20px;
+    color: #0000ff;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    body *:not(.mobile-construction ) {
+        display: none;
+    }
+    .container-fluid.mobile-construction, .container-fluid.mobile-construction * {
+        display: block;
+    }
+
     .banner-wrapper {
         min-height: 320px;
     }
@@ -1905,6 +1935,12 @@ section, footer {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+    body *:not(.mobile-construction ) {
+        display: none;
+    }
+    .container-fluid.mobile-construction, .container-fluid.mobile-construction * {
+        display: block;
+    }
     .title h1 {
         font-size: 50px;
         padding: 0 30px;
@@ -1913,6 +1949,12 @@ section, footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    body *:not(.mobile-construction ) {
+        display: none;
+    }
+    .container-fluid.mobile-construction, .container-fluid.mobile-construction * {
+        display: block;
+    }
     .title h1 {
         font-size: 60px;
     }
@@ -1920,6 +1962,12 @@ section, footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    body *:not(.mobile-construction ) {
+        display: none;
+    }
+    .container-fluid.mobile-construction, .container-fluid.mobile-construction * {
+        display: block;
+    }
     .title h1 {
         font-size: 60px;
     }
