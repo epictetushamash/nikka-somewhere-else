@@ -11,12 +11,19 @@
     "url": "git+https://github.com/epictetushamash/nikka-somewhere-else.git"
   },
   "author": "Nikka",
-  "license": "ISC",
+  "license": "Apache License",
   "bugs": {
     "url": "https://github.com/epictetushamash/nikka-somewhere-else/issues"
   },
   "homepage": "https://github.com/epictetushamash/nikka-somewhere-else#readme",
-  "dependencies": {
-    "bower": "^1.8.2"
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cssbeautify": "^1.0.0",
+    "gulp-sass": "^3.2.1"
   }
 }
