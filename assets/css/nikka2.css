@@ -24,9 +24,50 @@ img {
 .navbar .nav-item .nav-link {
     color: black;
 }
-.navbar .nav-item.active .nav-link {
+.navbar .nav-item.active .nav-link, .navbar .nav-item .nav-link:hover {
     color: var(--color-primary);
 }
+.navbar-vertical {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: left top 0;
+    transform-origin: left top 0;
+    bottom: 320px;
+    left: 100px;
+    z-index: 99;
+    width: 360px;
+}
+.navbar-vertical .nav-link {
+    font-size: 22px;
+}
+/* FOOTER */
+.footer {
+    color: #c2c2c2;
+    font-size: 14px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.social-widget ul {
+    padding: 0;
+    margin: 0;
+}
+.social-widget li {
+    display: inline;
+    padding: 0 20px;
+}
+.social-widget li:first-child {
+    padding-left: 0;
+}
+.social-widget li:last-child {
+    padding-right: 0;
+}
+.social-widget a {
+    color: #c2c2c2;
+}
+.social-widget a:hover {
+    color: var(--color-primary);
+}
+
 /* HOME */
 /* Banner Section */
 .banner {
@@ -114,7 +155,21 @@ img {
     font-weight: 600;
     color: black;
     text-shadow: 0px 5px 45px rgba(0, 0, 0, 0.1);
-    
+}
+.image-wrapper .image-link a:hover {
+    text-decoration: none;
+}
+.journey .image-link, .elsewhere .image-link {
+    right: 0;
+}
+.work .image-link {
+    left: 0;
+}
+
+.journey .description, .work .description, .elsewhere .description {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 30px;
 }
 .journey, .work, .elsewhere {
     padding-top: 100px;
@@ -139,6 +194,11 @@ img {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    /* FOOTER */
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
     /* HOME */
     .banner {
         height: 60vh;
@@ -167,7 +227,6 @@ img {
     }
 
     .image-wrapper .image-bg {
-        /* height: 460px; */
         width: 380px;
         overflow: visible;
     }
@@ -184,6 +243,12 @@ img {
     .image-wrapper .number {
         font-size: 12.5rem;
         bottom: 0;
+    }
+    .journey .image-bg, .elsewhere .image-bg {
+        margin-right: 50px;
+    }
+    .work .image-bg {
+        margin-left: 50px;
     }
 }
 
