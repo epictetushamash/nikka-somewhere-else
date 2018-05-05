@@ -2,7 +2,7 @@
   "name": "nikka-somewhere-else",
   "version": "1.0.0",
   "description": "Portfolio",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,15 +15,5 @@
   "bugs": {
     "url": "https://github.com/epictetushamash/nikka-somewhere-else/issues"
   },
-  "homepage": "https://github.com/epictetushamash/nikka-somewhere-else#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "bootstrap": "^4.0.0",
-    "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-browserify": "^0.5.1",
-    "gulp-cssbeautify": "^1.0.0",
-    "gulp-sass": "^3.2.1"
-  }
+  "homepage": "https://github.com/epictetushamash/nikka-somewhere-else#readme"
 }
