@@ -147,7 +147,7 @@ img {
     font-size: 10rem;
     font-weight: 700;
     bottom: 460px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .image-wrapper .image-bg {
@@ -161,9 +161,12 @@ img {
     background-position: center;
     border-radius: 5px;
 }
-
+.image-wrapper .image-bg-link {
+    z-index: 2;
+}
 .image-wrapper .image-link {
     margin-top: 50px;
+    z-index: 3;
 }
 .image-wrapper .image-link a {
     font-size: 1.5em;
