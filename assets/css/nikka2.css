@@ -1,4 +1,11 @@
-/* GLOBAL */
+/*!
+ * Nikka Guo - Portfolio
+ * Version - 2.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ * Developed by Nikka Guo <nikka999@foxmail.com> (www.nikkaguo.design) | Yunfei Li <dylannnnlee@gmail.com> (www.yunfei.li)
+ * Copyright (c) 2018 Nikka Guo | Yunfei Li
+ */
+/* GLOBAL STYLE */
 body {
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
@@ -81,8 +88,49 @@ img {
 .social-widget a:hover {
     color: #0000ff;
 }
+/* BOX BLOCK ANIMATION */
+.box-animation {
+    opacity: 1;
+    position: relative;
+    will-change: opacity;
+    overflow: hidden;
+}
+.box-animation::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000ff;
+    transition: all .6s cubic-bezier(.4,0,.2,1);
+    transform: translate3d(-100%,0,0);
+    will-change: transform;
+}
+.box-animation [data-box-animation-target] {
+    opacity: 0;
+    position: relative;
+    will-change: opacity;
+}
+.box-animation[data-box-animation="active"] [data-box-animation-target] {
+    opacity: 1;
+}
+.box-animation[data-box-animation="active"]::after {
+    left: 1px;
+    transform: translateZ(0);
+    will-change: transform;
+    transition: all .6s cubic-bezier(.4,0,.2,1);
+    transform: translate3d(100%,0,0);
+    will-change: transform;
+    transition: all .7s cubic-bezier(.4,0,.2,1);
+}
+.box-animation[data-box-animation="active"][data-box-animation-delay="300"]::after {
+    transition-delay: .3s;
+}
 
-/* HOME */
+/* ========================
+    HOME
+   ======================== */
 /* Banner Section */
 .banner {
     width: 100%;
@@ -147,7 +195,7 @@ img {
     font-size: 10rem;
     font-weight: 700;
     bottom: 460px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .image-wrapper .image-bg {
@@ -163,6 +211,7 @@ img {
 }
 .image-wrapper .image-bg-link {
     z-index: 2;
+    position: relative;
 }
 .image-wrapper .image-link {
     margin-top: 50px;
@@ -202,7 +251,9 @@ img {
     background-image: url("../image/diver-2-retouched.png");
 }
 
-/* ABOUT */
+/* ========================
+    ABOUT
+   ======================== */
 .jumbotro.about {
     background-color: white;
     position: fixed;
@@ -253,12 +304,206 @@ img {
     background-color: #000;
 }
 #about .navbar-vertical {
-    z-index: 0;
+    z-index: 1;
 }
 #about .navbar-vertical {
     bottom: auto;
-    top: calc(100vh - 400px);
+    top: calc(100vh - 386px);
 }
+
+/* ========================
+    WORK
+   ======================== */
+.ribbon .ribbon-wrapper {
+    height: 80vh;
+    min-height: 320px;
+}
+.ribbon h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.ribbon .box-animation {
+    padding: 15px 0;
+}
+.uxproject .project-link {
+    color: #202020;
+    z-index: 2;
+    padding: 20px 15px 40px;
+}
+.uxproject .project-link h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.uxproject .project-link h2 {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.uxproject .project-image img {
+    -webkit-filter: grayscale(100);
+    -moz-filter: grayscale(100);
+    filter: grayscale(100);
+    width: 100%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.uxproject .project-image:hover img {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.bluebox {
+    width: 150px;
+    background-color: #0000ff;
+    height: 150px;
+}
+
+/* ========================
+    ELSEWHERE
+   ======================== */
+.video-bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#elsewhere .ribbon {
+    overflow: hidden;
+}
+#elsewhere .ribbon-wrapper {
+    z-index: 1;
+    position: relative;
+}
+#elsewhere .ribbon .line-separator {
+    width: 40px;
+    margin-top: 180px;
+    height: 4px;
+    background: white;
+}
+#elsewhere .ribbon-content h1 {
+    text-align: left;
+    margin-left: 0;
+    color: aliceblue;
+}
+#elsewhere .ribbon-content p {
+    text-align: left;
+    margin-left: 0;
+    color: aliceblue;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+#elsewhere .ribbon-content {
+    height: 80vh;
+    min-height: 320px;
+}
+.content-section {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.content-section .header h2 {
+    color: #0000ff;
+    font-weight: 700;
+}
+.content-section .header p {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.content-section .image {
+    margin: 10px 0;
+}
+.content-section .note {
+    text-align: right;
+}
+.content-section .note h4::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #0000ff;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+.content-section .note h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+.content-section .horizontal, .content-section .vertical {
+    width: 100%;
+}
+.content-section .horizontal {
+    height: 230px;
+}
+.content-section .vertical {
+    height: 400px;
+}
+.content-section .block {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#still-life {
+    background-image: url("../image/still-life-painting.png");
+    margin-top: 30px;
+}
+#water {
+    background-image: url("../image/water-sketch.png");
+    margin-top: 60px;
+}
+#kanagawa {
+    background-image: url("../image/kanagawa.png");
+}
+#dustpan {
+    background-image: url("../image/sketch-dustpan-optimized.jpg");
+    height: 300px;
+    margin-top: 30px;
+}
+#book {
+    background-image: url("../image/sketch-book.png");
+}
+#beverage {
+    background-image: url("../image/sketch-beverage.png");
+}
+#volunteer {
+    background-image: url("../image/volunteer.png");
+    margin-top: 30px;
+}
+#washi {
+    background-image: url("../image/washipaper.png");
+    margin-top: 60px;
+}
+#elsewhere .content-section #bamboo {
+    background-image: url("../image/bamboospoon.png");
+}
+#dive {
+    background-image: url("../image/underwater-dive.png");
+    margin-top: 30px;
+}
+#hunting {
+    background-image: url("../image/underwater-hunting.png");
+    margin-top: 60px;
+}
+
+/* ========================
+    SEASOR
+   ======================== */
+/* ========================
+    YOUNGCAPITAL
+   ======================== */
+/* ========================
+    MAISON FLOOLIPE
+   ======================== */
+/* ========================
+    PRINTPLUS
+   ======================== */
+/* ========================
+    TACIT
+   ======================== */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .banner h1 {
@@ -277,7 +522,9 @@ img {
         padding-top: 100px;
         padding-bottom: 80px;
     }
-    /* HOME */
+    /* ========================
+        HOME
+       ======================== */
     .banner {
         height: 60vh;
     }
@@ -311,7 +558,7 @@ img {
     }
     
     .image-wrapper .image-link a {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-weight: 600;
         color: black;
         text-shadow: 0px 5px 45px rgba(0, 0, 0, 0.1);
@@ -327,14 +574,31 @@ img {
         margin-left: 50px;
     }
 
-    /* ABOUT */
+    /* ========================
+        ABOUT
+       ======================== */
     .screen-blue h2, .screen-black h2 {
         font-size: 4rem;
     }
     .screen-blue p, .screen-black p {
         font-size: 2rem;
     }
-    
+
+    /* ========================
+        WORK
+       ======================== */
+    .ribbon h1 {
+        font-size: 3.5rem;
+    }
+    .uxproject .project-link {
+        left: -100px;
+        top: 120px;
+        position: absolute;
+        padding: 0;
+    }
+    .uxproject .project-link h1 {
+        font-size: 2.5rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -342,18 +606,24 @@ img {
     .banner h1 {
         padding: 0 100px;
     }
-    
+    /* ========================
+        WORK
+       ======================== */
+    .ribbon h1 {
+        font-size: 4rem;
+    }
     
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    /* ABOUT */
+    /* ========================
+        ABOUT
+       ======================== */
     .nkguo-intro {
         padding-left: 100px;
     }
     .jumbotro.about.bg-image {
         background-image: url("../image/itisme.jpg");
-        
     }
 }

@@ -3,294 +3,291 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Nikka Somewhere Else | Portfolio</title>
+    <title>Elsewhere | Nikka Somewhere Else | Portfolio</title>
     <meta name="description" content="Nikka's awesome portfolio">
     <meta name="keywords" content="nikka, somewhere else, portfolio, designer, UI/UX">
+    <meta name="author" content="co-authored by Nikka Guo and Yunfei Li">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0000ff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#0000ff">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-		crossorigin="anonymous"> -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/nikka.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/nikka2.css" />
 </head>
 
 <body id="elsewhere">
-    <section class="container-fluid mobile-construction">
-        <div class="row">
-            <div class="col full-height d-flex flex-column align-items-center justify-content-center">
-                <h1>Mobile under construction.</h1>
-                <p>Please visit desktop right now</p>
-            </div>
-        </div>
-    </section>
     <div class="logo">
-        <a href="index.html">
+        <a class="d-sm-inline-block" href="/" title="Home">
             <img src="logo-guo.png" alt="hand writing Nikka as logo">
         </a>
     </div>
-    <svg id="navigation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 350 50"
-        style="enable-background:new 0 0 350 50;" xml:space="preserve">
-        <symbol id="navigation-text">
-            <a xlink:href="/about.html">
-                <text transform="matrix(1 0 0 1 0 33)">About</text>
-            </a>
-            <a xlink:href="/work.html">
-                <text transform="matrix(1 0 0 1 124 33)">Work</text>
-            </a>
-            <a xlink:href="/elsewhere.html">
-                <text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
-            </a>
-        </symbol>
-        <clippath id="navigation-text-clip">
-            <text transform="matrix(1 0 0 1 0 33)">About</text>
-            <text transform="matrix(1 0 0 1 124 33)">Work</text>
-            <text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
-        </clippath>
-        <g clip-path="url(#navigation-text-clip)" class="colortext">
-            <rect width="100%" height="100%" fill="black"></rect>
-            <rect width="30%" height="100%" fill="#0000ff" style="transform: translateX(70%)"></rect>
-        </g>
-        <use xlink:href="#navigation-text" fill="transparent"></use>
-    </svg>
-    <div class="container-fluid">
-        <header class="row ribbon-wrapper">
-            <div class="col ribbon-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h1>Nikka is somewhere else.</h1>
-                            <div class="line-separator"></div>
-                            <p>She is not confined with boundary.</p>
+    <nav class="d-none d-xl-none navbar navbar-light bg-white fixed-bottom">
+        <ul class="navbar-nav mr-auto d-flex flex-row justify-content-around align-items-stretch font-weight-bold">
+            <li class="nav-item">
+                <a class="nav-link" href="/" title="Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about.html" title="About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/work.html" title="Work">Work</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/elsewhere.html" title="Elsewhere">Elsewhere</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="d-none d-xl-block navbar position-fixed navbar-vertical">
+        <ul class="navbar-nav mr-auto d-flex flex-row justify-content-around align-items-stretch font-weight-bold">
+            <li class="nav-item">
+                <a class="nav-link" href="/about.html" title="About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/work.html" title="Work">Work</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/elsewhere.html" title="Elsewhere">Elsewhere</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="jumbotro">
+        <div class="container-fluid">
+            <div class="row ribbon align-items-center justify-content-center py-0">
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="ribbon-wrapper">
+                                    <div class="ribbon-content d-flex flex-column justify-content-center">
+                                        <h1>Nikka is somewhere else.</h1>
+                                        <div class="line-separator"></div>
+                                        <p>She is not confined with boundary.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="video-bg-overlay" id="video-bg-wrapper"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section in-2d-world">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header">
+                        <h2>In 2D world</h2>
+                        <p>Drawing is another way of her expression.</p>
                     </div>
                 </div>
             </div>
-            <div class="video-bg-overlay" id="video-bg-wrapper">
-                <!-- <iframe id="video-bg-frame" class="video-bg-frame" src="https://www.youtube.com/embed/4kXqfHhMvRU?loop=1&amp;playlist=4kXqfHhMvRU&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amps;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-            </div>
-        </header>
-        <div class="row content-wrapper">
-            <div class="col">
-                <div class="container">
-                    <section id="in-2d-world" class="content-section">
-                        <div class="row">
-                            <div class="col">
-                                <div class="header">
-                                    <h2>In 2D world</h2>
-                                    <p>Drawing is another way of her expression.</p>
-                                </div>
-                            </div>
+            <div class="row image">
+                <div class="col-sm-12 col-md-4">
+                    <div class="horizontal block" id="still-life">
+                    </div>
+                    <div class="note">
+                        <h4>Still life color painting</h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="vertical block" id="water">
+                    </div>
+                    <div class="vertical-notation">
+                        <div class="line-separator"></div>
+                        <div class="note note-vertical ">
+                            <h4>Glass water sketch</h4>
                         </div>
-                        <div class="row image">
-                            <div class="col">
-                                <div class="horizontal block" id="still-life">
-                                </div>
-                                <div class="note">
-                                    <h4>Still life color painting</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="vertical block" id="water">
-                                </div>
-                                <div class="vertical-notation">
-                                    <div class="line-separator"></div>
-                                    <div class="note note-vertical ">
-                                        <h4>Glass water sketch</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="horizontal block" id="kanagawa">
-                                </div>
-                                <div class="line-separator"></div>
-                                <div class="note">
-                                    <h4>The Great Wave off Kanagawa sketch copy</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="observer" class="content-section">
-                        <div class="row">
-                            <div class="col">
-                                <div class="header">
-                                    <h2>Observer and thinkerd</h2>
-                                    <p>Getting inspiration from daily life.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row image">
-                            <div class="col">
-                                <div class="horizontal block bg-contain" id="dustpan">
-                                </div>
-                                <div id="notation" class="note">
-                                    <h4>Redesign Dustpan</h4>
-                                    <p>a new dust collecting system</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row image">
-                            <div class="col">
-                                <div class="horizontal block" id="book">
-                                </div>
-                                <div class="note">
-                                    <h4>Notebook with pen</h4>
-                                    <p>This would save me from losing 100 pens</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="vertical block" id="beverage"></div>
-                                <div class="note">
-                                    <h4>Beverage container</h4>
-                                    <p>Less messy when different drink bottles on the table</p>
-                                </div>
-                            </div>
-                    </section>
-
-                    <section class="content-section" id="Experience">
-                        <div class="row">
-                            <div class="col">
-                                <div class="header">
-                                    <h2>Out of sight</h2>
-                                    <p>Experience is the essense of life.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row image">
-                            <div class="col">
-                                <div class="horizontal block" id="volunteer">
-                                </div>
-                                <div class="note">
-                                    <h4>Being together with children in Nepal</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="vertical block" id="washi">
-                                </div>
-                                <div class="vertical-notation">
-
-                                    <div class="note note-vertical ">
-                                        <h4>Creating washi paper from plant fibre</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="horizontal block" id="bamboo">
-                                </div>
-
-                                <div class="note">
-                                    <h4>Making spoon from bamboo</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="content-section" id="Underwater">
-                        <div class="row">
-                            <div class="col">
-                                <div class="header">
-                                    <h2>Underwater</h2>
-                                    <p>Perhaps, Nikka used to be a fish.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row image">
-                            <div class="col">
-                                <div class="horizontal block" id="dive">
-                                </div>
-                                <div class="note">
-                                    <h4>Dive in Indian Ocean</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="horizontal block" id="hunting">
-                                </div>
-
-                                <div class="note">
-                                    <h4>Lobster hunting</h4>
-                                </div>
-                            </div>
-                            <div class="col">
-
-                            </div>
-                        </div>
-                    </section>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="horizontal block" id="kanagawa">
+                    </div>
+                    <div class="line-separator"></div>
+                    <div class="note">
+                        <h4>The Great Wave off Kanagawa sketch copy</h4>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col ">
-                        <div class="copyright">© 2018</div>
-                    </div>
-                    <div class="col">
-                        <div class="social-widget">
-                            <ul>
-                                <li>
-                                    <a href="#" title="" target="_blank">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="" target="_blank">
-                                        <i class="fab fa-medium-m"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="contact-email">
-                            nikka999@foxmail.com
-                        </div>
+    </section>
+    <section class="content-section observer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header">
+                        <h2>Observer and thinkerd</h2>
+                        <p>Getting inspiration from daily life.</p>
                     </div>
                 </div>
             </div>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-            crossorigin="anonymous"></script>
-        <script src="./assets/plugin/youtube-background/jquery.youtubebackground.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#video-bg-wrapper').YTPlayer({
-                    ratio: 16 / 9,
-                    mute: true,
-                    fitToBackground: false,
-                    videoId: 'VDVpaW7RgL4',
-                    playerVars: {
-                        modestbranding: 0,
-                        autoplay: 1,
-                        controls: 0,
-                        showinfo: 0,
-                        branding: 0,
-                        rel: 0,
-                        autohide: 0,
-                        start: 0
-                    }
-                });
+            <div class="row image">
+                <div class="col">
+                    <div class="horizontal block bg-contain" id="dustpan">
+                    </div>
+                    <div id="notation" class="note">
+                        <h4>Redesign Dustpan</h4>
+                        <p>a new dust collecting system</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row image">
+                <div class="col-sm-12 col-md-6">
+                    <div class="horizontal block" id="book">
+                    </div>
+                    <div class="note">
+                        <h4>Notebook with pen</h4>
+                        <p>This would save me from losing 100 pens</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="vertical block" id="beverage"></div>
+                    <div class="note">
+                        <h4>Beverage container</h4>
+                        <p>Less messy when different drink bottles on the table</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section experience">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header">
+                        <h2>Out of sight</h2>
+                        <p>Experience is the essense of life.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row image">
+                <div class="col-sm-12 col-md-4">
+                    <div class="horizontal block" id="volunteer">
+                    </div>
+                    <div class="note">
+                        <h4>Being together with children in Nepal</h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="vertical block" id="washi">
+                    </div>
+                    <div class="vertical-notation">
+                        <div class="note note-vertical ">
+                            <h4>Creating washi paper from plant fibre</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="horizontal block" id="bamboo">
+                    </div>
+                    <div class="note">
+                        <h4>Making spoon from bamboo</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section underwater">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header">
+                        <h2>Underwater</h2>
+                        <p>Perhaps, Nikka used to be a fish.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row image">
+                <div class="col-sm-12 col-md-4">
+                    <div class="horizontal block" id="dive">
+                    </div>
+                    <div class="note">
+                        <h4>Dive in Indian Ocean</h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="horizontal block" id="hunting">
+                    </div>
+
+                    <div class="note">
+                        <h4>Lobster hunting</h4>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 pb-4">
+                    <div class="copyright">© 2018</div>
+                </div>
+                <div class="col-sm-12 col-md-4 pb-4">
+                    <div class="social-widget">
+                        <ul class="d-flex justify-content-md-center">
+                            <li>
+                                <a href="https://www.linkedin.com/in/nikkaguo/" title="Linkedin" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/nkguo" title="Facebook" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@nikkaguo" title="Medium" target="_blank">
+                                    <i class="fab fa-medium-m"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 pb-4">
+                    <div class="contact-email" title="Email">
+                        nikka999@foxmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/nikka.js"></script>
+    <script src="./assets/plugin/youtube-background/jquery.youtubebackground.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#video-bg-wrapper').YTPlayer({
+                ratio: 16 / 9,
+                mute: true,
+                fitToBackground: false,
+                videoId: 'VDVpaW7RgL4',
+                playerVars: {
+                    modestbranding: 0,
+                    autoplay: 1,
+                    controls: 0,
+                    showinfo: 0,
+                    branding: 0,
+                    rel: 0,
+                    autohide: 0,
+                    start: 0
+                }
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>

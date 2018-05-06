@@ -4,21 +4,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Nikka Somewhere Else | Portfolio | About</title>
+	<title>About | Nikka Somewhere Else | Portfolio</title>
 	<meta name="description" content="Nikka's awesome portfolio">
 	<meta name="keywords" content="nikka, somewhere else, portfolio, designer, UI/UX">
+	<meta name="author" content="co-authored by Nikka Guo and Yunfei Li">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0000ff">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="manifest" href="./site.webmanifest">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#0000ff">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/nikka2.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/nikka2.css" />
 </head>
 
 <body id="about">
@@ -162,27 +163,9 @@
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 	<!-- <script src="/assets/js/skrollr.min.js"></script> -->
+	<script src="/assets/js/nikka.js"></script>
 	<script>
-		$.scrollDir = function(options) {
-			var settings = $.extend({
-				down: function() {},
-				up: function() {}
-			}, options);
-
-			var scrollPosition = 0;
-			$(window).scroll(function () {
-				var cursorPosition = $(this).scrollTop();
-				if (cursorPosition > scrollPosition) {
-					settings.down();
-				}
-				else if (cursorPosition < scrollPosition) {
-					settings.up();
-				}
-				scrollPosition = cursorPosition;
-			});
-		};
 		$(document).ready(function () {
-			
 			function logoSwitch() {
 				var offset = $('.navbar-vertical:not(.navbar-reverse)').offset().top - $('.navbar-reverse').closest('#white-navigation').offset().top;
 				$('.navbar-reverse').css('top', offset);
@@ -190,21 +173,6 @@
 			$(window).on('scroll', function() {
 				logoSwitch()
 			});
-
-			$.scrollDir({
-				down: function(){
-					$('.navbar:not(.navbar-vertical)').addClass('d-none fadeOutDown').removeClass('d-block').one();
-				},
-				up: function(){
-					var currPos = $(window).scrollTop();
-					if (currPos > 0) {
-						$('.navbar:not(.navbar-vertical)').addClass('d-block fadeInUp').removeClass('d-none');
-					} else {
-						$('.navbar:not(.navbar-vertical)').addClass('d-none fadeOutDown').removeClass('d-block');
-					}
-				},
-			});
-
 		});
 	</script>
 </body>

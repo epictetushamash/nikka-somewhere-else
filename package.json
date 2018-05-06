@@ -1,7 +1,11 @@
 {
   "name": "nikka-somewhere-else",
-  "version": "1.0.0",
-  "description": "Portfolio",
+  "version": "2.0.0",
+  "description": "Nikka Guo - Portfolio.",
+  "contributors": [
+    "Nikka Guo <nikka999@foxmail.com> (www.nikkaguo.design)",
+    "Yunfei Li <dylannnnlee@gmail.com> (www.yunfei.li)"
+  ],
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/epictetushamash/nikka-somewhere-else.git"
   },
-  "author": "Nikka",
+  "author": "Yunfei Li <dylannnnlee@gmail.com> (www.yunfei.li)",
   "license": "Apache License",
   "bugs": {
     "url": "https://github.com/epictetushamash/nikka-somewhere-else/issues"
