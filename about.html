@@ -23,34 +23,83 @@
 
 <body id="about">
 	<div class="logo">
-		<a href="index.html">
+		<a class="d-sm-inline-block" href="/" title="Home">
 			<img src="logo-guo.png" alt="hand writing Nikka as logo">
 		</a>
 	</div>
+	<nav class="d-none d-xl-none navbar navbar-light bg-white fixed-bottom">
+		<ul class="navbar-nav mr-auto d-flex flex-row justify-content-around align-items-stretch font-weight-bold">
+			<li class="nav-item">
+				<a class="nav-link" href="/" title="Home">Home</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="/about.html" title="About">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/work.html" title="Work">Work</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/elsewhere.html" title="Elsewhere">Elsewhere</a>
+			</li>
+		</ul>
+	</nav>
+	
 	<section class="jumbotro about full-height bg-image">
-		<div class="container">
+		<nav class="d-none d-xl-block navbar position-fixed navbar-vertical">
+			<ul class="navbar-nav mr-auto d-flex flex-row justify-content-around align-items-stretch font-weight-bold">
+				<li class="nav-item active">
+					<a class="nav-link" href="/about.html" title="About">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/work.html" title="Work">Work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/elsewhere.html" title="Elsewhere">Elsewhere</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="container-fluid">
 			<div class="row py-0 d-flex align-items-center justify-content-center full-height">
-				<div class="col-sm-12 col-md-6">
-					<div class="nkguo-intro">
-						<div class="nkguo-content">
-							<div class="name">
-								<h2>Nikka Guo</h2>
-								<h3>郭美妤</h3>
+				<div class="col">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 col-md-6">
+								<div class="nkguo-intro">
+									<div class="nkguo-content">
+										<div class="name">
+											<h2>Nikka Guo</h2>
+											<h3>郭美妤</h3>
+										</div>
+										<div class="keywords">
+											<p>Life explorer</p>
+											<p>Design enthusiast</p>
+											<p>Ocean lover</p>
+											<p>Problem solver</p>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="keywords">
-								<p>Life explorer</p>
-								<p>Design enthusiast</p>
-								<p>Ocean lover</p>
-								<p>Problem solver</p>
-							</div>
+							<div class="col-sm-12 col-md-6"></div>
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6"></div>
 			</div>
 		</div>
 	</section>
 	<div id="white-navigation">
+		<nav class="d-none d-xl-block navbar position-absolute navbar-vertical navbar-reverse">
+			<ul class="navbar-nav mr-auto d-flex flex-row justify-content-around align-items-stretch font-weight-bold">
+				<li class="nav-item active">
+					<a class="nav-link" href="/about.html" title="About">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/work.html" title="Work">Work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/elsewhere.html" title="Elsewhere">Elsewhere</a>
+				</li>
+			</ul>
+		</nav>
 		<section class="screen-blue d-flex align-items-center justify-content-center full-height">
 			<div class="container">
 				<div class="row">
@@ -71,53 +120,91 @@
 				</div>
 			</div>
 		</section>
-	</div>
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-4 pb-4">
-					<div class="copyright">© 2018</div>
-				</div>
-				<div class="col-sm-12 col-md-4 pb-4">
-					<div class="social-widget">
-						<ul class="d-flex justify-content-md-center">
-							<li>
-								<a href="https://www.linkedin.com/in/nikkaguo/" title="Linkedin" target="_blank">
-									<i class="fab fa-linkedin-in"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com/nkguo" title="Facebook" target="_blank">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://medium.com/@nikkaguo" title="Medium" target="_blank">
-									<i class="fab fa-medium-m"></i>
-								</a>
-							</li>
-						</ul>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 pb-4">
+						<div class="copyright">© 2018</div>
 					</div>
-				</div>
-				<div class="col-sm-12 col-md-4 pb-4">
-					<div class="contact-email" title="Email">
-						nikka999@foxmail.com
+					<div class="col-sm-12 col-md-4 pb-4">
+						<div class="social-widget">
+							<ul class="d-flex justify-content-md-center">
+								<li>
+									<a href="https://www.linkedin.com/in/nikkaguo/" title="Linkedin" target="_blank">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/nkguo" title="Facebook" target="_blank">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://medium.com/@nikkaguo" title="Medium" target="_blank">
+										<i class="fab fa-medium-m"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4 pb-4">
+						<div class="contact-email" title="Email">
+							nikka999@foxmail.com
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
+	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-	<script src="/assets/js/skrollr.min.js"></script>
+	<!-- <script src="/assets/js/skrollr.min.js"></script> -->
 	<script>
-		$(document).ready(function () {
-			var s = skrollr.init({
-				forceHeight: false,
-				smoothScrolling: false
+		$.scrollDir = function(options) {
+			var settings = $.extend({
+				down: function() {},
+				up: function() {}
+			}, options);
+
+			var scrollPosition = 0;
+			$(window).scroll(function () {
+				var cursorPosition = $(this).scrollTop();
+				if (cursorPosition > scrollPosition) {
+					settings.down();
+				}
+				else if (cursorPosition < scrollPosition) {
+					settings.up();
+				}
+				scrollPosition = cursorPosition;
 			});
+		};
+		$(document).ready(function () {
+			
+			function logoSwitch() {
+				var offset = $('.navbar-vertical:not(.navbar-reverse)').offset().top - $('.navbar-reverse').closest('#white-navigation').offset().top;
+				$('.navbar-reverse').css('top', offset);
+			}
+			$(window).on('scroll', function() {
+				logoSwitch()
+			});
+
+			$.scrollDir({
+				down: function(){
+					$('.navbar:not(.navbar-vertical)').addClass('d-none fadeOutDown').removeClass('d-block').one();
+				},
+				up: function(){
+					var currPos = $(window).scrollTop();
+					if (currPos > 0) {
+						$('.navbar:not(.navbar-vertical)').addClass('d-block fadeInUp').removeClass('d-none');
+					} else {
+						$('.navbar:not(.navbar-vertical)').addClass('d-none fadeOutDown').removeClass('d-block');
+					}
+				},
+			});
+
 		});
 	</script>
 </body>
