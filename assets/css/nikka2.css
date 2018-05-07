@@ -629,9 +629,135 @@ img {
 /* ========================
     YOUNGCAPITAL
    ======================== */
+.junefruit {
+    position: relative;
+    background: linear-gradient(to bottom right, #F9A93A, #F77F00, #FF6E44);
+    color: floralwhite;
+}
+.landing-img {
+    width: 45%;
+    box-shadow: 0px 5px 50px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 5px 5px;
+    margin-right: 10%;
+    margin-left: auto;
+}
+.overlap-img {
+    width: 45%;
+    box-shadow: 0px 5px 50px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: absolute;
+    right: 35%;
+    top: 30%;
+}
+.junefruit .landing, .junefruit .overlap {
+    text-align: right;
+}
+.junefruit h3 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+.junefruit p {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.research, .opti, .design, .design-sub-section {
+    padding-top: 80px;
+}
+.research .image, .opti .image, .design .image, .design-sub-section .image {
+    height: auto;
+    border-radius: 5px;
+}
+.research .image, .design .image.image-left {
+    margin-right: auto;
+}
+.opti .image, .design .image.image-right {
+    margin-left: auto;
+}
+.research img, .opti img, .design img, .design-sub-section img {
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 40px 10px rgba(0, 0, 0, 0.03);
+}
+.copywrite {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+.copywrite.right {
+    margin-left: auto;
+}
+.copywrite.left {
+    margin-right: auto;
+}
+.copywrite h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: blue;
+    margin-top: 50px;
+}
+.copywrite h4 {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+.copywrite .number {
+    color: #f5f5f5;
+    font-size: 6rem;
+    font-weight: 700;
+    position: absolute;
+    top: -60px;
+    z-index: -1;
+    left: 50px;
+}
+.yc-mobile, .validation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.yc-mobile .image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 5px 45px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.yc-mobile .swiper-container-horizontal > .swiper-wrapper {
+    margin-bottom: 50px;
+}
+.yc-mobile .swiper-container {
+    padding: 0 50px;
+}
+.yc-mobile .swiper-container-horizontal > .swiper-scrollbar {
+    width: 40%;
+    left: 30%;
+    background: rgba(255,255,255,.3);
+    cursor: pointer;
+}
+.yc-mobile .swiper-scrollbar-drag {
+    background: rgba(255,255,255,.8);
+}
+.data .block {
+    margin-bottom: 35px;
+}
+.data h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+.data p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #E5E5E5;
+    letter-spacing: 1px;
+}
 /* ========================
     MAISON FLOOLIPE
    ======================== */
+.slickraven {
+    position: relative;
+    background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
+    color: floralwhite;
+}
 /* ========================
     PRINTPLUS
    ======================== */
@@ -649,6 +775,10 @@ img {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .row-fluid {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .logo {
         display: block;
     }
@@ -754,6 +884,27 @@ img {
         width: 75%;
         margin: 0 auto;
         display: block;
+    }
+
+    /* ========================
+    YOUNGCAPITAL
+   ======================== */
+    .research .image, .opti .image, .design .image, .design-sub-section .image {
+        width: 70%;
+    }
+    .research, .opti, .design, .design-sub-section {
+        padding-top: 200px;
+    }
+    .design {
+        padding-bottom: 200px;
+    }
+    .copywrite {
+        width: 80%;
+    }
+    .copywrite .number {
+        font-size: 9rem;
+        top: -100px;
+        left: 100px;
     }
 }
 
