@@ -19,6 +19,7 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/plugin/swiper/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/nikka2.css" />
 </head>
@@ -112,28 +113,29 @@
                 </div>
             </div>
             <div class="row row-fluid branding">
-                <div class="col-sm-6 col-md-3">
-                    <div class="card" id="rice">
+                <div class="col col-md-3">
+                    <div class="branding-card" id="rice">
                         <img src="./assets/image/logo-cn-rice.png" alt="logo of MF">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="card" id="salmon">
+                <div class="col col-md-3">
+                    <div class="branding-card" id="salmon">
                         <img src="./assets/image/logo-mf-salmon.png" alt="logo of MF">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="card" id="sandstone">
+                <div class="w-100 d-md-none"></div>
+                <div class="col col-md-3">
+                    <div class="branding-card" id="sandstone">
                         <img src="./assets/image/logo-mf-sandstone.png" alt="logo of MF">
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="card" id="raven">
+                <div class="col col-md-3">
+                    <div class="branding-card" id="raven">
                         <img src="./assets/image/logo-mf-raven.png" alt="logo of MF">
                     </div>
                 </div>
             </div>
-            <div class="row row-fluid color-card">
+            <div class="row row-fluid color-card pt-4">
                 <div class="col">
                     <div class="color-palette d-flex align-items-center justify-content-center">
                         <div class="color-item" data-color="#CFC1B0">
@@ -169,19 +171,86 @@
     </section>
     <section class="mf-mobile">
         <div class="container">
-            <div class="col-sm-12 col-md-4">
-                <div class="image" id="mf-homepage">
-                    <img src="assets/image/mf-mobile-homepage.png" alt="mf on mobile">
+            <div class="row">
+                <div class="col">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="assets/image/mf-mobile-homepage.png" alt="mf on mobile">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="assets/image/mf-mobile-menu.png" alt="mf on mobile">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="assets/image/mf-mobile-collection.png" alt="mf on mobile">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="image" id="mf-menu">
-                    <img src="assets/image/mf-mobile-menu.png" alt="mf on mobile">
+        </div>
+    </section>
+
+    <section class="project-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- <div class="footer-nav">
+                        <a href="./work.html" title="Work" class="nav-link">
+                            <div class="nav-item nav-prev d-flex justify-content-start align-items-center">
+                                <span class="nav-icon">
+                                    <svg width="36px" height="30px" viewBox="0 0 36 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" alt="arrow left">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="arrow-color" transform="translate(-1335.000000, -4804.000000)" fill="#f5f5f5" fill-rule="nonzero">
+                                                <g transform="translate(1062.000000, 4776.000000)">
+                                                    <g transform="translate(291.000000, 43.000000) rotate(-90.000000) translate(-291.000000, -43.000000) translate(276.000000, 25.000000)">
+                                                        <path d="M29.4884951,19.8266702 C30.1705016,20.5038777 30.1705016,21.6533405 29.4884951,22.3306681 L16.3056971,35.5098445 C16.2069713,35.6078756 16.1082455,35.7059067 16.0184728,35.7059067 L15.919747,35.8039378 C15.8210212,35.8039378 15.8210212,35.9019689 15.7222954,35.9019689 C15.6235696,35.9019689 15.6235696,35.9019689 15.5248438,36 C15.426118,36 15.426118,36 15.3273922,36 C15.2286664,36 15.1299406,36 14.941563,36 C14.8428372,36 14.7441114,36 14.5557339,36 C14.4570081,36 14.4570081,36 14.3582823,36 C14.2595565,36 14.2595565,36 14.1608307,35.9019689 C14.0621049,35.9019689 14.0621049,35.8039378 13.9633791,35.8039378 C13.9633791,35.8039378 13.8646533,35.8039378 13.8646533,35.7059067 C13.7659275,35.6078756 13.6672017,35.6078756 13.577429,35.5098445 L0.511504903,22.2325169 C-0.170501634,21.5553094 -0.170501634,20.4058466 0.511504903,19.728519 C1.19351144,19.0511914 2.35111984,19.0513115 3.03324736,19.728519 L13.3084738,29.9314423 L13.3084738,1.72875926 C13.3084738,0.766348528 14.080253,0 15.0494839,0 C16.0187147,0 16.790494,0.766348528 16.790494,1.72875926 L16.790494,29.9226724 L26.8772219,19.9158113 C27.6488802,19.1493426 28.8154416,19.1493426 29.4884951,19.8266702 Z" id="Shape"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="nav-text">
+                                    Work
+                                </span>
+                            </div>
+                        </a>
+                    </div> -->
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="image" id="mf-collection">
-                    <img src="assets/image/mf-mobile-collection.png" alt="mf on mobile">
+                <div class="col">
+                    <div class="footer-nav">
+                        <a href="./printplus.html" title="PrintPlus" class="nav-link">
+                            <div class="nav-item nav-next d-flex flex-row-reverse justify-content-start align-items-center">
+                                <span class="nav-icon">
+                                    <svg width="36px" height="30px" viewBox="0 0 36 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" alt="arrow right">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="arrow-color" transform="translate(-1335.000000, -4804.000000)" fill="#f5f5f5" fill-rule="nonzero">
+                                                <g transform="translate(1062.000000, 4776.000000)">
+                                                    <g transform="translate(291.000000, 43.000000) rotate(-90.000000) translate(-291.000000, -43.000000) translate(276.000000, 25.000000)">
+                                                        <path d="M29.4884951,19.8266702 C30.1705016,20.5038777 30.1705016,21.6533405 29.4884951,22.3306681 L16.3056971,35.5098445 C16.2069713,35.6078756 16.1082455,35.7059067 16.0184728,35.7059067 L15.919747,35.8039378 C15.8210212,35.8039378 15.8210212,35.9019689 15.7222954,35.9019689 C15.6235696,35.9019689 15.6235696,35.9019689 15.5248438,36 C15.426118,36 15.426118,36 15.3273922,36 C15.2286664,36 15.1299406,36 14.941563,36 C14.8428372,36 14.7441114,36 14.5557339,36 C14.4570081,36 14.4570081,36 14.3582823,36 C14.2595565,36 14.2595565,36 14.1608307,35.9019689 C14.0621049,35.9019689 14.0621049,35.8039378 13.9633791,35.8039378 C13.9633791,35.8039378 13.8646533,35.8039378 13.8646533,35.7059067 C13.7659275,35.6078756 13.6672017,35.6078756 13.577429,35.5098445 L0.511504903,22.2325169 C-0.170501634,21.5553094 -0.170501634,20.4058466 0.511504903,19.728519 C1.19351144,19.0511914 2.35111984,19.0513115 3.03324736,19.728519 L13.3084738,29.9314423 L13.3084738,1.72875926 C13.3084738,0.766348528 14.080253,0 15.0494839,0 C16.0187147,0 16.790494,0.766348528 16.790494,1.72875926 L16.790494,29.9226724 L26.8772219,19.9158113 C27.6488802,19.1493426 28.8154416,19.1493426 29.4884951,19.8266702 Z" id="Shape"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="nav-text">
+                                    Next
+                                </span>
+                            </div>
+                            <div class="nav-info d-flex flex-column justify-content-end align-items-end">
+                                <span class="nav-title">PrintPlus</span>
+                                <span class="nav-title-info uppercase">3D printed headphone</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -227,12 +296,45 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
 		crossorigin="anonymous"></script>
     <script src="/assets/js/skrollr.min.js"></script>
+    <script src="/assets/plugin/swiper/js/swiper.min.js"></script>
     <script src="/assets/js/nikka.js"></script>
     <script>
         $(document).ready(function () {
             var s = skrollr.init({
                 forceHeight: false,
                 smoothScrolling: false
+            });
+
+            var mySwiper = new Swiper('.swiper-container', {
+                speed: 400,
+                spaceBetween: 160,
+                initialSlide: 0,
+                slidesPerView: 3,
+                mousewheel: {
+                    invert: false,
+                    forceToAxis: true
+                },
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: false
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 80
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 100
+                    },
+                    1200: {
+                        slidesPerView: 3
+                    }
+                }
             });
         });
     </script>

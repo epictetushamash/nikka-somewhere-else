@@ -564,66 +564,64 @@ img {
     background-size: cover;
 }
 /* Footer navigation */
-.footer-nav-items {
-    padding: 0;
-    margin: 0;
+.project-nav {
+    padding: 40px 0 0;
 }
-.footer-nav-item {
+.footer-nav {
+    display: block;
+}
+.footer-nav .nav-icon {
     display: inline-block;
+}
+.footer-nav svg {
+    width: 36px;
+    height: 30px;
+}
+.footer-nav .nav-prev svg {
+    transform: rotate(180deg);
+}
+.footer-nav .nav-prev .nav-text {
+    margin-left: 30px;
+}
+.footer-nav .nav-next .nav-text {
     margin-right: 30px;
 }
-.footer-nav-item:last-child {
-    margin-right: 0;
-}
-.footer-nav-item .number {
+.footer-nav .nav-text {
     font-size: 4rem;
-    font-weight: bold;
-    color: #f5f5f5;
-    display: inline-block;
-    transition: all 0.3s;
+    display: inline;
+    text-decoration: none;
+    font-weight: 700;
+    color: #E5E5E5
 }
-.footer-nav-item .nav-text {
-    margin-right: 20px;
-    text-align: left;
-    color: #f5f5f5;
-    overflow: hidden;
-    width: 0;
-    display: none;
-    transition: all 0.3s;
+.footer-nav .nav-info {
+    display: block;
 }
-.footer-nav-item .title {
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin-left: -100px;
-    transition: all 0.3s;
+.footer-nav .nav-info {
+    color: #E5E5E5
 }
-.footer-nav-item .sub-title {
+.footer-nav .nav-info .nav-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footer-nav .nav-info .nav-title-info {
     font-size: 0.9rem;
-    margin-left: -150px;
-    transition: all 0.3s;
 }
-.footer-nav-item:hover .number, .footer-nav-item:hover .nav-text {
+.footer-nav .nav-next, .footer-nav .nav-next .nav-text, .footer-nav .nav-next #arrow-color, .footer-nav .nav-next + .nav-info .nav-title, .footer-nav .nav-next + .nav-info .nav-title-info {
+    color: #0000ff;
+    fill: #0000ff;
+}
+.footer-nav:hover {
+    text-decoration: none;
     color: #0000ff;
     transition: all 0.3s;
 }
-.footer-nav-item:hover .nav-text {
-    display: inline-block;
-    width: auto;
-    transition: all 0.3s;
-}
-.footer-nav-item:hover .title, .footer-nav-item:hover .sub-title {
-    margin-left: 0;
-    transition: all 0.3s;
-}
-.footer-nav-item.current .number, .footer-nav-item.current .nav-text {
+.footer-nav:hover .nav-text,.footer-nav:hover .nav-info {
     color: #0000ff;
+    transition: all 0.3s;
 }
-.footer-nav-item.current .nav-text {
-    display: inline-block;
-    width: auto;
-}
-.footer-nav-item.current .title, .footer-nav-item.current .sub-title {
-    margin-left: 0;
+.footer-nav:hover #arrow-color {
+    color: #0000ff;
+    fill: #0000ff;
     transition: all 0.3s;
 }
 /* ========================
@@ -757,6 +755,81 @@ img {
     position: relative;
     background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
     color: floralwhite;
+    padding-bottom: 100px;
+}
+.slickraven .landing, .slickraven .overlap {
+    text-align: right;
+}
+.slickraven .overlap-img {
+    top: 15%;
+}
+.slickraven .font-img {
+    width: 15%;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+.slickraven h3 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+.slickraven {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.branding .branding-card {
+    background: transparent;
+    margin-bottom: 20px;
+}
+.color-palette {
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.color-palette .color-item-bg {
+    width: 100%;
+    max-width: 90px;
+    height: 20px;
+    display: block;
+}
+.color-palette .color-item-text {
+    font-size: 12px;
+    color: #c2c2c2;
+}
+.color-palette .color-item {
+    width: 20%;
+}
+.color-item[data-color="#CFC1B0"] .color-item-bg {
+    background-color: #CFC1B0;
+}
+.color-item[data-color="#D38269"] .color-item-bg {
+    background-color: #D38269;
+}
+.color-item[data-color="#C69C6D"] .color-item-bg {
+    background-color: #C69C6D;
+}
+.color-item[data-color="#FFFBF7"] .color-item-bg {
+    background-color: #FFFBF7;
+}
+.color-item[data-color="#282828"] .color-item-bg {
+    background-color: #282828;
+}
+.mf-wireframe, .mf-overview {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+.mf-wireframe {
+    background-image: url("../image/mf-wireframe.png");
+}
+.mf-overview {
+    background-image: url("../image/mf-overview.png");
+}
+.mf-mobile {
+    position: relative;
+    background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
+    color: floralwhite;
+    padding: 100px 0;
 }
 /* ========================
     PRINTPLUS
@@ -906,6 +979,9 @@ img {
         top: -100px;
         left: 100px;
     }
+   .mf-wireframe, .mf-overview {
+        height: 730px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -925,7 +1001,12 @@ img {
     .seasor-overview {
         height: 730px;
     }
-    
+    /* ========================
+    MAISON FLOOLIPE
+   ======================== */
+   .branding .branding-card {
+        padding: 15%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -938,5 +1019,12 @@ img {
     }
     .jumbotro.about.bg-image {
         background-image: url("../image/itisme.jpg");
+    }
+
+    /* ========================
+    MAISON FLOOLIPE
+   ======================== */
+   .branding .branding-card {
+        padding:20%;
     }
 }
