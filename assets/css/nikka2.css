@@ -587,7 +587,7 @@ img {
     margin-right: 30px;
 }
 .footer-nav .nav-text {
-    font-size: 4rem;
+    font-size: 3rem;
     display: inline;
     text-decoration: none;
     font-weight: 700;
@@ -834,9 +834,90 @@ img {
 /* ========================
     PRINTPLUS
    ======================== */
+.mintsalad .image {
+    background-image: url("../image/headphone-xl.png");
+    height: 300px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+    position: relative;
+}
+.mintsalad h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+}
+.mintsalad p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: black;
+}
+.components .image {
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.components #print {
+    background-image: url("../image/printable-parts.png");
+}
+.components #toolkit {
+    background-image: url("../image/kit-parts.png");
+}
+.components #assemble {
+    background-image: url("../image/overview-headphones.png");
+    height: 50vh;
+}
+.components .image p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.content {
+    padding: 100px 0;
+}
+.content h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+}
+.content p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: black;
+}
 /* ========================
     TACIT
    ======================== */
+.video-container {
+    background-color: antiquewhite;
+    overflow: hidden;
+    max-height: 100vh;
+}
+.btn-wrapper .btn-rounded {
+    padding: 12px 48px;
+    border-color: #0000ff;
+    color: #0000ff;
+    border-radius: 40px;
+    border-width: 2px;
+}
+.graphic-wrapper {
+    padding: 100px 0;
+}
+.btn-wrapper .btn-rounded:hover {
+    background-color: #0000ff;
+    color: white;
+}
+.sketch {
+    background-image: url("../image/lightsketch-together.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -981,6 +1062,30 @@ img {
     }
    .mf-wireframe, .mf-overview {
         height: 730px;
+    }
+    /* ========================
+    PRINTPLUS
+   ======================== */
+    .mintsalad .image {
+        height: 600px;
+        right: -60px;
+    }
+    .components .image {
+        height: 440px;
+    }
+    .components #assemble {
+        height: 100vh;
+    }
+    /* ========================
+    TACIT
+   ======================== */
+    .sketch {
+        background-repeat: repeat;
+        height: 400px;
+        background-size: 100%;
+    }
+    .footer-nav .nav-text {
+        font-size: 4rem;
     }
 }
 
