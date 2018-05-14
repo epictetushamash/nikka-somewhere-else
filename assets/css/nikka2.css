@@ -5,6 +5,12 @@
  * Developed by Nikka Guo <nikka999@foxmail.com> (www.nikkaguo.design) | Yunfei Li <dylannnnlee@gmail.com> (www.yunfei.li)
  * Copyright (c) 2018 Nikka Guo | Yunfei Li
  */
+/* Overwrite bootstrap default container width */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
 /* GLOBAL STYLE */
 body {
     font-size: 16px;
@@ -348,10 +354,14 @@ img {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
+.uxproject .project-image.maison img {
+    opacity: 0.6;
+}
 .uxproject .project-image:hover img {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
     filter: grayscale(0);
+    opacity: 1;
 }
 .bluebox {
     width: 150px;
@@ -1044,7 +1054,7 @@ img {
     YOUNGCAPITAL
    ======================== */
     .research .image, .opti .image, .design .image, .design-sub-section .image {
-        width: 70%;
+        width: 80%;
     }
     .research, .opti, .design, .design-sub-section {
         padding-top: 200px;
