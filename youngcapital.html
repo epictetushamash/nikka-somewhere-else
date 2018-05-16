@@ -93,19 +93,19 @@
             <div class="row">
                 <div class="col">
                     <div class="landing">
-                        <img class="landing-img" src="./assets/image/dashboard.png" alt="youngcapital dashboard mockup">
+                        <img class="landing-img" src="./assets/image/desktop-dashboard.png" alt="youngcapital dashboard mockup">
                     </div>
                     <div class="overlap">
                         <img class="overlap-img" src="./assets/image/yc-homepage.png" alt="youngcapital dashboard home page mockup">
                     </div>
                 </div>
             </div>
-            <div class="row row-fluid pt-5">
-                <div class="col-sm-12 col-md-6 pb-5">
+            <div class="row row-fluid content-row">
+                <div class="col-sm-12 col-md-6">
                     <h3>Goal</h3>
                     <p class="mt-4">The goal in this project is to improve the whole user journey from 'candidates looking for jobs' to 'recommend jobs to candidates', integrating the method of machine learning. <br><br>Deliverables are responsive website, including desktop, mobile, and tablet version, lanuched in 9 countries.</p>
                 </div>
-                <div class="col-sm-12 col-md-6 pb-5">
+                <div class="col-sm-12 col-md-6">
                     <h3>YoungCapital</h3>
                     <p class="mt-4">As the most popular employment agency among young generation, YoungCapital has been active since 2000. With over 20 subsites under YoungCapital around Europe, design needs to be consistant for each country and scalable to different languages, while keeping the creativity of brand. Fight the best user flow against corporation legacy is part of the challenge.</p>
                 </div>
@@ -207,7 +207,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="image">
-                                    <img src="assets/image/yc-mobile-menu.png">
+                                    <img src="assets/image/yc-mobile-tips.png">
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -217,32 +217,17 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="image">
-                                    <img src="assets/image/yc-mobile-dashboard.png">
+                                    <img src="assets/image/yc-mobile-gegevens.png">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image">
+                                    <img src="assets/image/yc-mobile-applied.png">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="image">
                                     <img src="assets/image/yc-mobile-menu.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-cv.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-dashboard.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-menu.png">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image">
-                                    <img src="assets/image/yc-mobile-cv.png">
                                 </div>
                             </div>
                         </div>
@@ -254,6 +239,7 @@
     </section>
 
     <section class="validation pb-0">
+            <!-- data-bottom-top="@data-animation:counter" data-emit-events -->
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -277,8 +263,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-7 mt-5">
-                    <div class="data" data-center="@data-animation:counter" data-emit-events>
-                        <div class="row">
+                    <div class="data">
+                        <div class="row wow validation-block" data-wow-offset="200" data-wow-delay="500ms">
                             <div class="col-md-6 block" id="bounce">
                                 <h2><span data-count="10" style="display: none">0</span>%</h2>
                                 <p>Bounce Rate decrease</p>
@@ -378,54 +364,35 @@
 		crossorigin="anonymous"></script>
     <script src="/assets/js/skrollr.min.js"></script>
     <script src="/assets/plugin/swiper/js/swiper.min.js"></script>
+    <script src="/assets/plugin/wow/wow.min.js"></script>
     <script src="/assets/js/nikka.js"></script>
 	<script>
+        window.counterAnimated = false;
 		$(document).ready(function () {
             var s = skrollr.init({
 				forceHeight: false,
 				smoothScrolling: false,
-                keyframe: function(element, name, direction) {
-                    window.counterAnimated = false;
-                    
-                    if (name == 'dataCenter' && direction == 'down') {
-                        window.counterAnimated = true;
-                    } else if (name == 'dataCenter' && direction == 'up') {
-                        window.counterAnimated = false;
-                    }
-                    animateNumber();
-                }
 			});
 
-            function animateNumber () {
-                window.counterAnimated = window.counterAnimated || false;
+            new WOW().init();
+            
+            var validationElement = $('.validation-block');
+            $(window).scroll(function(){
+                if (validationElement.hasClass('animated')) {
+                    animateNumber();
+                }
+            });
+
+            function animateNumber() {
                 if (!window.counterAnimated) {
-                    
                     $('[data-count]').each(function() {
                         var $this = $(this),
-                            countTo = 0;
-                        $this.animate({
-                            countNum: countTo
-                        }, {
-                            duration: 500,
-                            easing:'linear',
-                            step: function() {
-                                $this.text(Math.floor(this.countNum));
-                            },
-                            complete: function() {
-                                $this.text(this.countNum);
-                                $('[data-count]').hide();
-                            }
-                        });
-                    });
-                } else {
-                    $('[data-count]').each(function() {
-                        var $this = $(this),
-                            countTo = $this.attr('data-count');
+                            countTo = parseInt($this.attr('data-count'));
                         $this.show();
                         $this.animate({
                             countNum: countTo
                         }, {
-                            duration: 500,
+                            duration: 700,
                             easing:'linear',
                             step: function() {
                                 $this.text(Math.floor(this.countNum));
@@ -443,7 +410,7 @@
                 speed: 400,
                 spaceBetween: 30,
                 initialSlide: 0,
-                slidesPerView: 4,
+                slidesPerView: 3,
                 scrollbar: {
                     el: '.swiper-scrollbar',
                     hide: false,
@@ -471,7 +438,7 @@
                         slidesPerView: 3
                     },
                     1200: {
-                        slidesPerView: 4
+                        slidesPerView: 3
                     }
                 }
             });

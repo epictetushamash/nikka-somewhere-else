@@ -305,6 +305,7 @@ img {
 }
 .screen-blue p, .screen-black p {
     font-size: 1.5rem;
+    font-weight: 300;
 }
 #about .footer {
     background-color: #000;
@@ -355,6 +356,9 @@ img {
     transition: .3s ease-in-out;
 }
 .uxproject .project-image.maison img {
+    opacity: 0.6;
+}
+.uxproject .project-image.tacit img {
     opacity: 0.6;
 }
 .uxproject .project-image:hover img {
@@ -452,7 +456,7 @@ img {
     height: 400px;
 }
 .content-section .block {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -641,6 +645,7 @@ img {
     position: relative;
     background: linear-gradient(to bottom right, #F9A93A, #F77F00, #FF6E44);
     color: floralwhite;
+    overflow: hidden;
 }
 .landing-img {
     width: 45%;
@@ -667,6 +672,10 @@ img {
 .junefruit p {
     font-weight: 300;
     font-size: 1.3rem;
+}
+.junefruit .content-row {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .research, .opti, .design, .design-sub-section {
     padding-top: 80px;
@@ -766,6 +775,7 @@ img {
     background: linear-gradient(to bottom right, #39373E, #313C3E, #313D3A);
     color: floralwhite;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 .slickraven .landing, .slickraven .overlap {
     text-align: right;
@@ -788,8 +798,11 @@ img {
     font-size: 1.3rem;
 }
 .branding .branding-card {
+    /* height: 125px;
+    width: 230px; */
     background: transparent;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0px 5px 40px 8px rgba(0, 0, 0, 0.1);
 }
 .color-palette {
     text-align: center;
@@ -939,6 +952,9 @@ img {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .contact-email {
+        text-align: right;
+    }
     .row-fluid {
         padding-left: 10%;
         padding-right: 10%;
@@ -987,7 +1003,6 @@ img {
     }
     
     .image-wrapper .image-link a {
-        font-size: 1.5rem;
         font-weight: 600;
         color: black;
         text-shadow: 0px 5px 45px rgba(0, 0, 0, 0.1);
@@ -1002,15 +1017,11 @@ img {
     .work .image-bg {
         margin-left: 50px;
     }
-
     /* ========================
         ABOUT
        ======================== */
     .screen-blue h2, .screen-black h2 {
         font-size: 4rem;
-    }
-    .screen-blue p, .screen-black p {
-        font-size: 2rem;
     }
 
     /* ========================
@@ -1054,7 +1065,7 @@ img {
     YOUNGCAPITAL
    ======================== */
     .research .image, .opti .image, .design .image, .design-sub-section .image {
-        width: 80%;
+        width: 90%;
     }
     .research, .opti, .design, .design-sub-section {
         padding-top: 200px;
@@ -1104,6 +1115,9 @@ img {
     .banner h1 {
         padding: 0 100px;
     }
+    .journey .description, .work .description, .elsewhere .description {
+        padding-right: 100px;
+    }
     /* ========================
         WORK
     ======================== */
@@ -1115,12 +1129,6 @@ img {
     ======================== */
     .seasor-overview {
         height: 730px;
-    }
-    /* ========================
-    MAISON FLOOLIPE
-   ======================== */
-   .branding .branding-card {
-        padding: 15%;
     }
 }
 
@@ -1139,7 +1147,9 @@ img {
     /* ========================
     MAISON FLOOLIPE
    ======================== */
-   .branding .branding-card {
-        padding:20%;
+    .branding .branding-card {
+        height: 125px;
+        width: 230px;
+        margin: 0 auto 20px auto;
     }
 }
