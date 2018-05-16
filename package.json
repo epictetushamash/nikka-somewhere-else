@@ -1,8 +1,12 @@
 {
   "name": "nikka-somewhere-else",
-  "version": "1.0.0",
-  "description": "Portfolio",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Nikka Guo - Portfolio.",
+  "contributors": [
+    "Nikka Guo <nikka999@foxmail.com> (www.nikkaguo.design)",
+    "Yunfei Li <dylannnnlee@gmail.com> (www.yunfei.li)"
+  ],
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,20 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/epictetushamash/nikka-somewhere-else.git"
   },
-  "author": "Nikka",
+  "author": "Yunfei Li <dylannnnlee@gmail.com> (www.yunfei.li)",
   "license": "Apache License",
   "bugs": {
     "url": "https://github.com/epictetushamash/nikka-somewhere-else/issues"
   },
-  "homepage": "https://github.com/epictetushamash/nikka-somewhere-else#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "bootstrap": "^4.0.0",
-    "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-browserify": "^0.5.1",
-    "gulp-cssbeautify": "^1.0.0",
-    "gulp-sass": "^3.2.1"
-  }
+  "homepage": "https://github.com/epictetushamash/nikka-somewhere-else#readme"
 }

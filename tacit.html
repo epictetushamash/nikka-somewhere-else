@@ -5,162 +5,200 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Nikka Somewhere Else | Portfolio</title>
+	<title>Tacit | Nikka Somewhere Else | Portfolio</title>
 	<meta name="description" content="Nikka's awesome portfolio">
 	<meta name="keywords" content="nikka, somewhere else, portfolio, designer, UI/UX">
+	<meta name="author" content="co-authored by Nikka Guo and Yunfei Li">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0000ff">
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="manifest" href="./site.webmanifest">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#0000ff">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="../assets/css/nikka.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./assets/plugin/swiper/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/nikka2.css" />
 </head>
 
 <body id="tacit">
-	<section class="container-fluid mobile-construction">
-		<div class="row">
-			<div class="col full-height d-flex flex-column align-items-center justify-content-center">
-				<h1>Mobile under construction.</h1>
-				<p>Please visit desktop right now</p>
-			</div>
-		</div>
-	</section>
 	<div class="logo">
-		<a href="index.html">
+		<a class="d-sm-inline-block" href="/" title="Home">
 			<img src="logo-guo.png" alt="hand writing Nikka as logo">
 		</a>
 	</div>
-	<svg id="navigation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	viewBox="0 0 350 50" style="enable-background:new 0 0 350 50;" xml:space="preserve">
-		<symbol id="navigation-text">
-			<a xlink:href="/about.html">
-				<text transform="matrix(1 0 0 1 0 33)">About</text>
-			</a>
-			<a xlink:href="/work.html">
-				<text transform="matrix(1 0 0 1 124 33)">Work</text>
-			</a>
-			<a xlink:href="/elsewhere.html">
-				<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
-			</a>
-		</symbol>
-		<clippath id="navigation-text-clip">
-			<text transform="matrix(1 0 0 1 0 33)">About</text>
-			<text transform="matrix(1 0 0 1 124 33)">Work</text>
-			<text transform="matrix(1 0 0 1 247 33)">Elsewhere</text>
-		</clippath>
-		<g clip-path="url(#navigation-text-clip)" class="colortext">
-			<rect width="100%" height="100%" fill="black"></rect>
-			<rect width="30%" height="100%" fill="#0000ff" style="transform: translateX(30%)"></rect>
-		</g>
-		<use xlink:href="#navigation-text" fill="transparent"></use>
-	</svg>
-	<div class="container-fluid bg-white">
-		<header class="row" id="ribbon">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<div class="ribbon-wrapper">
-								<div class="ribbon-content">
-									<h1>
-										<span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active">
-											<span data-box-animation-target>Tacit</span>
-										</span>
-									</h1>
-									<h2>
-										<span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active" data-box-animation-delay="300">
-											<span data-box-animation-target>Ambient lighting clock</span>
-										</span>
-									</h2>
-								</div>
-								<div class="tags">
-									<p>Feb, 2016 - June, 2016<br>
-										# Product Design
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-        <section class="row video-container">
-            <div class="col px-0 video" id="video-bg-wrapper">
+	<nav class="d-none d-xl-none navbar navbar-light bg-white fixed-bottom">
+		<ul class="navbar-nav mr-auto d-flex flex-row justify-content-around align-items-stretch font-weight-bold">
+			<li class="nav-item">
+				<a class="nav-link" href="/" title="Home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/about.html" title="About">About</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="/work.html" title="Work">Work</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/elsewhere.html" title="Elsewhere">Elsewhere</a>
+			</li>
+		</ul>
+	</nav>
+	<nav class="d-none d-xl-block navbar position-fixed navbar-vertical">
+		<ul class="navbar-nav mr-auto d-flex flex-row justify-content-around align-items-stretch font-weight-bold">
+			<li class="nav-item">
+				<a class="nav-link" href="/about.html" title="About">About</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="/work.html" title="Work">Work</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/elsewhere.html" title="Elsewhere">Elsewhere</a>
+			</li>
+		</ul>
+	</nav>
+	<section class="ribbon">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="ribbon-wrapper d-flex flex-column align-items-center justify-content-center">
+                        <div class="ribbon-content">
+                            <h1>
+                                <span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active">
+                                    <span data-box-animation-target>Tacit</span>
+                                </span>
+                            </h1>
+                            <h2>
+                                <span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active" data-box-animation-delay="300">
+                                    <span data-box-animation-target >Ambient lighting clock</span>
+                                </span>
+                            </h2>
+                        </div>
+                        <div class="tags">
+                            <p>Feb, 2016 - June, 2016<br>
+							# Product Design
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-		
-		<section class="row nullland">
-			<div class="col">
-				<div class="container">
-					<div class="row copywrite">
-						<div class="col">
-							<div class="text">
-								<h3>Concept</h3>
-								<p>Inspired by traditional hourglass, Tacit is a dynamic water lamp that subtly implies time by the movement of light while creating a relaxing mood in a dark environment such as sauna room, bathroom.</p>
-							</div>
-						</div>
-						<div class="col">
-							<div class="text">
-								<h3>Background</h3>
-								<p>As a girl who likes to turn off the lights while taking a shower, I reckon darkness as important as lightness for people. In modern society people are surrounded by lots of lights which is more or less overwhelming. In that sense, I focus on 'design for darkness' to give  back the experience that people could have a rest, think or calm down while feeling the beauty of lights in dim light condition.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="row graphic-wrapper">
-			<div class="col">
-				<div class="graphic-container d-flex flex-column align-items-center justify-content-center">
-					<div class="graphic">
-						<img src="./assets/image/tacit-process-graph.svg">
-					</div>
-					<div class="btn-wrapper d-block"><a class="btn btn-outline-primary btn-border-thicker btn-rounded" href="./assets/documents/tacit-process-details.pdf" target="_blank">Read process details</a></div>
-				</div>
-			</div>
-		</section>
-		<section class="row sketch">
-			<div class="col">
-			</div>
-		</section>
-
-        <div class="switch hidden">
-            <div class="next">
-                <a class="link" href="seasor.html">
-                    <h4>Next</h4>
-                    <img src="assets/image/down-arrow.svg">
-                </a>
-                <p>Maison Floolipe</p>
-                <p>Online business - ux</p>
-            </div>
-        
         </div>
-	</div>
-    
-    
-    <footer class="footer">
+	</section>
+	
+	<section class="video-container">
+		<div class="container-fluid video px-0" id="video-bg-wrapper">
+			<div class="row">
+				<div class="col"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="text">
+                        <h3>Concept</h3>
+                        <p>Inspired by traditional hourglass, Tacit is a dynamic water lamp that subtly implies time by the movement of light while creating a relaxing mood in a dark environment such as sauna room, bathroom.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="text"> 
+                        <h3>Background</h3>
+                        <p>As a girl who likes to turn off the lights while taking a shower, I reckon darkness as important as lightness for people. In modern society people are surrounded by lots of lights which is more or less overwhelming. In that sense, I focus on 'design for darkness' to give back the experience that people could have a rest, think or calm down while feeling the beauty of lights in dim light condition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</section>
+
+	<section class="graphic-wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col ">
-					<div class="copyright">© 2018</div>
+				<div class="col">
+					<div class="graphic-container d-flex flex-column align-items-center justify-content-center">
+						<div class="graphic">
+							<img src="./assets/image/tacit-process-graph.svg" alt="tacit process graph">
+						</div>
+						<div class="mt-5 btn-wrapper d-block"><a class="btn btn-outline-primary btn-border-thicker btn-rounded" href="./assets/documents/tacit-process-details.pdf" target="_blank">Read process details</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="sketch">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col"></div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="project-nav">
+		<div class="container">
+			<div class="row">
+				<div class="col">
 				</div>
 				<div class="col">
+					<div class="footer-nav">
+						<a href="./elsewhere.html" title="Elsewhere" class="nav-link">
+							<div class="nav-item nav-next d-flex flex-row-reverse justify-content-start align-items-center">
+								<span class="nav-icon">
+									<svg width="36px" height="30px" viewBox="0 0 36 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" alt="arrow right">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<g id="arrow-color" transform="translate(-1335.000000, -4804.000000)" fill="#f5f5f5" fill-rule="nonzero">
+												<g transform="translate(1062.000000, 4776.000000)">
+													<g transform="translate(291.000000, 43.000000) rotate(-90.000000) translate(-291.000000, -43.000000) translate(276.000000, 25.000000)">
+														<path d="M29.4884951,19.8266702 C30.1705016,20.5038777 30.1705016,21.6533405 29.4884951,22.3306681 L16.3056971,35.5098445 C16.2069713,35.6078756 16.1082455,35.7059067 16.0184728,35.7059067 L15.919747,35.8039378 C15.8210212,35.8039378 15.8210212,35.9019689 15.7222954,35.9019689 C15.6235696,35.9019689 15.6235696,35.9019689 15.5248438,36 C15.426118,36 15.426118,36 15.3273922,36 C15.2286664,36 15.1299406,36 14.941563,36 C14.8428372,36 14.7441114,36 14.5557339,36 C14.4570081,36 14.4570081,36 14.3582823,36 C14.2595565,36 14.2595565,36 14.1608307,35.9019689 C14.0621049,35.9019689 14.0621049,35.8039378 13.9633791,35.8039378 C13.9633791,35.8039378 13.8646533,35.8039378 13.8646533,35.7059067 C13.7659275,35.6078756 13.6672017,35.6078756 13.577429,35.5098445 L0.511504903,22.2325169 C-0.170501634,21.5553094 -0.170501634,20.4058466 0.511504903,19.728519 C1.19351144,19.0511914 2.35111984,19.0513115 3.03324736,19.728519 L13.3084738,29.9314423 L13.3084738,1.72875926 C13.3084738,0.766348528 14.080253,0 15.0494839,0 C16.0187147,0 16.790494,0.766348528 16.790494,1.72875926 L16.790494,29.9226724 L26.8772219,19.9158113 C27.6488802,19.1493426 28.8154416,19.1493426 29.4884951,19.8266702 Z" id="Shape"></path>
+													</g>
+												</g>
+											</g>
+										</g>
+									</svg>
+								</span>
+								<span class="nav-text">
+									Elsewhere
+								</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-4 pb-4">
+					<div class="copyright">© 2018</div>
+				</div>
+				<div class="col-sm-12 col-md-4 pb-4">
 					<div class="social-widget">
-						<ul>
-							<li><a href="#" title="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#" title="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" title="" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+						<ul class="d-flex justify-content-md-center">
+							<li>
+								<a href="https://www.linkedin.com/in/nikkaguo/" title="Linkedin" target="_blank">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/nkguo" title="Facebook" target="_blank">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://medium.com/@nikkaguo" title="Medium" target="_blank">
+									<i class="fab fa-medium-m"></i>
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="col">
-					<div class="contact-email">
+				<div class="col-sm-12 col-md-4 pb-4">
+					<div class="contact-email" title="Email">
 						nikka999@foxmail.com
 					</div>
 				</div>
@@ -168,17 +206,12 @@
 		</div>
 	</footer>
     
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	    crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	    crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	    crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-	<script src="/assets/js/skrollr.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+		crossorigin="anonymous"></script>
+    <script src="/assets/js/skrollr.min.js"></script>
+    <script src="/assets/plugin/swiper/js/swiper.min.js"></script>
+    <script src="/assets/js/nikka.js"></script>
 	<script src="./assets/plugin/youtube-background/jquery.youtubebackground.js"></script>
     <script>
         $(document).ready(function () {
