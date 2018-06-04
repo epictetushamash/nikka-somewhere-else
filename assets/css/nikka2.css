@@ -118,7 +118,7 @@ img {
     position: relative;
     will-change: opacity;
 }
-.box-animation[data-box-animation="active"] [data-box-animation-target] {
+/* .box-animation[data-box-animation="active"] [data-box-animation-target] {
     opacity: 1;
 }
 .box-animation[data-box-animation="active"]::after {
@@ -132,12 +132,12 @@ img {
 }
 .box-animation[data-box-animation="active"][data-box-animation-delay="300"]::after {
     transition-delay: .3s;
-}
+} */
 
-#work .box-animation.animated [data-box-animation-target] {
+.box-animation.animated [data-box-animation-target] {
     opacity: 1;
 }
-#work .box-animation.animated::after {
+.box-animation.animated::after {
     left: 1px;
     transform: translateZ(0);
     will-change: transform;
@@ -146,7 +146,7 @@ img {
     will-change: transform;
     transition: all .7s cubic-bezier(.4,0,.2,1);
 }
-#work .box-animation.animated[data-box-animation-delay="300"]::after {
+.box-animation.animated[data-box-animation-delay="300"]::after {
     transition-delay: .3s;
 }
 
