@@ -64,10 +64,12 @@
 					<div class="ribbon-wrapper d-flex align-items-center justify-content-center">
 						<div class="ribbon-content">
 							<h1>
-								<span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active">
+
+								<span class="box-animation d-block wow" data-wow-delay="500ms">
 									<span data-box-animation-target>Design makes solutions.</span>
 								</span>
-								<span class="box-animation d-block" data-target="#ribbon" data-top="@data-box-animation:active" data-box-animation-delay="300">
+								<span class="box-animation d-block wow" data-wow-delay="500ms" data-box-animation-delay="300">
+
 									<span data-box-animation-target >Art makes questions.</span>
 								</span>
 							</h1>
@@ -236,15 +238,13 @@
 	    crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
 		crossorigin="anonymous"></script>
+	<script src="/assets/plugin/wow/wow.min.js"></script>
 	<script src="/assets/js/skrollr.min.js"></script>
 	<script src="/assets/js/nikka.js"></script>
 	<script>
 		$(document).ready(function () {
-			var s = skrollr.init({
-				forceHeight: false,
-				smoothScrolling: false
-			});
-		});
+            new WOW().init();
+        });
 	</script>
 </body>
 
